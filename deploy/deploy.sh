@@ -100,15 +100,24 @@ gcloud builds submit . \
   --config deploy/cloudbuild.yaml \
   --substitutions "_IMAGE=${IMAGE},_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL},_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}"
 
-ENV_VARS="GOOGLE_CLOUD_PROJECT=${PROJECT_ID}"
-ENV_VARS+="@GOOGLE_CLOUD_LOCATION=${GOOGLE_CLOUD_LOCATION:-global}"
-ENV_VARS+="@GEMINI_MODEL=${GEMINI_MODEL}"
-ENV_VARS+="@GEMINI_VISION_MODEL=${GEMINI_VISION_MODEL:-$GEMINI_MODEL}"
-ENV_VARS+="@MAX_BROWSER_CONTEXTS=${MAX_BROWSER_CONTEXTS}"
-ENV_VARS+="@NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}"
-ENV_VARS+="@NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}"
-[[ -n "${RESEND_FROM_EMAIL:-}" ]] && ENV_VARS+="@RESEND_FROM_EMAIL=${RESEND_FROM_EMAIL}"
-[[ -n "${APP_URL:-}" ]] && ENV_VARS+="@APP_URL=${APP_URL}"
+# Values such as "Heuristiq <noreply@example.com>" contain characters that
+# break gcloud's inline KEY=VALUE list, so pass them as a YAML file instead.
+ENV_FILE="$(mktemp)"
+trap 'rm -f "$ENV_FILE"' EXIT
+add_env() {
+  local value="${2//\\/\\\\}"
+  value="${value//\"/\\\"}"
+  printf '%s: "%s"\n' "$1" "$value" >> "$ENV_FILE"
+}
+add_env GOOGLE_CLOUD_PROJECT "$PROJECT_ID"
+add_env GOOGLE_CLOUD_LOCATION "${GOOGLE_CLOUD_LOCATION:-global}"
+add_env GEMINI_MODEL "$GEMINI_MODEL"
+add_env GEMINI_VISION_MODEL "${GEMINI_VISION_MODEL:-$GEMINI_MODEL}"
+add_env MAX_BROWSER_CONTEXTS "$MAX_BROWSER_CONTEXTS"
+add_env NEXT_PUBLIC_SUPABASE_URL "$NEXT_PUBLIC_SUPABASE_URL"
+add_env NEXT_PUBLIC_SUPABASE_ANON_KEY "$NEXT_PUBLIC_SUPABASE_ANON_KEY"
+if [[ -n "${RESEND_FROM_EMAIL:-}" ]]; then add_env RESEND_FROM_EMAIL "$RESEND_FROM_EMAIL"; fi
+if [[ -n "${APP_URL:-}" ]]; then add_env APP_URL "$APP_URL"; fi
 
 # Live persona runs stream progress over a single long-lived SSE request and
 # keep abort state in instance memory, hence the long timeout and session
@@ -128,7 +137,7 @@ gcloud run deploy "$SERVICE" \
   --session-affinity \
   --min-instances "$MIN_INSTANCES" \
   --max-instances "$MAX_INSTANCES" \
-  --set-env-vars "^@^${ENV_VARS}" \
+  --env-vars-file "$ENV_FILE" \
   --set-secrets "$SECRETS"
 
 SERVICE_URL="$(gcloud run services describe "$SERVICE" --region "$REGION" --format 'value(status.url)')"

@@ -17,7 +17,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { cn } from '@/lib/utils'
-import { Globe, Monitor, Smartphone, Link, ImageIcon, Upload, X, Plus, Loader2, Play, Clock } from 'lucide-react'
+import { Globe, GitCompare, Monitor, Smartphone, Link, ImageIcon, Upload, X, Plus, Loader2, Play, Clock } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 
@@ -219,7 +219,7 @@ export function StepDetails({ projects: initialProjects }: StepDetailsProps) {
       {/* Experiment Type */}
       <div className="space-y-3">
         <Label className="text-sm font-semibold">Experiment Type</Label>
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <label
             className={cn(
               'relative flex items-start gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all hover:bg-muted/50',
@@ -242,6 +242,22 @@ export function StepDetails({ projects: initialProjects }: StepDetailsProps) {
               </p>
             </div>
           </label>
+
+          <div
+            className="relative flex items-start gap-4 p-4 rounded-xl border-2 border-transparent bg-muted/30 opacity-50 cursor-not-allowed"
+            title="Coming soon"
+          >
+            <GitCompare className="h-5 w-5 text-muted-foreground mt-0.5" />
+            <div className="flex-1">
+              <span className="font-bold text-muted-foreground">A/B Split Experiment</span>
+              <p className="text-xs text-muted-foreground mt-1">
+                Compare performance between a control page and a variant.
+              </p>
+            </div>
+            <span className="absolute top-0 right-0 rounded-bl-xl rounded-tr-lg bg-muted-foreground text-white text-[10px] font-bold px-2 py-1">
+              COMING SOON
+            </span>
+          </div>
         </div>
       </div>
 

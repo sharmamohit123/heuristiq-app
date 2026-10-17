@@ -1,7 +1,17 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from '@/components/ui/alert-dialog'
 import { KPICard } from '@/components/dashboard/kpi-card'
 import { ExperimentCard } from '@/components/dashboard/experiment-card'
 import { LiveExperimentPreview } from '@/components/dashboard/live-experiment-preview'
@@ -28,6 +38,7 @@ export function DashboardContent({
   searchQuery 
 }: DashboardContentProps) {
   const router = useRouter()
+  const [showComingSoonDialog, setShowComingSoonDialog] = useState(false)
 
   // Calculate project-specific KPIs
   const activeTests = experiments?.filter(e => e.status === 'running').length || 0
@@ -91,6 +102,14 @@ export function DashboardContent({
                 >
                   <Sparkles className="h-5 w-5 mr-2" />
                   Usability Experiment
+                </Button>
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-400 hover:to-pink-400 text-white shadow-lg shadow-purple-500/25 border-0 transition-all hover:scale-105 hover:shadow-xl hover:shadow-purple-500/35"
+                  onClick={() => setShowComingSoonDialog(true)}
+                >
+                  <FlaskConical className="h-5 w-5 mr-2" />
+                  A/B Experiment
                 </Button>
               </div>
             </div>
@@ -195,6 +214,23 @@ export function DashboardContent({
 
         <div className="h-8" />
       </div>
+
+      <AlertDialog open={showComingSoonDialog} onOpenChange={setShowComingSoonDialog}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Coming Soon!</AlertDialogTitle>
+            <AlertDialogDescription>
+              A/B Split Experiments are currently in development and will be available soon. 
+              In the meantime, try our Usability Experiments to get actionable insights from AI-powered persona testing.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction onClick={() => setShowComingSoonDialog(false)}>
+              Got it
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   )
 }
