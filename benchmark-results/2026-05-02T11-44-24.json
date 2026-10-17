@@ -1,0 +1,3868 @@
+{
+  "results": [
+    {
+      "taskId": "T01",
+      "taskName": "Wikipedia Article Discovery",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T09:48:50.827Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 6,
+      "durationMs": 80216,
+      "taskProgress": 100,
+      "finalUrl": "https://en.wikipedia.org/wiki/Quantum_computing",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 7,
+        "total_input_tokens": 30904,
+        "total_output_tokens": 1624,
+        "total_cost_usd": 0.020326,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5065,
+            "output_tokens": 180,
+            "cost_usd": 0.003073,
+            "timestamp": "2026-05-02T09:47:30.466Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5087,
+            "output_tokens": 196,
+            "cost_usd": 0.003132,
+            "timestamp": "2026-05-02T09:47:39.269Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4972,
+            "output_tokens": 220,
+            "cost_usd": 0.003146,
+            "timestamp": "2026-05-02T09:47:47.207Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4977,
+            "output_tokens": 219,
+            "cost_usd": 0.003146,
+            "timestamp": "2026-05-02T09:47:55.753Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4935,
+            "output_tokens": 206,
+            "cost_usd": 0.003086,
+            "timestamp": "2026-05-02T09:48:25.408Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4990,
+            "output_tokens": 196,
+            "cost_usd": 0.003083,
+            "timestamp": "2026-05-02T09:48:35.231Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 878,
+            "output_tokens": 407,
+            "cost_usd": 0.00166,
+            "timestamp": "2026-05-02T09:48:50.825Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T01",
+      "taskName": "Wikipedia Article Discovery",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T09:50:00.850Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 4,
+      "durationMs": 63707,
+      "taskProgress": 100,
+      "finalUrl": "https://en.wikipedia.org/wiki/Quantum_computing#History",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 5,
+        "total_input_tokens": 20942,
+        "total_output_tokens": 1206,
+        "total_cost_usd": 0.014091,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5065,
+            "output_tokens": 190,
+            "cost_usd": 0.003103,
+            "timestamp": "2026-05-02T09:48:56.862Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5088,
+            "output_tokens": 208,
+            "cost_usd": 0.003168,
+            "timestamp": "2026-05-02T09:49:04.722Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4973,
+            "output_tokens": 218,
+            "cost_usd": 0.003141,
+            "timestamp": "2026-05-02T09:49:11.393Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4979,
+            "output_tokens": 250,
+            "cost_usd": 0.00324,
+            "timestamp": "2026-05-02T09:49:47.843Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 837,
+            "output_tokens": 340,
+            "cost_usd": 0.001439,
+            "timestamp": "2026-05-02T09:50:00.848Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T01",
+      "taskName": "Wikipedia Article Discovery",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T09:51:40.060Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 89919,
+      "taskProgress": 100,
+      "finalUrl": "https://en.wikipedia.org/wiki/Quantum_computing#History",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 6,
+        "total_input_tokens": 25959,
+        "total_output_tokens": 1354,
+        "total_cost_usd": 0.017043,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5065,
+            "output_tokens": 177,
+            "cost_usd": 0.003064,
+            "timestamp": "2026-05-02T09:50:06.586Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5087,
+            "output_tokens": 182,
+            "cost_usd": 0.00309,
+            "timestamp": "2026-05-02T09:50:14.097Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4973,
+            "output_tokens": 203,
+            "cost_usd": 0.003096,
+            "timestamp": "2026-05-02T09:50:23.752Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4979,
+            "output_tokens": 218,
+            "cost_usd": 0.003144,
+            "timestamp": "2026-05-02T09:50:51.675Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4999,
+            "output_tokens": 239,
+            "cost_usd": 0.003216,
+            "timestamp": "2026-05-02T09:51:24.478Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 856,
+            "output_tokens": 335,
+            "cost_usd": 0.001433,
+            "timestamp": "2026-05-02T09:51:40.059Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T02",
+      "taskName": "Hacker News Story Deep-Dive",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T09:52:36.312Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 4,
+      "durationMs": 46126,
+      "taskProgress": 100,
+      "finalUrl": "https://news.ycombinator.com/news",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 5,
+        "total_input_tokens": 22881,
+        "total_output_tokens": 1365,
+        "total_cost_usd": 0.015537,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5332,
+            "output_tokens": 297,
+            "cost_usd": 0.003557,
+            "timestamp": "2026-05-02T09:51:49.203Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5655,
+            "output_tokens": 186,
+            "cost_usd": 0.003386,
+            "timestamp": "2026-05-02T09:52:01.576Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5665,
+            "output_tokens": 256,
+            "cost_usd": 0.003601,
+            "timestamp": "2026-05-02T09:52:11.916Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5389,
+            "output_tokens": 194,
+            "cost_usd": 0.003277,
+            "timestamp": "2026-05-02T09:52:21.501Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 840,
+            "output_tokens": 432,
+            "cost_usd": 0.001716,
+            "timestamp": "2026-05-02T09:52:36.312Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T02",
+      "taskName": "Hacker News Story Deep-Dive",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T09:53:38.222Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 4,
+      "durationMs": 45832,
+      "taskProgress": 100,
+      "finalUrl": "https://news.ycombinator.com/news",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 5,
+        "total_input_tokens": 22826,
+        "total_output_tokens": 1256,
+        "total_cost_usd": 0.015181,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5332,
+            "output_tokens": 277,
+            "cost_usd": 0.003497,
+            "timestamp": "2026-05-02T09:52:43.872Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5647,
+            "output_tokens": 204,
+            "cost_usd": 0.003436,
+            "timestamp": "2026-05-02T09:52:53.516Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5658,
+            "output_tokens": 233,
+            "cost_usd": 0.003528,
+            "timestamp": "2026-05-02T09:53:05.390Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5386,
+            "output_tokens": 192,
+            "cost_usd": 0.003269,
+            "timestamp": "2026-05-02T09:53:15.605Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 803,
+            "output_tokens": 350,
+            "cost_usd": 0.001451,
+            "timestamp": "2026-05-02T09:53:38.221Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T02",
+      "taskName": "Hacker News Story Deep-Dive",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T09:54:32.568Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 47179,
+      "taskProgress": 100,
+      "finalUrl": "https://news.ycombinator.com/news",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 6,
+        "total_input_tokens": 28571,
+        "total_output_tokens": 1503,
+        "total_cost_usd": 0.018795,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5332,
+            "output_tokens": 252,
+            "cost_usd": 0.003422,
+            "timestamp": "2026-05-02T09:53:46.002Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5647,
+            "output_tokens": 189,
+            "cost_usd": 0.003391,
+            "timestamp": "2026-05-02T09:53:55.973Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5658,
+            "output_tokens": 200,
+            "cost_usd": 0.003429,
+            "timestamp": "2026-05-02T09:54:05.663Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5679,
+            "output_tokens": 206,
+            "cost_usd": 0.003458,
+            "timestamp": "2026-05-02T09:54:13.196Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5406,
+            "output_tokens": 231,
+            "cost_usd": 0.003396,
+            "timestamp": "2026-05-02T09:54:20.450Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 849,
+            "output_tokens": 425,
+            "cost_usd": 0.001699,
+            "timestamp": "2026-05-02T09:54:32.567Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T03",
+      "taskName": "GitHub Repo Exploration",
+      "runNumber": 1,
+      "verdict": "FAIL",
+      "score": 40,
+      "timestampIso": "2026-05-02T10:08:03.704Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 802235,
+      "taskProgress": 70,
+      "finalUrl": "https://github.com/vercel/next.js",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.8571428571428571,
+        "withinStepBudget": false,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 21,
+        "total_input_tokens": 102168,
+        "total_output_tokens": 4791,
+        "total_cost_usd": 0.065461,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4901,
+            "output_tokens": 187,
+            "cost_usd": 0.003012,
+            "timestamp": "2026-05-02T09:54:40.650Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5037,
+            "output_tokens": 253,
+            "cost_usd": 0.003278,
+            "timestamp": "2026-05-02T09:54:54.938Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4964,
+            "output_tokens": 215,
+            "cost_usd": 0.003127,
+            "timestamp": "2026-05-02T09:55:02.999Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5085,
+            "output_tokens": 253,
+            "cost_usd": 0.003302,
+            "timestamp": "2026-05-02T09:55:19.939Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5030,
+            "output_tokens": 189,
+            "cost_usd": 0.003082,
+            "timestamp": "2026-05-02T09:57:15.198Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5046,
+            "output_tokens": 219,
+            "cost_usd": 0.00318,
+            "timestamp": "2026-05-02T09:57:23.494Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4988,
+            "output_tokens": 240,
+            "cost_usd": 0.003214,
+            "timestamp": "2026-05-02T09:57:36.151Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5120,
+            "output_tokens": 200,
+            "cost_usd": 0.00316,
+            "timestamp": "2026-05-02T09:57:45.450Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5044,
+            "output_tokens": 222,
+            "cost_usd": 0.003188,
+            "timestamp": "2026-05-02T09:59:46.198Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5046,
+            "output_tokens": 263,
+            "cost_usd": 0.003312,
+            "timestamp": "2026-05-02T09:59:59.569Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5002,
+            "output_tokens": 202,
+            "cost_usd": 0.003107,
+            "timestamp": "2026-05-02T10:00:10.679Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5120,
+            "output_tokens": 209,
+            "cost_usd": 0.003187,
+            "timestamp": "2026-05-02T10:00:21.134Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5113,
+            "output_tokens": 213,
+            "cost_usd": 0.003196,
+            "timestamp": "2026-05-02T10:02:28.492Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5038,
+            "output_tokens": 205,
+            "cost_usd": 0.003134,
+            "timestamp": "2026-05-02T10:04:24.878Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5038,
+            "output_tokens": 191,
+            "cost_usd": 0.003092,
+            "timestamp": "2026-05-02T10:04:33.932Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4981,
+            "output_tokens": 194,
+            "cost_usd": 0.003073,
+            "timestamp": "2026-05-02T10:04:42.908Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5113,
+            "output_tokens": 220,
+            "cost_usd": 0.003217,
+            "timestamp": "2026-05-02T10:04:54.410Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5044,
+            "output_tokens": 223,
+            "cost_usd": 0.003191,
+            "timestamp": "2026-05-02T10:07:01.433Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5046,
+            "output_tokens": 236,
+            "cost_usd": 0.003231,
+            "timestamp": "2026-05-02T10:07:12.309Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5043,
+            "output_tokens": 197,
+            "cost_usd": 0.003113,
+            "timestamp": "2026-05-02T10:07:27.223Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1369,
+            "output_tokens": 460,
+            "cost_usd": 0.002065,
+            "timestamp": "2026-05-02T10:08:03.699Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 15)",
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear.",
+        "Final URL did not match expected pattern (got: https://github.com/vercel/next.js)",
+        "Required URL(s) never visited: \\/tree\\/[^/]+\\/packages\\/next"
+      ],
+      "notes": [
+        "Skipped checkpoints: #7 \"Verify the README.md file opens and displays its rendered ma...\""
+      ]
+    },
+    {
+      "taskId": "T03",
+      "taskName": "GitHub Repo Exploration",
+      "runNumber": 2,
+      "verdict": "FAIL",
+      "score": 40,
+      "timestampIso": "2026-05-02T10:25:00.416Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 1008237,
+      "taskProgress": 65,
+      "finalUrl": "https://github.com/vercel/next.js",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.8571428571428571,
+        "withinStepBudget": false,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 21,
+        "total_input_tokens": 102437,
+        "total_output_tokens": 4886,
+        "total_cost_usd": 0.06588,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4902,
+            "output_tokens": 201,
+            "cost_usd": 0.003054,
+            "timestamp": "2026-05-02T10:08:14.894Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5038,
+            "output_tokens": 288,
+            "cost_usd": 0.003383,
+            "timestamp": "2026-05-02T10:08:31.023Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4967,
+            "output_tokens": 200,
+            "cost_usd": 0.003084,
+            "timestamp": "2026-05-02T10:08:39.065Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4965,
+            "output_tokens": 206,
+            "cost_usd": 0.003101,
+            "timestamp": "2026-05-02T10:08:46.538Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5112,
+            "output_tokens": 195,
+            "cost_usd": 0.003141,
+            "timestamp": "2026-05-02T10:08:54.242Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5131,
+            "output_tokens": 236,
+            "cost_usd": 0.003274,
+            "timestamp": "2026-05-02T10:10:59.062Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5130,
+            "output_tokens": 255,
+            "cost_usd": 0.00333,
+            "timestamp": "2026-05-02T10:12:59.226Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5127,
+            "output_tokens": 222,
+            "cost_usd": 0.003229,
+            "timestamp": "2026-05-02T10:15:04.889Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5047,
+            "output_tokens": 222,
+            "cost_usd": 0.00319,
+            "timestamp": "2026-05-02T10:17:01.639Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5048,
+            "output_tokens": 190,
+            "cost_usd": 0.003094,
+            "timestamp": "2026-05-02T10:17:10.625Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4990,
+            "output_tokens": 234,
+            "cost_usd": 0.003197,
+            "timestamp": "2026-05-02T10:17:24.014Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5124,
+            "output_tokens": 243,
+            "cost_usd": 0.003291,
+            "timestamp": "2026-05-02T10:17:36.171Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5050,
+            "output_tokens": 206,
+            "cost_usd": 0.003143,
+            "timestamp": "2026-05-02T10:19:36.384Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5053,
+            "output_tokens": 190,
+            "cost_usd": 0.003097,
+            "timestamp": "2026-05-02T10:19:48.483Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4992,
+            "output_tokens": 267,
+            "cost_usd": 0.003297,
+            "timestamp": "2026-05-02T10:20:04.137Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5120,
+            "output_tokens": 222,
+            "cost_usd": 0.003226,
+            "timestamp": "2026-05-02T10:20:17.292Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5117,
+            "output_tokens": 216,
+            "cost_usd": 0.003207,
+            "timestamp": "2026-05-02T10:22:18.559Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5043,
+            "output_tokens": 207,
+            "cost_usd": 0.003143,
+            "timestamp": "2026-05-02T10:24:18.325Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5043,
+            "output_tokens": 203,
+            "cost_usd": 0.00313,
+            "timestamp": "2026-05-02T10:24:26.947Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5045,
+            "output_tokens": 204,
+            "cost_usd": 0.003135,
+            "timestamp": "2026-05-02T10:24:38.299Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1393,
+            "output_tokens": 479,
+            "cost_usd": 0.002134,
+            "timestamp": "2026-05-02T10:25:00.414Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 15)",
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear.",
+        "Final URL did not match expected pattern (got: https://github.com/vercel/next.js)",
+        "Required URL(s) never visited: \\/tree\\/[^/]+\\/packages\\/next"
+      ],
+      "notes": [
+        "Skipped checkpoints: #7 \"Verify the README.md file opens and displays its rendered ma...\""
+      ]
+    },
+    {
+      "taskId": "T03",
+      "taskName": "GitHub Repo Exploration",
+      "runNumber": 3,
+      "verdict": "FAIL",
+      "score": 40,
+      "timestampIso": "2026-05-02T10:40:46.241Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 931695,
+      "taskProgress": 65,
+      "finalUrl": "https://github.com/vercel/next.js/tree/canary/packages",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.8571428571428571,
+        "withinStepBudget": false,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 21,
+        "total_input_tokens": 102474,
+        "total_output_tokens": 4754,
+        "total_cost_usd": 0.065501,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5032,
+            "output_tokens": 197,
+            "cost_usd": 0.003107,
+            "timestamp": "2026-05-02T10:25:10.631Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5034,
+            "output_tokens": 206,
+            "cost_usd": 0.003135,
+            "timestamp": "2026-05-02T10:25:26.415Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4957,
+            "output_tokens": 193,
+            "cost_usd": 0.003058,
+            "timestamp": "2026-05-02T10:25:33.277Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5081,
+            "output_tokens": 214,
+            "cost_usd": 0.003182,
+            "timestamp": "2026-05-02T10:25:44.318Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5096,
+            "output_tokens": 255,
+            "cost_usd": 0.003313,
+            "timestamp": "2026-05-02T10:25:56.769Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5114,
+            "output_tokens": 230,
+            "cost_usd": 0.003247,
+            "timestamp": "2026-05-02T10:28:00.698Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5040,
+            "output_tokens": 212,
+            "cost_usd": 0.003156,
+            "timestamp": "2026-05-02T10:29:57.816Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5043,
+            "output_tokens": 209,
+            "cost_usd": 0.003149,
+            "timestamp": "2026-05-02T10:30:05.284Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5076,
+            "output_tokens": 201,
+            "cost_usd": 0.003141,
+            "timestamp": "2026-05-02T10:30:14.200Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5118,
+            "output_tokens": 209,
+            "cost_usd": 0.003186,
+            "timestamp": "2026-05-02T10:30:26.795Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5117,
+            "output_tokens": 222,
+            "cost_usd": 0.003225,
+            "timestamp": "2026-05-02T10:32:28.905Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5044,
+            "output_tokens": 210,
+            "cost_usd": 0.003152,
+            "timestamp": "2026-05-02T10:34:30.380Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5044,
+            "output_tokens": 190,
+            "cost_usd": 0.003092,
+            "timestamp": "2026-05-02T10:34:41.027Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4988,
+            "output_tokens": 230,
+            "cost_usd": 0.003184,
+            "timestamp": "2026-05-02T10:34:54.978Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5114,
+            "output_tokens": 193,
+            "cost_usd": 0.003136,
+            "timestamp": "2026-05-02T10:35:14.873Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5036,
+            "output_tokens": 213,
+            "cost_usd": 0.003157,
+            "timestamp": "2026-05-02T10:37:12.684Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5037,
+            "output_tokens": 205,
+            "cost_usd": 0.003134,
+            "timestamp": "2026-05-02T10:37:27.893Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4978,
+            "output_tokens": 231,
+            "cost_usd": 0.003182,
+            "timestamp": "2026-05-02T10:37:41.771Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5112,
+            "output_tokens": 208,
+            "cost_usd": 0.00318,
+            "timestamp": "2026-05-02T10:37:57.937Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5041,
+            "output_tokens": 223,
+            "cost_usd": 0.00319,
+            "timestamp": "2026-05-02T10:39:55.196Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1372,
+            "output_tokens": 503,
+            "cost_usd": 0.002195,
+            "timestamp": "2026-05-02T10:40:46.240Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 15)",
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear.",
+        "Final URL did not match expected pattern (got: https://github.com/vercel/next.js/tree/canary/packages)",
+        "Required URL(s) never visited: \\/tree\\/[^/]+\\/packages\\/next"
+      ],
+      "notes": [
+        "Skipped checkpoints: #7 \"Verify the README.md file opens and displays its rendered ma...\""
+      ]
+    },
+    {
+      "taskId": "T04",
+      "taskName": "MDN API Reference Lookup",
+      "runNumber": 1,
+      "verdict": "PARTIAL",
+      "score": 80,
+      "timestampIso": "2026-05-02T10:51:10.416Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 20,
+      "durationMs": 615833,
+      "taskProgress": 100,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": false,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 21,
+        "total_input_tokens": 100122,
+        "total_output_tokens": 4994,
+        "total_cost_usd": 0.065047,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4931,
+            "output_tokens": 218,
+            "cost_usd": 0.00312,
+            "timestamp": "2026-05-02T10:41:00.701Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4966,
+            "output_tokens": 218,
+            "cost_usd": 0.003137,
+            "timestamp": "2026-05-02T10:41:31.227Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4968,
+            "output_tokens": 207,
+            "cost_usd": 0.003105,
+            "timestamp": "2026-05-02T10:41:38.151Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4879,
+            "output_tokens": 252,
+            "cost_usd": 0.003195,
+            "timestamp": "2026-05-02T10:42:24.686Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4906,
+            "output_tokens": 251,
+            "cost_usd": 0.003206,
+            "timestamp": "2026-05-02T10:43:25.916Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4927,
+            "output_tokens": 199,
+            "cost_usd": 0.003061,
+            "timestamp": "2026-05-02T10:43:55.060Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4926,
+            "output_tokens": 221,
+            "cost_usd": 0.003126,
+            "timestamp": "2026-05-02T10:44:33.260Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4928,
+            "output_tokens": 222,
+            "cost_usd": 0.00313,
+            "timestamp": "2026-05-02T10:45:01.110Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4928,
+            "output_tokens": 217,
+            "cost_usd": 0.003115,
+            "timestamp": "2026-05-02T10:45:25.225Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4920,
+            "output_tokens": 242,
+            "cost_usd": 0.003186,
+            "timestamp": "2026-05-02T10:45:55.095Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4919,
+            "output_tokens": 216,
+            "cost_usd": 0.003108,
+            "timestamp": "2026-05-02T10:46:43.912Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4922,
+            "output_tokens": 218,
+            "cost_usd": 0.003115,
+            "timestamp": "2026-05-02T10:47:23.540Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4923,
+            "output_tokens": 242,
+            "cost_usd": 0.003188,
+            "timestamp": "2026-05-02T10:47:47.992Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4923,
+            "output_tokens": 233,
+            "cost_usd": 0.003161,
+            "timestamp": "2026-05-02T10:48:15.218Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5023,
+            "output_tokens": 209,
+            "cost_usd": 0.003139,
+            "timestamp": "2026-05-02T10:48:41.377Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4923,
+            "output_tokens": 235,
+            "cost_usd": 0.003167,
+            "timestamp": "2026-05-02T10:49:18.001Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4930,
+            "output_tokens": 220,
+            "cost_usd": 0.003125,
+            "timestamp": "2026-05-02T10:49:27.231Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5029,
+            "output_tokens": 213,
+            "cost_usd": 0.003154,
+            "timestamp": "2026-05-02T10:49:47.445Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4930,
+            "output_tokens": 223,
+            "cost_usd": 0.003134,
+            "timestamp": "2026-05-02T10:50:21.456Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4926,
+            "output_tokens": 250,
+            "cost_usd": 0.003213,
+            "timestamp": "2026-05-02T10:50:37.479Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1395,
+            "output_tokens": 488,
+            "cost_usd": 0.002162,
+            "timestamp": "2026-05-02T10:51:10.414Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 15)",
+        "Final URL did not match expected pattern (got: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)"
+      ],
+      "notes": [
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)"
+      ]
+    },
+    {
+      "taskId": "T04",
+      "taskName": "MDN API Reference Lookup",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T10:57:21.207Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 12,
+      "durationMs": 362251,
+      "taskProgress": 100,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 13,
+        "total_input_tokens": 60327,
+        "total_output_tokens": 3262,
+        "total_cost_usd": 0.039952,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4931,
+            "output_tokens": 214,
+            "cost_usd": 0.003108,
+            "timestamp": "2026-05-02T10:51:23.401Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4965,
+            "output_tokens": 200,
+            "cost_usd": 0.003083,
+            "timestamp": "2026-05-02T10:51:55.594Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4968,
+            "output_tokens": 229,
+            "cost_usd": 0.003171,
+            "timestamp": "2026-05-02T10:52:04.286Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4876,
+            "output_tokens": 240,
+            "cost_usd": 0.003158,
+            "timestamp": "2026-05-02T10:52:40.763Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4897,
+            "output_tokens": 240,
+            "cost_usd": 0.003169,
+            "timestamp": "2026-05-02T10:53:10.123Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4918,
+            "output_tokens": 234,
+            "cost_usd": 0.003161,
+            "timestamp": "2026-05-02T10:53:38.660Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4922,
+            "output_tokens": 226,
+            "cost_usd": 0.003139,
+            "timestamp": "2026-05-02T10:54:11.941Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4923,
+            "output_tokens": 248,
+            "cost_usd": 0.003206,
+            "timestamp": "2026-05-02T10:54:47.390Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4924,
+            "output_tokens": 242,
+            "cost_usd": 0.003188,
+            "timestamp": "2026-05-02T10:55:12.937Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4919,
+            "output_tokens": 214,
+            "cost_usd": 0.003102,
+            "timestamp": "2026-05-02T10:56:25.817Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4918,
+            "output_tokens": 234,
+            "cost_usd": 0.003161,
+            "timestamp": "2026-05-02T10:56:49.932Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5013,
+            "output_tokens": 251,
+            "cost_usd": 0.00326,
+            "timestamp": "2026-05-02T10:57:02.517Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1153,
+            "output_tokens": 490,
+            "cost_usd": 0.002046,
+            "timestamp": "2026-05-02T10:57:21.205Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T04",
+      "taskName": "MDN API Reference Lookup",
+      "runNumber": 3,
+      "verdict": "PARTIAL",
+      "score": 85,
+      "timestampIso": "2026-05-02T11:00:32.769Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 184618,
+      "taskProgress": 100,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 6,
+        "total_input_tokens": 25508,
+        "total_output_tokens": 1500,
+        "total_cost_usd": 0.017256,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4931,
+            "output_tokens": 226,
+            "cost_usd": 0.003143,
+            "timestamp": "2026-05-02T10:57:33.454Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4963,
+            "output_tokens": 215,
+            "cost_usd": 0.003127,
+            "timestamp": "2026-05-02T10:58:02.178Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4965,
+            "output_tokens": 192,
+            "cost_usd": 0.003059,
+            "timestamp": "2026-05-02T10:58:11.207Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4871,
+            "output_tokens": 232,
+            "cost_usd": 0.003132,
+            "timestamp": "2026-05-02T10:58:58.388Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4887,
+            "output_tokens": 276,
+            "cost_usd": 0.003272,
+            "timestamp": "2026-05-02T11:00:15.470Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 891,
+            "output_tokens": 359,
+            "cost_usd": 0.001523,
+            "timestamp": "2026-05-02T11:00:32.768Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Final URL did not match expected pattern (got: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)"
+      ],
+      "notes": [
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)"
+      ]
+    },
+    {
+      "taskId": "T05",
+      "taskName": "Unsplash Search + Modal",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:01:31.899Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 6,
+      "durationMs": 51720,
+      "taskProgress": 100,
+      "finalUrl": "https://unsplash.com/@watpics",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 7,
+        "total_input_tokens": 30321,
+        "total_output_tokens": 1597,
+        "total_cost_usd": 0.019952,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3405,
+            "output_tokens": 163,
+            "cost_usd": 0.002192,
+            "timestamp": "2026-05-02T11:00:38.532Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5180,
+            "output_tokens": 217,
+            "cost_usd": 0.003241,
+            "timestamp": "2026-05-02T11:00:48.067Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5192,
+            "output_tokens": 191,
+            "cost_usd": 0.003169,
+            "timestamp": "2026-05-02T11:00:55.159Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5202,
+            "output_tokens": 216,
+            "cost_usd": 0.003249,
+            "timestamp": "2026-05-02T11:01:06.554Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5277,
+            "output_tokens": 197,
+            "cost_usd": 0.003229,
+            "timestamp": "2026-05-02T11:01:15.237Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5193,
+            "output_tokens": 216,
+            "cost_usd": 0.003245,
+            "timestamp": "2026-05-02T11:01:22.054Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 872,
+            "output_tokens": 397,
+            "cost_usd": 0.001627,
+            "timestamp": "2026-05-02T11:01:31.897Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T05",
+      "taskName": "Unsplash Search + Modal",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 93,
+      "timestampIso": "2026-05-02T11:02:29.922Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 50814,
+      "taskProgress": 100,
+      "finalUrl": "https://unsplash.com/@watpics",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.875,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 6,
+        "total_input_tokens": 25018,
+        "total_output_tokens": 1511,
+        "total_cost_usd": 0.017044,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3405,
+            "output_tokens": 251,
+            "cost_usd": 0.002456,
+            "timestamp": "2026-05-02T11:01:38.385Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5177,
+            "output_tokens": 228,
+            "cost_usd": 0.003273,
+            "timestamp": "2026-05-02T11:01:48.788Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5192,
+            "output_tokens": 183,
+            "cost_usd": 0.003145,
+            "timestamp": "2026-05-02T11:01:54.666Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5198,
+            "output_tokens": 229,
+            "cost_usd": 0.003286,
+            "timestamp": "2026-05-02T11:02:06.637Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5183,
+            "output_tokens": 220,
+            "cost_usd": 0.003252,
+            "timestamp": "2026-05-02T11:02:19.251Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 863,
+            "output_tokens": 400,
+            "cost_usd": 0.001632,
+            "timestamp": "2026-05-02T11:02:29.921Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Skipped checkpoints: #5 \"Click on any image thumbnail to open it in a modal/lightbox...\""
+      ]
+    },
+    {
+      "taskId": "T05",
+      "taskName": "Unsplash Search + Modal",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:03:38.035Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 6,
+      "durationMs": 59971,
+      "taskProgress": 100,
+      "finalUrl": "https://unsplash.com/@watpics",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 7,
+        "total_input_tokens": 30310,
+        "total_output_tokens": 1729,
+        "total_cost_usd": 0.020344,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3405,
+            "output_tokens": 184,
+            "cost_usd": 0.002255,
+            "timestamp": "2026-05-02T11:02:36.347Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5177,
+            "output_tokens": 203,
+            "cost_usd": 0.003198,
+            "timestamp": "2026-05-02T11:02:46.611Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5187,
+            "output_tokens": 196,
+            "cost_usd": 0.003182,
+            "timestamp": "2026-05-02T11:02:54.883Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5193,
+            "output_tokens": 236,
+            "cost_usd": 0.003304,
+            "timestamp": "2026-05-02T11:03:07.732Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5265,
+            "output_tokens": 254,
+            "cost_usd": 0.003395,
+            "timestamp": "2026-05-02T11:03:17.821Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 5204,
+            "output_tokens": 218,
+            "cost_usd": 0.003256,
+            "timestamp": "2026-05-02T11:03:25.890Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 879,
+            "output_tokens": 438,
+            "cost_usd": 0.001754,
+            "timestamp": "2026-05-02T11:03:38.035Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T06",
+      "taskName": "Stripe Marketing Exploration",
+      "runNumber": 1,
+      "verdict": "PARTIAL",
+      "score": 66,
+      "timestampIso": "2026-05-02T11:05:11.470Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 7,
+      "durationMs": 85277,
+      "taskProgress": 100,
+      "finalUrl": "https://stripe.com/in/contact/sales",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.8571428571428571,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 8,
+        "total_input_tokens": 34787,
+        "total_output_tokens": 1843,
+        "total_cost_usd": 0.022924,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4877,
+            "output_tokens": 171,
+            "cost_usd": 0.002952,
+            "timestamp": "2026-05-02T11:03:46.234Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4895,
+            "output_tokens": 224,
+            "cost_usd": 0.00312,
+            "timestamp": "2026-05-02T11:03:56.720Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4912,
+            "output_tokens": 256,
+            "cost_usd": 0.003224,
+            "timestamp": "2026-05-02T11:04:08.982Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4716,
+            "output_tokens": 166,
+            "cost_usd": 0.002856,
+            "timestamp": "2026-05-02T11:04:16.547Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4729,
+            "output_tokens": 225,
+            "cost_usd": 0.003039,
+            "timestamp": "2026-05-02T11:04:29.514Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4751,
+            "output_tokens": 186,
+            "cost_usd": 0.002934,
+            "timestamp": "2026-05-02T11:04:37.933Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4968,
+            "output_tokens": 242,
+            "cost_usd": 0.00321,
+            "timestamp": "2026-05-02T11:04:56.111Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 939,
+            "output_tokens": 373,
+            "cost_usd": 0.001589,
+            "timestamp": "2026-05-02T11:05:11.468Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Final URL did not match expected pattern (got: https://stripe.com/in/contact/sales)",
+        "Required URL(s) never visited: stripe\\.com\\/pricing"
+      ],
+      "notes": [
+        "Skipped checkpoints: #7 \"Do NOT fill or submit any form fields...\"",
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)"
+      ]
+    },
+    {
+      "taskId": "T06",
+      "taskName": "Stripe Marketing Exploration",
+      "runNumber": 2,
+      "verdict": "PARTIAL",
+      "score": 66,
+      "timestampIso": "2026-05-02T11:06:36.900Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 6,
+      "durationMs": 77199,
+      "taskProgress": 100,
+      "finalUrl": "https://stripe.com/in/contact/sales",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.8571428571428571,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 7,
+        "total_input_tokens": 29727,
+        "total_output_tokens": 1748,
+        "total_cost_usd": 0.020109,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4863,
+            "output_tokens": 181,
+            "cost_usd": 0.002975,
+            "timestamp": "2026-05-02T11:05:21.536Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4894,
+            "output_tokens": 213,
+            "cost_usd": 0.003086,
+            "timestamp": "2026-05-02T11:05:32.145Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4696,
+            "output_tokens": 195,
+            "cost_usd": 0.002933,
+            "timestamp": "2026-05-02T11:05:39.194Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4707,
+            "output_tokens": 205,
+            "cost_usd": 0.002969,
+            "timestamp": "2026-05-02T11:05:47.350Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4724,
+            "output_tokens": 241,
+            "cost_usd": 0.003085,
+            "timestamp": "2026-05-02T11:05:57.033Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4932,
+            "output_tokens": 243,
+            "cost_usd": 0.003195,
+            "timestamp": "2026-05-02T11:06:10.547Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 911,
+            "output_tokens": 470,
+            "cost_usd": 0.001866,
+            "timestamp": "2026-05-02T11:06:36.898Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Final URL did not match expected pattern (got: https://stripe.com/in/contact/sales)",
+        "Required URL(s) never visited: stripe\\.com\\/pricing"
+      ],
+      "notes": [
+        "Skipped checkpoints: #7 \"Do NOT fill or submit any form fields...\"",
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)"
+      ]
+    },
+    {
+      "taskId": "T06",
+      "taskName": "Stripe Marketing Exploration",
+      "runNumber": 3,
+      "verdict": "PARTIAL",
+      "score": 66,
+      "timestampIso": "2026-05-02T11:08:14.295Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 89163,
+      "taskProgress": 100,
+      "finalUrl": "https://stripe.com/in/contact/sales",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.8571428571428571,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 6,
+        "total_input_tokens": 25179,
+        "total_output_tokens": 1427,
+        "total_cost_usd": 0.016872,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4863,
+            "output_tokens": 201,
+            "cost_usd": 0.003035,
+            "timestamp": "2026-05-02T11:06:46.379Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4895,
+            "output_tokens": 205,
+            "cost_usd": 0.003063,
+            "timestamp": "2026-05-02T11:06:58.691Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4912,
+            "output_tokens": 223,
+            "cost_usd": 0.003125,
+            "timestamp": "2026-05-02T11:07:06.272Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4705,
+            "output_tokens": 235,
+            "cost_usd": 0.003058,
+            "timestamp": "2026-05-02T11:07:33.627Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4915,
+            "output_tokens": 205,
+            "cost_usd": 0.003073,
+            "timestamp": "2026-05-02T11:07:46.034Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 889,
+            "output_tokens": 358,
+            "cost_usd": 0.001518,
+            "timestamp": "2026-05-02T11:08:14.294Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Final URL did not match expected pattern (got: https://stripe.com/in/contact/sales)",
+        "Required URL(s) never visited: stripe\\.com\\/pricing"
+      ],
+      "notes": [
+        "Skipped checkpoints: #7 \"Do NOT fill or submit any form fields...\"",
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)"
+      ]
+    },
+    {
+      "taskId": "T07",
+      "taskName": "TodoMVC CRUD Flow",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:09:51.687Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 9,
+      "durationMs": 87034,
+      "taskProgress": 100,
+      "finalUrl": "https://todomvc.com/examples/react/dist/#/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 10,
+        "total_input_tokens": 35818,
+        "total_output_tokens": 2279,
+        "total_cost_usd": 0.024749,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3641,
+            "output_tokens": 181,
+            "cost_usd": 0.002364,
+            "timestamp": "2026-05-02T11:08:23.641Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3678,
+            "output_tokens": 213,
+            "cost_usd": 0.002478,
+            "timestamp": "2026-05-02T11:08:30.408Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3845,
+            "output_tokens": 207,
+            "cost_usd": 0.002543,
+            "timestamp": "2026-05-02T11:08:37.802Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3891,
+            "output_tokens": 204,
+            "cost_usd": 0.002558,
+            "timestamp": "2026-05-02T11:08:44.684Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3959,
+            "output_tokens": 241,
+            "cost_usd": 0.002703,
+            "timestamp": "2026-05-02T11:08:56.728Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3999,
+            "output_tokens": 233,
+            "cost_usd": 0.002699,
+            "timestamp": "2026-05-02T11:09:04.371Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3929,
+            "output_tokens": 178,
+            "cost_usd": 0.002499,
+            "timestamp": "2026-05-02T11:09:13.939Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3885,
+            "output_tokens": 212,
+            "cost_usd": 0.002579,
+            "timestamp": "2026-05-02T11:09:22.381Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3998,
+            "output_tokens": 223,
+            "cost_usd": 0.002668,
+            "timestamp": "2026-05-02T11:09:35.948Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 993,
+            "output_tokens": 387,
+            "cost_usd": 0.001658,
+            "timestamp": "2026-05-02T11:09:51.687Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T07",
+      "taskName": "TodoMVC CRUD Flow",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:11:14.598Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 9,
+      "durationMs": 73776,
+      "taskProgress": 100,
+      "finalUrl": "https://todomvc.com/examples/react/dist/#/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 10,
+        "total_input_tokens": 35788,
+        "total_output_tokens": 2270,
+        "total_cost_usd": 0.024707,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3641,
+            "output_tokens": 198,
+            "cost_usd": 0.002415,
+            "timestamp": "2026-05-02T11:09:58.865Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3677,
+            "output_tokens": 190,
+            "cost_usd": 0.002409,
+            "timestamp": "2026-05-02T11:10:05.031Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3839,
+            "output_tokens": 218,
+            "cost_usd": 0.002574,
+            "timestamp": "2026-05-02T11:10:12.641Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3900,
+            "output_tokens": 194,
+            "cost_usd": 0.002532,
+            "timestamp": "2026-05-02T11:10:20.795Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3946,
+            "output_tokens": 209,
+            "cost_usd": 0.0026,
+            "timestamp": "2026-05-02T11:10:33.293Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3991,
+            "output_tokens": 217,
+            "cost_usd": 0.002647,
+            "timestamp": "2026-05-02T11:10:40.076Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3922,
+            "output_tokens": 194,
+            "cost_usd": 0.002543,
+            "timestamp": "2026-05-02T11:10:45.808Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3874,
+            "output_tokens": 215,
+            "cost_usd": 0.002582,
+            "timestamp": "2026-05-02T11:10:52.170Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3989,
+            "output_tokens": 234,
+            "cost_usd": 0.002697,
+            "timestamp": "2026-05-02T11:11:02.222Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1009,
+            "output_tokens": 401,
+            "cost_usd": 0.001708,
+            "timestamp": "2026-05-02T11:11:14.598Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T07",
+      "taskName": "TodoMVC CRUD Flow",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:12:48.205Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 8,
+      "durationMs": 85175,
+      "taskProgress": 100,
+      "finalUrl": "https://todomvc.com/examples/react/dist/#/completed",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 9,
+        "total_input_tokens": 31685,
+        "total_output_tokens": 2097,
+        "total_cost_usd": 0.022136,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3641,
+            "output_tokens": 184,
+            "cost_usd": 0.002373,
+            "timestamp": "2026-05-02T11:11:21.519Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3682,
+            "output_tokens": 229,
+            "cost_usd": 0.002528,
+            "timestamp": "2026-05-02T11:11:26.809Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3844,
+            "output_tokens": 196,
+            "cost_usd": 0.00251,
+            "timestamp": "2026-05-02T11:11:32.138Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3885,
+            "output_tokens": 199,
+            "cost_usd": 0.00254,
+            "timestamp": "2026-05-02T11:11:38.468Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3936,
+            "output_tokens": 249,
+            "cost_usd": 0.002715,
+            "timestamp": "2026-05-02T11:11:59.386Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3981,
+            "output_tokens": 233,
+            "cost_usd": 0.00269,
+            "timestamp": "2026-05-02T11:12:13.278Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3948,
+            "output_tokens": 214,
+            "cost_usd": 0.002616,
+            "timestamp": "2026-05-02T11:12:24.126Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3801,
+            "output_tokens": 193,
+            "cost_usd": 0.00248,
+            "timestamp": "2026-05-02T11:12:32.119Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 967,
+            "output_tokens": 400,
+            "cost_usd": 0.001684,
+            "timestamp": "2026-05-02T11:12:48.205Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T08",
+      "taskName": "SauceDemo E-commerce Checkout",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:14:28.142Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 11,
+      "durationMs": 92566,
+      "taskProgress": 100,
+      "finalUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 12,
+        "total_input_tokens": 40240,
+        "total_output_tokens": 2722,
+        "total_cost_usd": 0.028289,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3287,
+            "output_tokens": 222,
+            "cost_usd": 0.00231,
+            "timestamp": "2026-05-02T11:12:54.350Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3334,
+            "output_tokens": 176,
+            "cost_usd": 0.002195,
+            "timestamp": "2026-05-02T11:13:00.778Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3349,
+            "output_tokens": 193,
+            "cost_usd": 0.002254,
+            "timestamp": "2026-05-02T11:13:10.617Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4068,
+            "output_tokens": 213,
+            "cost_usd": 0.002673,
+            "timestamp": "2026-05-02T11:13:17.846Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4057,
+            "output_tokens": 222,
+            "cost_usd": 0.002695,
+            "timestamp": "2026-05-02T11:13:25.831Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3499,
+            "output_tokens": 211,
+            "cost_usd": 0.002383,
+            "timestamp": "2026-05-02T11:13:34.007Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3522,
+            "output_tokens": 196,
+            "cost_usd": 0.002349,
+            "timestamp": "2026-05-02T11:13:48.192Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3519,
+            "output_tokens": 204,
+            "cost_usd": 0.002372,
+            "timestamp": "2026-05-02T11:13:54.339Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3520,
+            "output_tokens": 232,
+            "cost_usd": 0.002456,
+            "timestamp": "2026-05-02T11:13:59.948Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3523,
+            "output_tokens": 227,
+            "cost_usd": 0.002443,
+            "timestamp": "2026-05-02T11:14:06.322Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3454,
+            "output_tokens": 209,
+            "cost_usd": 0.002354,
+            "timestamp": "2026-05-02T11:14:16.855Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1108,
+            "output_tokens": 417,
+            "cost_usd": 0.001805,
+            "timestamp": "2026-05-02T11:14:28.141Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T08",
+      "taskName": "SauceDemo E-commerce Checkout",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:16:22.291Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 11,
+      "durationMs": 105129,
+      "taskProgress": 100,
+      "finalUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 12,
+        "total_input_tokens": 40243,
+        "total_output_tokens": 2721,
+        "total_cost_usd": 0.028287,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3287,
+            "output_tokens": 189,
+            "cost_usd": 0.002211,
+            "timestamp": "2026-05-02T11:14:33.680Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3333,
+            "output_tokens": 209,
+            "cost_usd": 0.002294,
+            "timestamp": "2026-05-02T11:14:37.995Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3346,
+            "output_tokens": 192,
+            "cost_usd": 0.002249,
+            "timestamp": "2026-05-02T11:14:43.553Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4065,
+            "output_tokens": 239,
+            "cost_usd": 0.00275,
+            "timestamp": "2026-05-02T11:14:49.818Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4054,
+            "output_tokens": 214,
+            "cost_usd": 0.002669,
+            "timestamp": "2026-05-02T11:14:57.846Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3494,
+            "output_tokens": 211,
+            "cost_usd": 0.00238,
+            "timestamp": "2026-05-02T11:15:05.289Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3522,
+            "output_tokens": 189,
+            "cost_usd": 0.002328,
+            "timestamp": "2026-05-02T11:15:10.800Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3520,
+            "output_tokens": 197,
+            "cost_usd": 0.002351,
+            "timestamp": "2026-05-02T11:15:18.588Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3521,
+            "output_tokens": 230,
+            "cost_usd": 0.002451,
+            "timestamp": "2026-05-02T11:15:32.584Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3524,
+            "output_tokens": 217,
+            "cost_usd": 0.002413,
+            "timestamp": "2026-05-02T11:15:51.324Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3457,
+            "output_tokens": 222,
+            "cost_usd": 0.002395,
+            "timestamp": "2026-05-02T11:16:03.495Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1120,
+            "output_tokens": 412,
+            "cost_usd": 0.001796,
+            "timestamp": "2026-05-02T11:16:22.291Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T08",
+      "taskName": "SauceDemo E-commerce Checkout",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:17:44.541Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 11,
+      "durationMs": 72998,
+      "taskProgress": 100,
+      "finalUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 12,
+        "total_input_tokens": 40262,
+        "total_output_tokens": 2657,
+        "total_cost_usd": 0.028105,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3287,
+            "output_tokens": 196,
+            "cost_usd": 0.002232,
+            "timestamp": "2026-05-02T11:16:28.249Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3339,
+            "output_tokens": 173,
+            "cost_usd": 0.002189,
+            "timestamp": "2026-05-02T11:16:34.684Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3354,
+            "output_tokens": 206,
+            "cost_usd": 0.002295,
+            "timestamp": "2026-05-02T11:16:39.722Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4073,
+            "output_tokens": 238,
+            "cost_usd": 0.002751,
+            "timestamp": "2026-05-02T11:16:45.350Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4062,
+            "output_tokens": 214,
+            "cost_usd": 0.002673,
+            "timestamp": "2026-05-02T11:16:51.020Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3504,
+            "output_tokens": 204,
+            "cost_usd": 0.002364,
+            "timestamp": "2026-05-02T11:16:56.363Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3524,
+            "output_tokens": 206,
+            "cost_usd": 0.00238,
+            "timestamp": "2026-05-02T11:17:07.414Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3520,
+            "output_tokens": 196,
+            "cost_usd": 0.002348,
+            "timestamp": "2026-05-02T11:17:13.372Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3521,
+            "output_tokens": 194,
+            "cost_usd": 0.002343,
+            "timestamp": "2026-05-02T11:17:18.762Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3524,
+            "output_tokens": 190,
+            "cost_usd": 0.002332,
+            "timestamp": "2026-05-02T11:17:25.770Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3455,
+            "output_tokens": 185,
+            "cost_usd": 0.002283,
+            "timestamp": "2026-05-02T11:17:30.348Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1099,
+            "output_tokens": 455,
+            "cost_usd": 0.001915,
+            "timestamp": "2026-05-02T11:17:44.540Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T09",
+      "taskName": "Atom Habit Tracker Full Journey",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:22:12.432Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 14,
+      "durationMs": 258853,
+      "taskProgress": 100,
+      "finalUrl": "https://atom-habit-builder-app.vercel.app/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 15,
+        "total_input_tokens": 56420,
+        "total_output_tokens": 3474,
+        "total_cost_usd": 0.038634,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3412,
+            "output_tokens": 165,
+            "cost_usd": 0.002201,
+            "timestamp": "2026-05-02T11:17:57.262Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3584,
+            "output_tokens": 228,
+            "cost_usd": 0.002476,
+            "timestamp": "2026-05-02T11:18:04.642Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3865,
+            "output_tokens": 202,
+            "cost_usd": 0.002539,
+            "timestamp": "2026-05-02T11:18:10.319Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3875,
+            "output_tokens": 198,
+            "cost_usd": 0.002532,
+            "timestamp": "2026-05-02T11:18:15.915Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3889,
+            "output_tokens": 199,
+            "cost_usd": 0.002542,
+            "timestamp": "2026-05-02T11:18:22.374Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3908,
+            "output_tokens": 189,
+            "cost_usd": 0.002521,
+            "timestamp": "2026-05-02T11:18:28.443Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4144,
+            "output_tokens": 234,
+            "cost_usd": 0.002774,
+            "timestamp": "2026-05-02T11:18:43.022Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4032,
+            "output_tokens": 217,
+            "cost_usd": 0.002667,
+            "timestamp": "2026-05-02T11:18:52.825Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4097,
+            "output_tokens": 250,
+            "cost_usd": 0.002798,
+            "timestamp": "2026-05-02T11:19:05.271Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4151,
+            "output_tokens": 221,
+            "cost_usd": 0.002739,
+            "timestamp": "2026-05-02T11:19:13.503Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4149,
+            "output_tokens": 226,
+            "cost_usd": 0.002752,
+            "timestamp": "2026-05-02T11:19:24.795Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3988,
+            "output_tokens": 250,
+            "cost_usd": 0.002744,
+            "timestamp": "2026-05-02T11:19:33.668Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3981,
+            "output_tokens": 211,
+            "cost_usd": 0.002624,
+            "timestamp": "2026-05-02T11:21:42.394Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4021,
+            "output_tokens": 190,
+            "cost_usd": 0.002581,
+            "timestamp": "2026-05-02T11:21:50.828Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1324,
+            "output_tokens": 494,
+            "cost_usd": 0.002144,
+            "timestamp": "2026-05-02T11:22:12.432Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T09",
+      "taskName": "Atom Habit Tracker Full Journey",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:27:35.316Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 18,
+      "durationMs": 313636,
+      "taskProgress": 100,
+      "finalUrl": "https://atom-habit-builder-app.vercel.app/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 19,
+        "total_input_tokens": 72404,
+        "total_output_tokens": 4347,
+        "total_cost_usd": 0.049248,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3412,
+            "output_tokens": 178,
+            "cost_usd": 0.00224,
+            "timestamp": "2026-05-02T11:22:21.654Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3584,
+            "output_tokens": 220,
+            "cost_usd": 0.002452,
+            "timestamp": "2026-05-02T11:22:29.534Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3866,
+            "output_tokens": 181,
+            "cost_usd": 0.002476,
+            "timestamp": "2026-05-02T11:22:35.128Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3882,
+            "output_tokens": 191,
+            "cost_usd": 0.002514,
+            "timestamp": "2026-05-02T11:22:41.900Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3897,
+            "output_tokens": 187,
+            "cost_usd": 0.00251,
+            "timestamp": "2026-05-02T11:22:48.463Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3915,
+            "output_tokens": 181,
+            "cost_usd": 0.002501,
+            "timestamp": "2026-05-02T11:22:56.489Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3913,
+            "output_tokens": 258,
+            "cost_usd": 0.002731,
+            "timestamp": "2026-05-02T11:23:04.866Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3907,
+            "output_tokens": 217,
+            "cost_usd": 0.002605,
+            "timestamp": "2026-05-02T11:23:19.366Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4137,
+            "output_tokens": 222,
+            "cost_usd": 0.002735,
+            "timestamp": "2026-05-02T11:23:31.431Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4034,
+            "output_tokens": 229,
+            "cost_usd": 0.002704,
+            "timestamp": "2026-05-02T11:23:43.724Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4091,
+            "output_tokens": 188,
+            "cost_usd": 0.00261,
+            "timestamp": "2026-05-02T11:23:52.429Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4027,
+            "output_tokens": 191,
+            "cost_usd": 0.002587,
+            "timestamp": "2026-05-02T11:24:04.326Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4136,
+            "output_tokens": 256,
+            "cost_usd": 0.002836,
+            "timestamp": "2026-05-02T11:24:15.776Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4144,
+            "output_tokens": 215,
+            "cost_usd": 0.002717,
+            "timestamp": "2026-05-02T11:24:21.782Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3982,
+            "output_tokens": 245,
+            "cost_usd": 0.002726,
+            "timestamp": "2026-05-02T11:24:34.657Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3976,
+            "output_tokens": 216,
+            "cost_usd": 0.002636,
+            "timestamp": "2026-05-02T11:26:43.490Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4017,
+            "output_tokens": 193,
+            "cost_usd": 0.002588,
+            "timestamp": "2026-05-02T11:26:50.860Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4019,
+            "output_tokens": 231,
+            "cost_usd": 0.002703,
+            "timestamp": "2026-05-02T11:27:22.409Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1465,
+            "output_tokens": 548,
+            "cost_usd": 0.002377,
+            "timestamp": "2026-05-02T11:27:35.315Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T09",
+      "taskName": "Atom Habit Tracker Full Journey",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:32:45.913Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 16,
+      "durationMs": 304255,
+      "taskProgress": 100,
+      "finalUrl": "https://atom-habit-builder-app.vercel.app/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 17,
+        "total_input_tokens": 64482,
+        "total_output_tokens": 3794,
+        "total_cost_usd": 0.043626,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3412,
+            "output_tokens": 181,
+            "cost_usd": 0.002249,
+            "timestamp": "2026-05-02T11:27:46.901Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3585,
+            "output_tokens": 250,
+            "cost_usd": 0.002543,
+            "timestamp": "2026-05-02T11:27:55.903Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3868,
+            "output_tokens": 173,
+            "cost_usd": 0.002453,
+            "timestamp": "2026-05-02T11:28:01.901Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3877,
+            "output_tokens": 185,
+            "cost_usd": 0.002494,
+            "timestamp": "2026-05-02T11:28:08.083Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3892,
+            "output_tokens": 197,
+            "cost_usd": 0.002537,
+            "timestamp": "2026-05-02T11:28:14.025Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3910,
+            "output_tokens": 182,
+            "cost_usd": 0.002501,
+            "timestamp": "2026-05-02T11:28:20.009Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4146,
+            "output_tokens": 220,
+            "cost_usd": 0.002733,
+            "timestamp": "2026-05-02T11:28:32.910Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4034,
+            "output_tokens": 234,
+            "cost_usd": 0.002719,
+            "timestamp": "2026-05-02T11:28:44.039Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4096,
+            "output_tokens": 196,
+            "cost_usd": 0.002636,
+            "timestamp": "2026-05-02T11:28:53.171Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4037,
+            "output_tokens": 220,
+            "cost_usd": 0.002679,
+            "timestamp": "2026-05-02T11:29:06.855Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4140,
+            "output_tokens": 259,
+            "cost_usd": 0.002847,
+            "timestamp": "2026-05-02T11:29:17.850Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4143,
+            "output_tokens": 209,
+            "cost_usd": 0.002699,
+            "timestamp": "2026-05-02T11:29:25.494Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3982,
+            "output_tokens": 235,
+            "cost_usd": 0.002696,
+            "timestamp": "2026-05-02T11:29:36.620Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3976,
+            "output_tokens": 184,
+            "cost_usd": 0.00254,
+            "timestamp": "2026-05-02T11:31:44.070Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4015,
+            "output_tokens": 223,
+            "cost_usd": 0.002677,
+            "timestamp": "2026-05-02T11:31:58.527Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4016,
+            "output_tokens": 183,
+            "cost_usd": 0.002557,
+            "timestamp": "2026-05-02T11:32:24.505Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1353,
+            "output_tokens": 463,
+            "cost_usd": 0.002066,
+            "timestamp": "2026-05-02T11:32:45.912Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    },
+    {
+      "taskId": "T10",
+      "taskName": "Heuristiq Landing Page Tour",
+      "runNumber": 1,
+      "verdict": "FAIL",
+      "score": 25,
+      "timestampIso": "2026-05-02T11:34:05.296Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 8,
+      "durationMs": 72038,
+      "taskProgress": 100,
+      "finalUrl": "https://www.heuristiq.co.in/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": false
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 9,
+        "total_input_tokens": 37332,
+        "total_output_tokens": 1943,
+        "total_cost_usd": 0.024497,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4493,
+            "output_tokens": 175,
+            "cost_usd": 0.002771,
+            "timestamp": "2026-05-02T11:32:53.852Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4528,
+            "output_tokens": 195,
+            "cost_usd": 0.002849,
+            "timestamp": "2026-05-02T11:33:00.305Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4541,
+            "output_tokens": 168,
+            "cost_usd": 0.002775,
+            "timestamp": "2026-05-02T11:33:05.546Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4545,
+            "output_tokens": 224,
+            "cost_usd": 0.002945,
+            "timestamp": "2026-05-02T11:33:17.358Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4559,
+            "output_tokens": 195,
+            "cost_usd": 0.002865,
+            "timestamp": "2026-05-02T11:33:26.906Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4560,
+            "output_tokens": 213,
+            "cost_usd": 0.002919,
+            "timestamp": "2026-05-02T11:33:35.286Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4567,
+            "output_tokens": 190,
+            "cost_usd": 0.002854,
+            "timestamp": "2026-05-02T11:33:44.154Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4568,
+            "output_tokens": 239,
+            "cost_usd": 0.003001,
+            "timestamp": "2026-05-02T11:33:53.114Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 971,
+            "output_tokens": 344,
+            "cost_usd": 0.001518,
+            "timestamp": "2026-05-02T11:34:05.294Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Forbidden action executed: \"Task complete: Verified that all contact form fields are filled and did not click the submit button.\"",
+        "Required URL(s) never visited: heuristiq\\.co\\.in\\/(signup|register|sign-up|auth)"
+      ],
+      "notes": [
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)"
+      ]
+    },
+    {
+      "taskId": "T10",
+      "taskName": "Heuristiq Landing Page Tour",
+      "runNumber": 2,
+      "verdict": "PARTIAL",
+      "score": 85,
+      "timestampIso": "2026-05-02T11:38:09.381Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 15,
+      "durationMs": 236848,
+      "taskProgress": 100,
+      "finalUrl": "https://www.heuristiq.co.in/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": false,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 16,
+        "total_input_tokens": 69515,
+        "total_output_tokens": 3600,
+        "total_cost_usd": 0.045559,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4493,
+            "output_tokens": 185,
+            "cost_usd": 0.002801,
+            "timestamp": "2026-05-02T11:34:10.068Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4529,
+            "output_tokens": 215,
+            "cost_usd": 0.002909,
+            "timestamp": "2026-05-02T11:34:16.670Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4543,
+            "output_tokens": 215,
+            "cost_usd": 0.002917,
+            "timestamp": "2026-05-02T11:34:23.233Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4548,
+            "output_tokens": 209,
+            "cost_usd": 0.002901,
+            "timestamp": "2026-05-02T11:34:34.713Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4562,
+            "output_tokens": 178,
+            "cost_usd": 0.002815,
+            "timestamp": "2026-05-02T11:34:41.523Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4576,
+            "output_tokens": 164,
+            "cost_usd": 0.00278,
+            "timestamp": "2026-05-02T11:34:53.515Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4569,
+            "output_tokens": 205,
+            "cost_usd": 0.0029,
+            "timestamp": "2026-05-02T11:35:06.794Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4559,
+            "output_tokens": 205,
+            "cost_usd": 0.002895,
+            "timestamp": "2026-05-02T11:35:18.908Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4558,
+            "output_tokens": 230,
+            "cost_usd": 0.002969,
+            "timestamp": "2026-05-02T11:35:35.814Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4560,
+            "output_tokens": 232,
+            "cost_usd": 0.002976,
+            "timestamp": "2026-05-02T11:35:55.395Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4560,
+            "output_tokens": 249,
+            "cost_usd": 0.003027,
+            "timestamp": "2026-05-02T11:36:10.035Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4562,
+            "output_tokens": 204,
+            "cost_usd": 0.002893,
+            "timestamp": "2026-05-02T11:36:36.168Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4563,
+            "output_tokens": 237,
+            "cost_usd": 0.002993,
+            "timestamp": "2026-05-02T11:36:55.014Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4559,
+            "output_tokens": 200,
+            "cost_usd": 0.00288,
+            "timestamp": "2026-05-02T11:37:12.249Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4556,
+            "output_tokens": 263,
+            "cost_usd": 0.003067,
+            "timestamp": "2026-05-02T11:37:52.662Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1218,
+            "output_tokens": 409,
+            "cost_usd": 0.001836,
+            "timestamp": "2026-05-02T11:38:09.379Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (15 > 14)",
+        "Required URL(s) never visited: heuristiq\\.co\\.in\\/(signup|register|sign-up|auth)"
+      ],
+      "notes": [
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)"
+      ]
+    },
+    {
+      "taskId": "T10",
+      "taskName": "Heuristiq Landing Page Tour",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-05-02T11:44:24.429Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 12,
+      "durationMs": 368147,
+      "taskProgress": 100,
+      "finalUrl": "https://www.heuristiq.co.in/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3-flash-preview",
+        "total_calls": 13,
+        "total_input_tokens": 52706,
+        "total_output_tokens": 2925,
+        "total_cost_usd": 0.035132,
+        "calls": [
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4493,
+            "output_tokens": 179,
+            "cost_usd": 0.002783,
+            "timestamp": "2026-05-02T11:38:17.822Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4529,
+            "output_tokens": 203,
+            "cost_usd": 0.002874,
+            "timestamp": "2026-05-02T11:38:23.960Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4543,
+            "output_tokens": 191,
+            "cost_usd": 0.002845,
+            "timestamp": "2026-05-02T11:38:32.734Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4548,
+            "output_tokens": 203,
+            "cost_usd": 0.002883,
+            "timestamp": "2026-05-02T11:38:50.701Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3521,
+            "output_tokens": 192,
+            "cost_usd": 0.002337,
+            "timestamp": "2026-05-02T11:38:58.514Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3541,
+            "output_tokens": 228,
+            "cost_usd": 0.002455,
+            "timestamp": "2026-05-02T11:41:11.599Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 3546,
+            "output_tokens": 277,
+            "cost_usd": 0.002604,
+            "timestamp": "2026-05-02T11:43:26.259Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4581,
+            "output_tokens": 213,
+            "cost_usd": 0.00293,
+            "timestamp": "2026-05-02T11:43:34.806Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4581,
+            "output_tokens": 188,
+            "cost_usd": 0.002855,
+            "timestamp": "2026-05-02T11:43:42.340Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4571,
+            "output_tokens": 194,
+            "cost_usd": 0.002868,
+            "timestamp": "2026-05-02T11:43:48.343Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4565,
+            "output_tokens": 212,
+            "cost_usd": 0.002919,
+            "timestamp": "2026-05-02T11:44:03.375Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "browser-agent-step",
+            "input_tokens": 4560,
+            "output_tokens": 236,
+            "cost_usd": 0.002988,
+            "timestamp": "2026-05-02T11:44:11.603Z"
+          },
+          {
+            "model": "gemini-3-flash-preview",
+            "feature": "run-analysis",
+            "input_tokens": 1127,
+            "output_tokens": 409,
+            "cost_usd": 0.001791,
+            "timestamp": "2026-05-02T11:44:24.428Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": []
+    }
+  ],
+  "scorecard": {
+    "totalRuns": 30,
+    "passRate": 0.6666666666666666,
+    "partialRate": 0.2,
+    "failRate": 0.13333333333333333,
+    "avgScore": 86,
+    "avgCheckpointCompletion": 0.9672619047619048,
+    "avgStepEfficiency": 0.8127741702741705,
+    "avgDurationMs": 225414.9,
+    "fatalErrorRate": 0,
+    "maxStepsExhaustionRate": 0.16666666666666666,
+    "totalCostUsd": 0.9303,
+    "totalLlmCalls": 332,
+    "navigationReliabilityScore": 93,
+    "byTask": {
+      "T01": {
+        "taskId": "T01",
+        "taskName": "Wikipedia Article Discovery",
+        "difficulty": "easy",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 5,
+        "avgCostUsd": 0.017153333333333336
+      },
+      "T02": {
+        "taskId": "T02",
+        "taskName": "Hacker News Story Deep-Dive",
+        "difficulty": "easy",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 4.333333333333333,
+        "avgCostUsd": 0.016504333333333333
+      },
+      "T03": {
+        "taskId": "T03",
+        "taskName": "GitHub Repo Exploration",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 0,
+        "avgScore": 40,
+        "avgCheckpointCompletion": 0.8571428571428571,
+        "avgSteps": 20,
+        "avgCostUsd": 0.06561399999999999
+      },
+      "T04": {
+        "taskId": "T04",
+        "taskName": "MDN API Reference Lookup",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 0.3333333333333333,
+        "avgScore": 88.33333333333333,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 12.333333333333334,
+        "avgCostUsd": 0.040751666666666665
+      },
+      "T05": {
+        "taskId": "T05",
+        "taskName": "Unsplash Search + Modal",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 97.66666666666667,
+        "avgCheckpointCompletion": 0.9583333333333334,
+        "avgSteps": 5.666666666666667,
+        "avgCostUsd": 0.019113333333333333
+      },
+      "T06": {
+        "taskId": "T06",
+        "taskName": "Stripe Marketing Exploration",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 0,
+        "avgScore": 66,
+        "avgCheckpointCompletion": 0.8571428571428571,
+        "avgSteps": 6,
+        "avgCostUsd": 0.019968333333333334
+      },
+      "T07": {
+        "taskId": "T07",
+        "taskName": "TodoMVC CRUD Flow",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 8.666666666666666,
+        "avgCostUsd": 0.023864
+      },
+      "T08": {
+        "taskId": "T08",
+        "taskName": "SauceDemo E-commerce Checkout",
+        "difficulty": "hard",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 11,
+        "avgCostUsd": 0.028227000000000002
+      },
+      "T09": {
+        "taskId": "T09",
+        "taskName": "Atom Habit Tracker Full Journey",
+        "difficulty": "hard",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 16,
+        "avgCostUsd": 0.04383600000000001
+      },
+      "T10": {
+        "taskId": "T10",
+        "taskName": "Heuristiq Landing Page Tour",
+        "difficulty": "easy",
+        "runs": 3,
+        "passRate": 0.3333333333333333,
+        "avgScore": 70,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 11.666666666666666,
+        "avgCostUsd": 0.035062666666666666
+      }
+    }
+  },
+  "durationMs": 7024489
+}

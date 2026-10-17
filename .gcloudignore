@@ -1,0 +1,9 @@
+.git
+.gitignore
+.next
+node_modules
+.env*
+!.env.example
+benchmark-results
+test
+.DS_Store

@@ -1,0 +1,173 @@
+{
+  "results": [
+    {
+      "taskId": "T03",
+      "taskName": "GitHub Repo Exploration",
+      "runNumber": 1,
+      "verdict": "FAIL",
+      "score": 15,
+      "timestampIso": "2026-05-03T17:37:31.526Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 1,
+      "durationMs": 12422,
+      "taskProgress": 0,
+      "finalUrl": "https://github.com/vercel/next.js",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "unknown",
+        "total_calls": 0,
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "total_cost_usd": 0,
+        "calls": []
+      },
+      "failureReasons": [
+        "Final URL did not match expected pattern (got: https://github.com/vercel/next.js)",
+        "Required URL(s) never visited: \\/issues, \\/tree\\/[^/]+\\/packages\\/?$, \\/tree\\/[^/]+\\/packages\\/next",
+        "Checkpoint completion 0% (0/7) below threshold 70%"
+      ],
+      "notes": [
+        "Judge unavailable — fell back to keyword-based checkpoint tracker (less reliable)",
+        "Skipped checkpoints: #1 \"On the next.js repository page, locate and click the \"Issues...\" | #2 \"On the Issues page, briefly observe the named filter buttons...\" | #3 \"Click the \"Code\" tab in the top repository navigation to ret...\" | #4 \"In the main file list table, click on the row labeled \"packa...\" | #5 \"After the packages folder loads, the file list now shows fol...\" | #6 \"After the next folder loads, scroll the file list and find t...\" | #7 \"Verify the README.md file opens and displays its rendered ma...\""
+      ]
+    },
+    {
+      "taskId": "T04",
+      "taskName": "MDN API Reference Lookup",
+      "runNumber": 1,
+      "verdict": "FAIL",
+      "score": 15,
+      "timestampIso": "2026-05-03T17:37:36.068Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 1,
+      "durationMs": 4541,
+      "taskProgress": 0,
+      "finalUrl": "https://developer.mozilla.org/en-US/",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "unknown",
+        "total_calls": 0,
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "total_cost_usd": 0,
+        "calls": []
+      },
+      "failureReasons": [
+        "Final URL did not match expected pattern (got: https://developer.mozilla.org/en-US/)",
+        "Required URL(s) never visited: \\/docs\\/Web\\/API\\/Fetch_API, \\/docs\\/Web\\/API\\/(Request|Response|Headers|Body|Using_Fetch)",
+        "Checkpoint completion 0% (0/7) below threshold 70%"
+      ],
+      "notes": [
+        "Judge unavailable — fell back to keyword-based checkpoint tracker (less reliable)",
+        "Skipped checkpoints: #1 \"On the MDN homepage, click the search bar at the top of the ...\" | #2 \"Type \"fetch API\" into the search bar...\" | #3 \"Press Enter to navigate to the full search results page (do ...\" | #4 \"From the search results, click the result titled \"Fetch API\"...\" | #5 \"On the Fetch API reference page, look at the LEFT SIDEBAR ON...\" | #6 \"On the subsection page, verify the URL is one of the expecte...\" | #7 \"Return to the Fetch API page by clicking the \"Fetch API\" lin...\""
+      ]
+    },
+    {
+      "taskId": "T09",
+      "taskName": "Atom Habit Tracker Full Journey",
+      "runNumber": 1,
+      "verdict": "FAIL",
+      "score": 35,
+      "timestampIso": "2026-05-03T17:37:40.348Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 1,
+      "durationMs": 4280,
+      "taskProgress": 0,
+      "finalUrl": "https://atom-habit-builder-app.vercel.app/",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "unknown",
+        "total_calls": 0,
+        "total_input_tokens": 0,
+        "total_output_tokens": 0,
+        "total_cost_usd": 0,
+        "calls": []
+      },
+      "failureReasons": [
+        "Checkpoint completion 0% (0/10) below threshold 70%"
+      ],
+      "notes": [
+        "Judge unavailable — fell back to keyword-based checkpoint tracker (less reliable)",
+        "Skipped checkpoints: #1 \"On the splash screen, click the \"I already have an account\" ...\" | #2 \"Log in using email \"coxejimu@forexzig.com\" and password \"123...\" | #3 \"On the home screen, locate the FIRST \"Drink Water\" habit at ...\" | #4 \"Navigate to the \"Habits\" tab in the bottom navigation bar...\" | #5 \"Click the three-dot (⋮) menu icon on any habit to reveal edi...\" | #6 \"Dismiss the three-dot menu by tapping outside of it (or anyw...\" | #7 \"Change the date range filter to \"Last 30 Days\" to view exten...\" | #8 \"Navigate to the \"Profile\" tab in the bottom navigation...\" | #9 \"In the General section, find the \"Notifications\" toggle swit...\" | #10 \"Scroll to the bottom of the profile page, click \"Log Out\", t...\""
+      ]
+    }
+  ],
+  "scorecard": {
+    "totalRuns": 3,
+    "passRate": 0,
+    "partialRate": 0,
+    "failRate": 1,
+    "avgScore": 22,
+    "avgCheckpointCompletion": 0,
+    "avgStepEfficiency": 1,
+    "avgDurationMs": 7081,
+    "fatalErrorRate": 0,
+    "maxStepsExhaustionRate": 0,
+    "totalCostUsd": 0,
+    "totalLlmCalls": 0,
+    "navigationReliabilityScore": 25,
+    "byTask": {
+      "T03": {
+        "taskId": "T03",
+        "taskName": "GitHub Repo Exploration",
+        "difficulty": "medium",
+        "runs": 1,
+        "passRate": 0,
+        "avgScore": 15,
+        "avgCheckpointCompletion": 0,
+        "avgSteps": 1,
+        "avgCostUsd": 0
+      },
+      "T04": {
+        "taskId": "T04",
+        "taskName": "MDN API Reference Lookup",
+        "difficulty": "medium",
+        "runs": 1,
+        "passRate": 0,
+        "avgScore": 15,
+        "avgCheckpointCompletion": 0,
+        "avgSteps": 1,
+        "avgCostUsd": 0
+      },
+      "T09": {
+        "taskId": "T09",
+        "taskName": "Atom Habit Tracker Full Journey",
+        "difficulty": "hard",
+        "runs": 1,
+        "passRate": 0,
+        "avgScore": 35,
+        "avgCheckpointCompletion": 0,
+        "avgSteps": 1,
+        "avgCostUsd": 0
+      }
+    }
+  },
+  "durationMs": 21246
+}

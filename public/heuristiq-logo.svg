@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="220" viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Left panel gradient (cyan to blue) - vertical -->
+    <linearGradient id="leftGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4DD9D9"/>
+      <stop offset="45%" stop-color="#3BA3D0"/>
+      <stop offset="100%" stop-color="#4B6FDF"/>
+    </linearGradient>
+    
+    <!-- Right panel gradient (purple to pink) - vertical -->
+    <linearGradient id="rightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B7DD8"/>
+      <stop offset="55%" stop-color="#A890DA"/>
+      <stop offset="100%" stop-color="#D8B0DA"/>
+    </linearGradient>
+    
+    <!-- Dot gradient -->
+    <linearGradient id="dotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#50A0F0"/>
+      <stop offset="100%" stop-color="#3B80D8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left part of H - chevron with deep notch creating left vertical bar -->
+  <path d="
+    M 15 40
+    L 90 5
+    L 90 78
+    L 48 78
+    Q 40 78 40 86
+    L 40 134
+    Q 40 142 48 142
+    L 90 142
+    L 90 215
+    L 15 180
+    Z
+  " fill="url(#leftGradient)"/>
+  
+  <!-- Right part of H - chevron with deep notch creating right vertical bar -->
+  <path d="
+    M 90 5
+    L 165 40
+    L 165 180
+    L 90 215
+    L 90 142
+    L 132 142
+    Q 140 142 140 134
+    L 140 86
+    Q 140 78 132 78
+    L 90 78
+    Z
+  " fill="url(#rightGradient)"/>
+
+  <!-- Accent dot in upper right -->
+  <circle cx="170" cy="24" r="12" fill="url(#dotGradient)"/>
+</svg>

@@ -1,0 +1,158 @@
+/* Print-specific styles for PDF export */
+@media print {
+  /* Page setup */
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+  }
+
+  /* Reset page to block layout */
+  * {
+    box-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  html, body {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Force everything to block display */
+  body * {
+    position: static !important;
+  }
+
+  /* Remove all flex layouts */
+  [class*="flex"] {
+    display: block !important;
+  }
+
+  /* CRITICAL: Hide sidebar, header, and navigation */
+  aside,
+  nav,
+  header,
+  [role="navigation"],
+  [role="banner"],
+  [data-sidebar],
+  [class*="sidebar"],
+  .no-print,
+  button,
+  [role="button"],
+  [type="button"],
+  select,
+  input,
+  textarea,
+  [data-radix-dropdown-menu-trigger],
+  [data-radix-select-trigger],
+  [role="combobox"],
+  [role="dialog"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Show main content only */
+  main {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+  }
+
+  /* Content containers */
+  [class*="max-w"] {
+    max-width: 100% !important;
+  }
+
+  [class*="container"] {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Page breaks */
+  h1 {
+    page-break-after: avoid !important;
+    margin-top: 0 !important;
+  }
+
+  h2, h3, h4 {
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  section {
+    page-break-inside: avoid !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Cards */
+  [class*="Card"] {
+    page-break-inside: avoid !important;
+    border: 1px solid #e5e7eb !important;
+    background: white !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Grid handling - convert to single column */
+  .grid {
+    display: block !important;
+  }
+
+  .grid > * {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Text colors for print */
+  [class*="text-muted"] {
+    color: #6b7280 !important;
+  }
+
+  .text-primary {
+    color: #1b67f3 !important;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Remove excessive spacing */
+  [class*="space-y-8"] > * + * {
+    margin-top: 1.5rem !important;
+  }
+
+  [class*="gap-8"] {
+    gap: 1rem !important;
+  }
+
+  /* Print-specific utilities */
+  .page-break-before {
+    page-break-before: always !important;
+  }
+
+  .page-break-after {
+    page-break-after: always !important;
+  }
+
+  /* Remove background patterns */
+  [class*="bg-gradient"] {
+    background: #f9fafb !important;
+  }
+
+  /* Optimize badge styling */
+  [class*="badge"],
+  [class*="Badge"] {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+}

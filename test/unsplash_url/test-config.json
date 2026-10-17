@@ -1,0 +1,44 @@
+{
+  "name": "Unsplash - Photo Discovery & Exploration Journey",
+  "url": "https://unsplash.com/",
+  "inputMode": "live_url",
+  "credentials": null,
+  "hypothesis": "Users with varying experience levels should be able to discover, search, and explore photos on Unsplash intuitively. The search functionality, category navigation, and photo detail interactions should be clear and efficient. Users should understand how to find specific content and explore related photos without confusion.",
+  "script": "1. Start on the Unsplash homepage and observe the layout, noting the search bar and featured photos\n2. Use the search bar to search for 'mountain landscape'\n3. On the search results page, scroll down to view more results and observe the image grid layout\n4. Click on any photo that catches your attention to view its detail page\n5. On the photo detail page, explore the available information (photographer name, likes, downloads)\n6. Close the photo modal/lightbox by clicking outside it or using the close button\n7. Use the category/topic navigation at the top to browse the 'Nature' category\n8. On the Nature category page, use any available filter options (if present) to refine results\n9. Click on a different photo and try to find information about the photographer\n10. Navigate back to the homepage using the Unsplash logo or navigation",
+  "recommendedPersonas": [
+    {
+      "name": "Design Student",
+      "description": "Young creative looking for inspiration, comfortable with visual interfaces",
+      "experienceLevel": "intermediate",
+      "patienceLevel": "medium",
+      "deviceType": "desktop"
+    },
+    {
+      "name": "Mobile Browser",
+      "description": "Casual user browsing on mobile during commute",
+      "experienceLevel": "beginner",
+      "patienceLevel": "low",
+      "deviceType": "mobile"
+    },
+    {
+      "name": "Professional Photographer",
+      "description": "Experienced user familiar with photo platforms, expects efficient navigation",
+      "experienceLevel": "expert",
+      "patienceLevel": "high",
+      "deviceType": "desktop"
+    }
+  ],
+  "testingFocus": [
+    "Search bar visibility and interaction",
+    "Search results grid layout clarity",
+    "Photo modal/lightbox interaction",
+    "Category/topic navigation",
+    "Photographer profile discoverability",
+    "Filter and sorting controls",
+    "Mobile responsive navigation",
+    "Back navigation patterns",
+    "Infinite scroll behavior",
+    "Image loading states"
+  ],
+  "createdAt": "2026-02-08"
+}
