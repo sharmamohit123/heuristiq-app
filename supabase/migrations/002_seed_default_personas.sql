@@ -43,7 +43,7 @@ BEGIN
     
     RETURN NEW;
 END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = public;
 
 -- Trigger to seed personas after profile creation
 DROP TRIGGER IF EXISTS on_profile_created_seed_personas ON profiles;

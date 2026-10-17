@@ -106,7 +106,7 @@ src/
     browser-automation.ts   Chromium pool, DOM extraction, resilient action executor
     ai/                     Gemini client, prompts, navigation, analysis, aggregation
     benchmarking/           Task suite, runner, verifier, LLM judge
-supabase/migrations/   Database schema, seed triggers, demo experiment (009)
+supabase/migrations/   Database schema, seed triggers, demo experiment (009), storage (010)
 scripts/               Benchmark CLI
 benchmark-results/     Committed benchmark runs
 deploy/                Cloud Build config and Cloud Run deploy script
@@ -118,11 +118,11 @@ Dockerfile             Two-stage build on the official Playwright image
 ### 1. Supabase
 
 1. Create a Supabase project.
-2. In the SQL editor, run every file in `supabase/migrations/` in order (001 to 009). Migration 009 seeds the demo study for each new account. To add it for users who already exist:
+2. In the SQL editor, run every file in `supabase/migrations/` in order (001 to 010). Migration 009 seeds the demo study for each new account. To add it for users who already exist:
    ```sql
    SELECT public.create_demo_experiment(id) FROM public.profiles;
    ```
-3. Under **Storage**, make sure two public buckets exist: `experiment-screenshots` (created by migration 004) and `experiment-recordings`.
+3. Migration 010 creates the two public storage buckets (`experiment-screenshots`, `experiment-recordings`) and their upload policies. Check that both appear under **Storage**.
 4. To let reviewers sign up without email verification, turn off **Authentication > Providers > Email > Confirm email**. Signup then goes straight to the dashboard.
 5. After deploying, add the app URL under **Authentication > URL Configuration**.
 
