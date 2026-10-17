@@ -15,6 +15,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { toast } from 'sonner'
 import { useParallelRuns } from '@/lib/stores/parallel-runs'
 import { MultiplexedEvent } from '@/lib/sse-multiplexer'
+import { readSSEData } from '@/lib/sse-client'
 import {
   ArrowLeft,
   Play,
@@ -412,99 +413,85 @@ export default function ExperimentPage() {
           throw new Error(`Parallel execution failed: ${response.statusText}`)
         }
 
-        const reader = response.body?.getReader()
-        const decoder = new TextDecoder()
+        if (response.body) {
+          for await (const jsonData of readSSEData(response.body)) {
+            try {
+              const event = JSON.parse(jsonData) as MultiplexedEvent
+              
+              // Update parallel runs store with the event
+              parallelRuns.handleSSEEvent(event)
 
-        if (reader) {
-          while (true) {
-            const { done, value } = await reader.read()
-            if (done) break
+              // Update progress based on event type
+              // Track per-run progress to avoid fluctuation in parallel execution
+              const runKey = `${event.personaId}-${event.runNumber}`
+              
+              if (event.eventType === 'progress') {
+                // Update this run's progress (only if it's higher than current - never decrease)
+                const taskProgress = event.data?.taskProgress || 0
+                const currentRunProgress = runProgressRef.current.get(runKey) || 0
+                if (taskProgress > currentRunProgress) {
+                  runProgressRef.current.set(runKey, taskProgress)
+                }
+                
+                // Calculate total progress from all runs
+                let totalProgress = 0
+                runProgressRef.current.forEach((p) => {
+                  totalProgress += p
+                })
+                // Each run contributes equally to total progress
+                const newProgress = Math.min(99, totalProgress / totalRuns)
+                setProgress((prev) => Math.max(prev, newProgress)) // Never decrease
+                setProgressStatus('Analysis in progress...')
+              } else if (event.eventType === 'complete' || event.eventType === 'error') {
+                // Mark this run as 100% complete
+                runProgressRef.current.set(runKey, 100)
+                completedRuns++
+                
+                // Calculate total progress
+                let totalProgress = 0
+                runProgressRef.current.forEach((p) => {
+                  totalProgress += p
+                })
+                const newProgress = Math.min(99, totalProgress / totalRuns)
+                setProgress((prev) => Math.max(prev, newProgress)) // Never decrease
+                setProgressStatus(`Completed ${completedRuns}/${totalRuns} runs`)
 
-            const chunk = decoder.decode(value)
-            const lines = chunk.split('\n')
-
-            for (const line of lines) {
-              if (line.startsWith('data: ')) {
-                const jsonData = line.substring(6)
-                try {
-                  const event = JSON.parse(jsonData) as MultiplexedEvent
-                  
-                  // Update parallel runs store with the event
-                  parallelRuns.handleSSEEvent(event)
-
-                  // Update progress based on event type
-                  // Track per-run progress to avoid fluctuation in parallel execution
-                  const runKey = `${event.personaId}-${event.runNumber}`
-                  
-                  if (event.eventType === 'progress') {
-                    // Update this run's progress (only if it's higher than current - never decrease)
-                    const taskProgress = event.data?.taskProgress || 0
-                    const currentRunProgress = runProgressRef.current.get(runKey) || 0
-                    if (taskProgress > currentRunProgress) {
-                      runProgressRef.current.set(runKey, taskProgress)
-                    }
-                    
-                    // Calculate total progress from all runs
-                    let totalProgress = 0
-                    runProgressRef.current.forEach((p) => {
-                      totalProgress += p
+                // Save run to database
+                if (event.eventType === 'complete' && event.data?.result) {
+                  const result = event.data.result
+                  const { data: runData } = await supabase
+                    .from('experiment_runs')
+                    .insert({
+                      experiment_id: experimentId,
+                      persona_id: event.personaId,
+                      run_number: event.runNumber,
+                      success: result.success,
+                      struggle_point: result.struggle_point,
+                      reason: result.reason,
+                      suggested_fix: result.suggested_fix,
+                      duration_ms: result.duration_ms,
+                      recording_url: result.recordingUrl || null,
+                      recording_expires_at: result.recordingExpiresAt || null,
+                      interaction_screenshots: result.interactionScreenshots || [],
+                      logs: {
+                        simple_logs: result.logs || [],
+                        experience_logs: result.experienceLogs || result.experience_logs || [],
+                        insights: result.insights || [],
+                        recommendations: result.recommendations || [],
+                        screenshot_issues: result.screenshot_issues || [],
+                      },
+                      llm_usage: result.llm_usage || null,
                     })
-                    // Each run contributes equally to total progress
-                    const newProgress = Math.min(99, totalProgress / totalRuns)
-                    setProgress((prev) => Math.max(prev, newProgress)) // Never decrease
-                    setProgressStatus('Analysis in progress...')
-                  } else if (event.eventType === 'complete' || event.eventType === 'error') {
-                    // Mark this run as 100% complete
-                    runProgressRef.current.set(runKey, 100)
-                    completedRuns++
-                    
-                    // Calculate total progress
-                    let totalProgress = 0
-                    runProgressRef.current.forEach((p) => {
-                      totalProgress += p
-                    })
-                    const newProgress = Math.min(99, totalProgress / totalRuns)
-                    setProgress((prev) => Math.max(prev, newProgress)) // Never decrease
-                    setProgressStatus(`Completed ${completedRuns}/${totalRuns} runs`)
+                    .select()
+                    .single()
 
-                    // Save run to database
-                    if (event.eventType === 'complete' && event.data?.result) {
-                      const result = event.data.result
-                      const { data: runData } = await supabase
-                        .from('experiment_runs')
-                        .insert({
-                          experiment_id: experimentId,
-                          persona_id: event.personaId,
-                          run_number: event.runNumber,
-                          success: result.success,
-                          struggle_point: result.struggle_point,
-                          reason: result.reason,
-                          suggested_fix: result.suggested_fix,
-                          duration_ms: result.duration_ms,
-                          recording_url: result.recordingUrl || null,
-                          recording_expires_at: result.recordingExpiresAt || null,
-                          interaction_screenshots: result.interactionScreenshots || [],
-                          logs: {
-                            simple_logs: result.logs || [],
-                            experience_logs: result.experienceLogs || result.experience_logs || [],
-                            insights: result.insights || [],
-                            recommendations: result.recommendations || [],
-                            screenshot_issues: result.screenshot_issues || [],
-                          },
-                          llm_usage: result.llm_usage || null,
-                        })
-                        .select()
-                        .single()
-
-                      if (runData) {
-                        setRuns((prev) => [...prev, runData])
-                      }
-                    }
+                  if (runData) {
+                    setRuns((prev) => [...prev, runData])
                   }
-                } catch (e) {
-                  // Ignore parse errors for incomplete chunks
                 }
               }
+            } catch (e) {
+              console.error('[Experiment] Failed to handle SSE event:', e)
             }
           }
         }
@@ -767,11 +754,8 @@ export default function ExperimentPage() {
         .select('*')
         .eq('experiment_id', experimentId)
 
-      // Skip aggregation if no runs completed (all were aborted/cleaned up)
       if (!allRuns || allRuns.length === 0) {
-        console.log('[Experiment] No runs to aggregate - experiment may have been aborted')
-        setIsAggregating(false)
-        return
+        throw new Error('No completed runs were saved, nothing to aggregate')
       }
 
       // Call aggregation API

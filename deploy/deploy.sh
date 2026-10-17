@@ -65,6 +65,14 @@ for role in roles/aiplatform.user roles/secretmanager.secretAccessor roles/loggi
     --member "serviceAccount:${RUN_SA}" --role "$role" --condition None >/dev/null
 done
 
+# Newer projects run Cloud Build as the Compute Engine default service account
+# without granting it any roles, so the build cannot read its uploaded source.
+PROJECT_NUMBER="$(gcloud projects describe "$PROJECT_ID" --format 'value(projectNumber)')"
+BUILD_SA="${PROJECT_NUMBER}-compute@developer.gserviceaccount.com"
+log "Granting Cloud Build permissions to ${BUILD_SA}"
+gcloud projects add-iam-policy-binding "$PROJECT_ID" \
+  --member "serviceAccount:${BUILD_SA}" --role roles/cloudbuild.builds.builder --condition None >/dev/null
+
 upsert_secret() {
   local name="$1" value="$2"
   if gcloud secrets describe "$name" >/dev/null 2>&1; then
