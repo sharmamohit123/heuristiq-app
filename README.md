@@ -2,8 +2,8 @@
 
 **UX research on autopilot.** Heuristiq sends Gemini-powered AI personas into a live web product. Each persona browses in its own real Chromium session, in parallel, behaving like a first-time visitor, an impatient expert, or a careful mobile shopper. Every hesitation becomes a prioritized, evidence-backed usability finding, with video, step screenshots, and suggested fixes, in minutes instead of weeks.
 
-- **Live app:** `https://YOUR-CLOUD-RUN-URL` (replace after deploying)
-- **Demo video:** `https://YOUR-VIDEO-LINK`
+- **Live app:** `https://heuristiq-xnlfddpy3a-as.a.run.app/`
+- **Demo video:** `https://www.youtube.com/watch?v=x05Q1cMyYQw`
 
 ## Evaluating in 5 minutes
 
