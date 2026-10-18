@@ -27,6 +27,8 @@ export interface RunnerOptions {
   onTaskComplete?: (result: BenchmarkResult) => void
   /** Override the default persona for all tasks. */
   personaOverride?: BenchmarkPersona
+  /** Run a task's repetitions concurrently, as the app runs personas. Default: false. */
+  parallelReps?: boolean
 }
 
 /**
@@ -119,6 +121,7 @@ export async function runBenchmarkSuite(
     onTaskStart,
     onTaskComplete,
     personaOverride,
+    parallelReps = false,
   } = options
 
   const tasks = taskIds && taskIds.length > 0
@@ -131,45 +134,51 @@ export async function runBenchmarkSuite(
 
   const results: BenchmarkResult[] = []
 
-  for (const task of tasks) {
-    for (let rep = 1; rep <= repetitions; rep++) {
-      if (onTaskStart) onTaskStart(task, rep)
-
-      try {
-        const result = await runSingleBenchmark(task, rep, personaOverride)
-        results.push(result)
-        if (onTaskComplete) onTaskComplete(result)
-      } catch (error) {
-        // Runner-level failure (e.g., browser pool crash) — record as FAIL
-        const failResult: BenchmarkResult = {
-          taskId: task.id,
-          taskName: task.name,
-          runNumber: rep,
-          verdict: 'FAIL',
-          score: 0,
-          timestampIso: new Date().toISOString(),
+  const runRep = async (task: BenchmarkTask, rep: number): Promise<BenchmarkResult> => {
+    if (onTaskStart) onTaskStart(task, rep)
+    try {
+      const result = await runSingleBenchmark(task, rep, personaOverride)
+      if (onTaskComplete) onTaskComplete(result)
+      return result
+    } catch (error) {
+      // Runner-level failure (e.g., browser pool crash) — record as FAIL
+      const failResult: BenchmarkResult = {
+        taskId: task.id,
+        taskName: task.name,
+        runNumber: rep,
+        verdict: 'FAIL',
+        score: 0,
+        timestampIso: new Date().toISOString(),
+        agentReportedSuccess: false,
+        totalSteps: 0,
+        durationMs: 0,
+        taskProgress: 0,
+        verificationSignals: {
           agentReportedSuccess: false,
-          totalSteps: 0,
-          durationMs: 0,
-          taskProgress: 0,
-          verificationSignals: {
-            agentReportedSuccess: false,
-            finalUrlMatch: false,
-            visitedExpectedUrls: false,
-            finalContentMatch: false,
-            checkpointCompletionRate: 0,
-            withinStepBudget: false,
-            noExplicitFailure: false,
-            noForbiddenActions: true,
-          },
-          failureReasons: [
-            `Runner-level crash: ${error instanceof Error ? error.message : 'Unknown'}`,
-          ],
-          notes: [],
-        }
-        results.push(failResult)
-        if (onTaskComplete) onTaskComplete(failResult)
+          finalUrlMatch: false,
+          visitedExpectedUrls: false,
+          finalContentMatch: false,
+          checkpointCompletionRate: 0,
+          withinStepBudget: false,
+          noExplicitFailure: false,
+          noForbiddenActions: true,
+        },
+        failureReasons: [
+          `Runner-level crash: ${error instanceof Error ? error.message : 'Unknown'}`,
+        ],
+        notes: [],
       }
+      if (onTaskComplete) onTaskComplete(failResult)
+      return failResult
+    }
+  }
+
+  for (const task of tasks) {
+    const reps = Array.from({ length: repetitions }, (_, i) => i + 1)
+    if (parallelReps) {
+      results.push(...(await Promise.all(reps.map((rep) => runRep(task, rep)))))
+    } else {
+      for (const rep of reps) results.push(await runRep(task, rep))
     }
   }
 
@@ -265,7 +274,7 @@ export function computeScorecard(
     }
   }
 
-  // Navigation Reliability score (tightened — May 2026, post-MVB-3)
+  // Navigation Reliability score
   // The previous formula was too lenient: a 50% pass rate produced a 79/100
   // score (above the 70 release gate). Pass rate is now the dominant factor
   // and target thresholds are tightened to industry norms.

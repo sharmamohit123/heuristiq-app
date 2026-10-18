@@ -1,31 +1,7 @@
 # Heuristiq: Technical Architecture Report
 
-> **Checkpoint**: `cac14ee` — *UI fixes + notification capability* (2026-03-01)
-> **Report Date**: 2026-03-01
 > **Scope**: Full analysis of `src/lib/` — screenshot-based and live URL-based experiment execution pipelines
-> **Post-Cleanup**: Removed legacy `url` input mode, marked A/B testing as TODO (not MVP), gutted `gemini.ts` monolith
-
----
-
-## Commit History (Checkpoint Reference)
-
-| Commit | Date | Description |
-|--------|------|-------------|
-| `cac14ee` | 2026-03-01 | **UI fixes + notification capability** *(current HEAD)* |
-| `bd0df2c` | 2026-02-08 | UI enhancements + build failure fix |
-| `45d2aa0` | 2026-02-08 | More Reliable browser automation + Key insights/recommendation logic + UI fixes |
-| `6a0d02a` | 2026-02-07 | Keep screenshots on cleanup, only delete recordings |
-| `72a0a65` | 2026-02-07 | Automated live url testing + recording clean API |
-| `f078b08` | 2026-01-26 | feat: Add landing page with demo video, features, pricing, and contact form |
-| `44349d1` | 2026-01-25 | Experiment thumbnail issue debug + Update heuristiq logo |
-| `feae944` | 2026-01-18 | Reports Management Screen Revamp |
-| `f084c2b` | 2026-01-18 | General UI fixes |
-| `f43b2c5` | 2026-01-18 | Dashboard UI & bug fixes |
-| `132d9f7` | 2026-01-18 | Support for exporting reports added |
-| `aba0538` | 2026-01-18 | Report page refinements + bug fixes |
-| `0816440` | 2026-01-17 | feat: Enhanced reporting with executive summary, findings sections, and improved AI aggregation |
-| `b0b5807` | 2026-01-11 | Edit & save draft functionality |
-| `24c2042` | 2026-01-11 | First commit — Design + Basic functionality |
+> **Notes**: Legacy `url` input mode removed, A/B testing marked as a future feature, `gemini.ts` monolith split into the `ai/` module
 
 ---
 
@@ -474,7 +450,7 @@ Per-step Gemini call → tracker.record(model, feature, inputTokens, outputToken
 
 ---
 
-## 11. Cleanup Changelog (this session)
+## 11. Cleanup Changelog
 
 | Change | Files Affected |
 |--------|---------------|

@@ -87,7 +87,7 @@ IMPORTANT: If you can SEE an element clearly in the screenshot but have trouble 
   submit), append a literal newline character (\\n) at the end of the value,
   e.g. "Buy groceries\\n" — this will type the text AND press Enter to submit.
 - **scroll**: Scroll the page (value: "up", "down", or selector to scroll to)
-- **navigate**: Go to a URL (provide URL as value)
+- **navigate**: Go to a URL (provide URL as value), or use value "back" to press the browser's Back button
 - **wait**: Wait for content to load (value: milliseconds)
 - **hover**: Hover over an element (provide selector)
 - **select**: Select an option from a dropdown (provide selector and value)
@@ -105,6 +105,7 @@ Respond with ONLY valid JSON (no markdown, no code blocks):
   "confidence": 0.0 to 1.0 (confidence that THIS PERSONA would take this action)",
   "taskProgress": 0 to 100 (estimate of how close we are to completing the task),
   "isTaskComplete": true/false,
+  "completedSteps": [numbers of the Task Checklist steps that are fully done so far, including earlier ones. Include a step only if you saw it happen; a step you skipped or worked around is NOT done],
   "observation": "What you observe on the current page from THIS PERSONA's perspective (2-3 sentences)",
   "uxObservation": "UX observation (positive OR negative) - describe what works well OR any issues. Examples: 'The button labels are clear and intuitive' (positive) OR 'The navigation menu is hard to find' (negative). Say 'No issues - UI is clear' ONLY if truly unremarkable."
 }
@@ -140,6 +141,8 @@ When a confirmation dialog appears (like "Log Out?"):
 - Consider the persona's experience level when assessing UI clarity
 - A "low patience" persona gives up faster on confusing interfaces
 - Maximum ${input.maxSteps - input.stepNumber} steps remaining
+- Move around the site with its own links, buttons, and menus, like a real user. Use "navigate" only with value "back" (the browser's Back button) or when the task explicitly gives you a URL to open; typing a URL to jump ahead skips the UI you are testing
+- Do every checklist step as written, in order. Set isTaskComplete to true only when every step is in completedSteps
 - If truly stuck (not just technical issues), try scrolling to find the element
 - Always dismiss open popups/menus before trying to navigate elsewhere
 - For toggles, always include the label text (e.g., "Notifications") in the value field

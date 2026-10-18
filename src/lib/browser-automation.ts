@@ -18,6 +18,7 @@ import {
   parseTaskCheckpoints, 
   generateCheckpointStatus, 
   updateCheckpointCompletion,
+  applyReportedCompletion,
   getTaskProgress,
   TaskCheckpoint 
 } from './task-tracking'
@@ -981,10 +982,11 @@ async function executeAction(page: Page, decision: AINavigationDecision): Promis
 
       case 'scroll': {
         try {
+          // One scroll moves most of a screen, like a swipe or Page Down
           if (decision.value === 'down') {
-            await page.evaluate(() => window.scrollBy(0, 500))
+            await page.evaluate(() => window.scrollBy(0, Math.round(window.innerHeight * 0.85)))
           } else if (decision.value === 'up') {
-            await page.evaluate(() => window.scrollBy(0, -500))
+            await page.evaluate(() => window.scrollBy(0, -Math.round(window.innerHeight * 0.85)))
           } else if (decision.selector) {
             await page.locator(decision.selector).scrollIntoViewIfNeeded()
           }
@@ -1000,6 +1002,10 @@ async function executeAction(page: Page, decision: AINavigationDecision): Promis
           return { success: false, error: 'No URL provided for navigate action' }
         }
         try {
+          if (decision.value.trim().toLowerCase() === 'back') {
+            await page.goBack({ waitUntil: 'domcontentloaded', timeout: 30000 })
+            return { success: true, strategyUsed: 'back' }
+          }
           await page.goto(decision.value, { waitUntil: 'domcontentloaded', timeout: 30000 })
           return { success: true, strategyUsed: 'navigate' }
         } catch (e) {
@@ -1093,6 +1099,36 @@ async function uploadToSupabase(
   }
 }
 
+/**
+ * page.screenshot() waits for web fonts to finish loading, which never happens
+ * on some pages (e.g. GitHub on slow networks) and used to end the run on step 1.
+ * Fall back to a raw CDP capture, which does not wait for fonts. Once a page
+ * has timed out, later steps on it go straight to CDP.
+ */
+const pagesWithStuckFonts = new WeakSet<Page>()
+
+async function captureScreenshot(page: Page): Promise<Buffer> {
+  if (!pagesWithStuckFonts.has(page)) {
+    try {
+      return await page.screenshot({ type: 'png', timeout: 10_000 })
+    } catch (error) {
+      pagesWithStuckFonts.add(page)
+      console.warn('[captureScreenshot] Falling back to CDP capture:', error instanceof Error ? error.message.split('\n')[0] : error)
+    }
+  }
+  const session = await page.context().newCDPSession(page)
+  try {
+    const { data } = await session.send('Page.captureScreenshot', { format: 'png' })
+    return Buffer.from(data, 'base64')
+  } finally {
+    await session.detach().catch(() => {})
+  }
+}
+
+// Times the agent is asked to re-check a "task complete" claim while
+// checklist steps are still pending, before the claim is accepted.
+const MAX_COMPLETION_CHECKS = 2
+
 // ============================================
 // Main Browser Test Runner
 // ============================================
@@ -1142,6 +1178,8 @@ export async function runPersonaBrowserTest(options: BrowserTestOptions): Promis
   let finalUrl: string | null = null
   // Hoisted so the final return statement can snapshot checkpoint completion data
   let taskCheckpoints: TaskCheckpoint[] = []
+  let completionChecks = 0
+  let completionCheckNote: string | null = null
 
   // Determine viewport based on persona device type
   const viewport = persona.device_type === 'mobile'
@@ -1207,7 +1245,7 @@ export async function runPersonaBrowserTest(options: BrowserTestOptions): Promis
       stepCount++
 
       // Capture screenshot
-      const screenshotBuffer = await page.screenshot({ type: 'png' })
+      const screenshotBuffer = await captureScreenshot(page)
       const screenshotPath = path.join(tempDir, `step-${stepCount}.png`)
       fs.writeFileSync(screenshotPath, screenshotBuffer)
 
@@ -1224,7 +1262,9 @@ export async function runPersonaBrowserTest(options: BrowserTestOptions): Promis
       })
 
       // Generate checkpoint status for AI prompt
-      const checkpointStatus = generateCheckpointStatus(taskCheckpoints)
+      const checkpointStatus = generateCheckpointStatus(taskCheckpoints) +
+        (completionCheckNote ? `\n\n${completionCheckNote}` : '')
+      completionCheckNote = null
 
       // AI decides next action (with checkpoint awareness)
       const decision = await analyzePageAndDecideAction({
@@ -1243,14 +1283,17 @@ export async function runPersonaBrowserTest(options: BrowserTestOptions): Promis
       previousActions.push(decision)
       taskProgress = decision.taskProgress
 
-      // Update task checkpoint tracking
-      taskCheckpoints = updateCheckpointCompletion(
-        taskCheckpoints,
-        decision.observation,
-        decision.description,
-        taskProgress,
-        stepCount
-      )
+      // Update task checkpoint tracking. Prefer the agent's own report; keyword
+      // matching marks steps done as soon as they are mentioned.
+      taskCheckpoints = decision.completedSteps
+        ? applyReportedCompletion(taskCheckpoints, decision.completedSteps, stepCount)
+        : updateCheckpointCompletion(
+            taskCheckpoints,
+            decision.observation,
+            decision.description,
+            taskProgress,
+            stepCount
+          )
       
       // Log checkpoint progress
       const progress = getTaskProgress(taskCheckpoints)
@@ -1303,9 +1346,19 @@ export async function runPersonaBrowserTest(options: BrowserTestOptions): Promis
 
       // Check for terminal states
       if (decision.isTaskComplete) {
-        success = true
-        reason = decision.reasoning
-        break
+        const pending = taskCheckpoints.filter(c => !c.completed)
+        if (pending.length > 0 && completionChecks < MAX_COMPLETION_CHECKS && stepCount < MAX_STEPS_PER_RUN) {
+          completionChecks++
+          completionCheckNote = `COMPLETION CHECK: You reported the task as complete, but these checklist steps are not confirmed yet:\n` +
+            pending.map(c => `${c.id}. ${c.description}`).join('\n') +
+            `\nLook at the current page. If every step really is done, set isTaskComplete to true again. Otherwise, continue with the first unfinished step.`
+          console.log(`[runPersonaBrowserTest] Completion claimed with ${pending.length} pending checkpoint(s); asking agent to re-check (${completionChecks}/${MAX_COMPLETION_CHECKS})`)
+          if (decision.action === 'done') continue
+        } else {
+          success = true
+          reason = decision.reasoning
+          break
+        }
       }
 
       if (decision.action === 'failed') {
@@ -1325,6 +1378,8 @@ export async function runPersonaBrowserTest(options: BrowserTestOptions): Promis
         url: currentUrl,
         title: pageTitle,
         action: decision.action,
+        description: decision.description,
+        target: [decision.selector, decision.value].filter(Boolean).join(' ') || undefined,
         strategyUsed: actionResult.strategyUsed,
         actionSuccess: actionResult.success,
       })

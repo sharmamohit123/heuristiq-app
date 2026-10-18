@@ -157,25 +157,25 @@ function SectionBadge({ icon: Icon, label, color }: { icon: React.ElementType; l
   )
 }
 
-// Source: benchmark-results/2026-05-02T11-44-24.json (10 live sites x 3 runs)
+// Source: benchmark-results/2026-10-18T10-48-50.json (10 live sites x 3 runs)
 const BENCHMARK_HEADLINE = [
-  { value: '93/100', label: 'Navigation reliability score' },
-  { value: '97%', label: 'Task checkpoints completed' },
+  { value: '85/100', label: 'Navigation reliability score' },
+  { value: '86%', label: 'Task checkpoints completed' },
   { value: '0', label: 'Fatal errors in 30 runs' },
-  { value: '~$0.03', label: 'Gemini cost per persona run' },
+  { value: '~$0.04', label: 'Gemini cost per persona run' },
 ]
 
 const BENCHMARK_TASKS = [
   { site: 'Wikipedia', task: 'Article discovery', difficulty: 'Easy', passed: 3, checkpoints: 100 },
   { site: 'Hacker News', task: 'Story deep-dive', difficulty: 'Easy', passed: 3, checkpoints: 100 },
-  { site: 'GitHub', task: 'Repository exploration', difficulty: 'Medium', passed: 0, checkpoints: 86 },
-  { site: 'MDN', task: 'API reference lookup', difficulty: 'Medium', passed: 1, checkpoints: 100 },
-  { site: 'Unsplash', task: 'Search and photo modal', difficulty: 'Medium', passed: 3, checkpoints: 96 },
-  { site: 'Stripe', task: 'Marketing site exploration', difficulty: 'Medium', passed: 0, checkpoints: 86 },
+  { site: 'GitHub', task: 'Repository exploration', difficulty: 'Medium', passed: 0, checkpoints: 57 },
+  { site: 'MDN', task: 'API reference lookup', difficulty: 'Medium', passed: 1, checkpoints: 67 },
+  { site: 'Open Library', task: 'Search to author page (mobile)', difficulty: 'Medium', passed: 2, checkpoints: 75 },
+  { site: 'Stripe', task: 'Marketing site exploration', difficulty: 'Medium', passed: 3, checkpoints: 100 },
   { site: 'TodoMVC', task: 'Create, edit, delete flow', difficulty: 'Medium', passed: 3, checkpoints: 100 },
   { site: 'SauceDemo', task: 'Login to checkout', difficulty: 'Hard', passed: 3, checkpoints: 100 },
-  { site: 'Atom', task: 'Habit tracker full journey (mobile)', difficulty: 'Hard', passed: 3, checkpoints: 100 },
-  { site: 'Heuristiq', task: 'Landing page tour', difficulty: 'Easy', passed: 1, checkpoints: 100 },
+  { site: 'Atom', task: 'Habit tracker full journey (mobile)', difficulty: 'Hard', passed: 0, checkpoints: 87 },
+  { site: 'Heuristiq', task: 'Landing page tour (mobile)', difficulty: 'Easy', passed: 2, checkpoints: 75 },
 ]
 
 const AGENT_LOOP = [
@@ -588,7 +588,7 @@ export default function LandingPage() {
               Benchmarked on 10 live websites
             </h2>
             <p className="text-lg text-slate-400 max-w-3xl mx-auto">
-              A navigation benchmark covering search, modals, multi-page forms, CRUD flows, and a mobile app journey.
+              A navigation benchmark covering search, pop-ups, multi-page forms, CRUD flows, and mobile journeys.
               Each task ran three times. A run passes only if it reaches the expected final URL, visits every required page,
               and completes enough checkpoints, with no failures or forbidden actions.
             </p>

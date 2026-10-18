@@ -1,10 +1,9 @@
 # Heuristiq: Navigation Reliability Benchmark Task Suite
 
-> **Date**: 2026-03-01 · **Updated**: 2026-05-02 (post-MVB revisions)
 > **Companion to**: `benchmarking-strategy.md` (Dimension 1: Navigation Reliability)
 > **Purpose**: 10 concrete, publicly runnable tasks to measure whether the live URL agent can actually complete scripted work on real websites
 
-## 0. Post-MVB Revisions (2026-05-02)
+## 0. Revisions After the Baseline Run
 
 After the first MVB (3 reps × all 10 tasks), manual review of the recordings surfaced systemic issues across scripts, scoring, and agent execution. This revision applies the following changes:
 
@@ -16,7 +15,7 @@ After the first MVB (3 reps × all 10 tasks), manual review of the recordings su
 | T02 Hacker News | Collapsed redundant step; URL pattern accepts both `/` and `/news` (HN serves identical content at both) |
 | T03 GitHub | Removed wrong "filter dropdown" reference; clarified file tree drill-in |
 | T04 MDN | TOC is in LEFT sidebar; "Fetch API" appears at top of left sidebar (not breadcrumb); use Enter on search instead of autocomplete |
-| T05 Unsplash | No close button on photo modal — changed final step to navigate to photographer profile instead |
+| T05 Open Library | New task: mobile search → book page → author page. Replaces an image-gallery task whose site now serves a bot check to automated browsers |
 | T06 Stripe | Full redesign — uses top-level Pricing + Contact sales links instead of confusing hover dropdowns |
 | T07 TodoMVC | Made Enter-key submission explicit; agent now supports `\n` suffix in `value` to press Enter after typing |
 | T09 Atom | Tightened wording for "FIRST habit" and "Notifications toggle" steps where agents struggled |
@@ -63,7 +62,7 @@ These were observed in the MVB and are not yet fully fixed:
 | Hover-reveal dropdowns: agent rarely uses `hover` action | (Removed from T06) | Improve prompt with explicit "use hover when an element only appears on hover" guidance |
 | Toggle switches with hidden checkboxes | T09 Atom Notifications toggle | Already have `parent-click` and `force-js` strategies; may need explicit aria-switch detection |
 | Duplicate elements (multiple "Drink Water" habits) | T09 Atom | Need positional/order-based selector (`first()`) when AI confidence is low |
-| Anti-bot detection | T06 Stripe | Add stealth plugin (`playwright-extra` + `puppeteer-extra-plugin-stealth`) |
+| Anti-bot checks ("verify you're human" pages) | Any site with bot protection | Detect the check page and report the run as blocked. Heuristiq does not try to get around bot protection |
 
 ---
 
@@ -89,7 +88,7 @@ Every task in this suite is designed to:
 | T02 | Hacker News Story Deep-Dive | news.ycombinator.com | Easy | No | Desktop | click, scroll, navigate |
 | T03 | GitHub Repo Exploration | github.com/vercel/next.js | Medium | No | Desktop | click, scroll, hover |
 | T04 | MDN API Reference Lookup | developer.mozilla.org | Medium | No | Desktop | type, click, scroll |
-| T05 | Unsplash Search + Modal | unsplash.com | Medium | No | Mobile | type, click, scroll |
+| T05 | Open Library Search + Book Detail | openlibrary.org | Medium | No | Mobile | type, click, scroll |
 | T06 | Stripe Marketing Exploration | stripe.com | Medium | No | Desktop | click, scroll, hover |
 | T07 | TodoMVC CRUD Flow | todomvc.com/examples/react | Medium | No | Desktop | type, click, select |
 | T08 | SauceDemo E-commerce Checkout | saucedemo.com | Hard | Yes | Desktop | type, click, select, navigate |
@@ -123,14 +122,14 @@ Which failure modes from the strategy doc (Section 8) are probed by each task:
 
 | Failure Mode | T01 | T02 | T03 | T04 | T05 | T06 | T07 | T08 | T09 | T10 |
 |--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Modal / overlay blocking | | | | | ✓ | ✓ | | | ✓ | ✓ |
+| Modal / overlay blocking | | | | | | ✓ | | | ✓ | ✓ |
 | Dynamic / lazy-loaded content | | | | | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Anti-bot detection | | | | | ✓ | ✓ | | | | |
+| Anti-bot detection | | | | | | ✓ | | | | |
 | Auth / login flow | | | | | | | | ✓ | ✓ | |
 | Navigation loops | ✓ | ✓ | ✓ | ✓ | | | | | | |
 | Wrong element targeting (duplicates) | ✓ | | ✓ | ✓ | ✓ | | ✓ | ✓ | ✓ | |
 | Small touch targets (mobile) | | | | | ✓ | | | | ✓ | ✓ |
-| Icon-only buttons | | | | | ✓ | | ✓ | | ✓ | |
+| Icon-only buttons | | | | | | | ✓ | | ✓ | |
 | Multi-field form entry | | | | | | | | ✓ | ✓ | ✓ |
 | Toggle / select controls | | | | | | | ✓ | ✓ | ✓ | |
 | Confirmation dialogs | | | | | | | | | ✓ | |
@@ -290,43 +289,43 @@ credentials: null
 
 ---
 
-### T05 — Unsplash Search + Modal
+### T05 — Open Library Search + Book Detail
 
 ```yaml
 id: T05
-name: "Unsplash Search + Modal"
-url: "https://unsplash.com/"
+name: "Open Library Search + Book Detail"
+url: "https://openlibrary.org/"
 difficulty: medium
 viewport: mobile
-max_expected_steps: 12
+max_expected_steps: 10
 credentials: null
 ```
 
 **Script**:
-1. On the Unsplash homepage, dismiss any cookie banner or newsletter popup if present
-2. Click the search bar at the top of the page
-3. Type "coffee" into the search bar and submit (press Enter or click search icon)
-4. On the search results page, scroll down to see more image thumbnails
-5. Click on any image thumbnail to open it in a modal/lightbox
-6. On the modal, locate the photographer's name or profile link
-7. Close the modal by clicking the X button or clicking outside the image
-8. Navigate back to the homepage by clicking the Unsplash logo
+1. On the Open Library homepage, dismiss any banner or popup if one appears
+2. Tap the search box at the top of the page (on small screens it may be behind a search icon)
+3. Type "coffee" into the search box and press Enter (or tap the search button) to submit
+4. On the search results page, scroll down once to see more results
+5. Tap the title of any book in the results to open its details page
+6. On the book's page, find the author's name (shown near the title, usually after "by")
+7. Tap the author's name to open the author's page
+8. On the author's page, verify the author's name is shown as the page heading
 
 **Success verification**:
-- At some point the URL contained `/s/photos/coffee`
-- Final URL is `https://unsplash.com/` (returned home)
+- At some point the URL contained `/search?...q=coffee` and `/works/OL…W`
+- Final URL is an author page: `https://openlibrary.org/authors/OL…A`
 - At least 6 of 8 checkpoints marked DONE
 
 **Failure modes probed**:
-- Modal overlay dismissal (multiple overlays: cookie + possible popup)
-- Image modal/lightbox open and close
+- Search entry on a mobile header where the search box may be collapsed
 - Mobile viewport — smaller touch targets
-- Infinite scroll / lazy-loaded images
+- Lazy-loaded result lists
+- Navigating from a detail page to a related profile page
 
 **Known pitfalls**:
-- Cookie banner appears on first visit — agent must dismiss before other interactions
-- Modal X button is often a small icon in the corner
-- Mobile viewport (390×844) makes grid items smaller
+- Search results can be slow to load; the agent may need to wait before tapping a title
+- Each result row has several links (title, author, edition); the agent must pick the title
+- The site may show a "verify you're human" page under heavy automated traffic
 
 ---
 
@@ -667,7 +666,7 @@ heuristiq/
 │   │   ├── t02-hackernews.ts
 │   │   ├── t03-github.ts
 │   │   ├── t04-mdn.ts
-│   │   ├── t05-unsplash.ts
+│   │   ├── t05-openlibrary.ts
 │   │   ├── t06-stripe.ts
 │   │   ├── t07-todomvc.ts
 │   │   ├── t08-saucedemo.ts
@@ -722,7 +721,10 @@ npm run benchmark:full
 npm run benchmark -- --tasks T01,T05,T08 --reps 2
 
 # Custom output location:
-npm run benchmark -- --output ./reports/baseline-2026-03-01.json
+npm run benchmark -- --output ./reports/baseline.json
+
+# Run each task's repetitions at the same time:
+npm run benchmark -- --reps 3 --parallel
 ```
 
 The CLI writes a structured JSON file containing:

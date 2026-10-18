@@ -78,11 +78,12 @@ interface CliArgs {
   tasks?: string[]
   reps: number
   output?: string
+  parallel: boolean
   help: boolean
 }
 
 function parseArgs(argv: string[]): CliArgs {
-  const args: CliArgs = { reps: 3, help: false }
+  const args: CliArgs = { reps: 3, parallel: false, help: false }
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]
     if (arg === '--help' || arg === '-h') {
@@ -93,6 +94,8 @@ function parseArgs(argv: string[]): CliArgs {
       args.reps = parseInt(argv[++i], 10)
     } else if (arg === '--output' && i + 1 < argv.length) {
       args.output = argv[++i]
+    } else if (arg === '--parallel') {
+      args.parallel = true
     }
   }
   return args
@@ -109,6 +112,7 @@ Options:
   --tasks IDs    Comma-separated task IDs (e.g. T01,T02,T05)
   --reps N       Repetitions per task (default: 3)
   --output FILE  Write results JSON to FILE (default: ./benchmark-results-{timestamp}.json)
+  --parallel     Run each task's repetitions at the same time
   --help         Show this help
 
 Examples:
@@ -207,39 +211,45 @@ async function main() {
 
   console.log('Heuristiq Navigation Reliability Benchmark')
   console.log(`  Tasks: ${args.tasks ? args.tasks.join(', ') : 'ALL'}`)
-  console.log(`  Repetitions: ${args.reps}`)
+  console.log(`  Repetitions: ${args.reps}${args.parallel ? ' (in parallel)' : ''}`)
   console.log()
 
   const startTime = Date.now()
+
+  // Default output: ./benchmark-results/{timestamp}.json
+  const defaultDir = path.resolve(process.cwd(), 'benchmark-results')
+  const defaultFile = `${new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19)}.json`
+  const outputPath = args.output
+    ? path.resolve(process.cwd(), args.output)
+    : path.join(defaultDir, defaultFile)
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true })
+
+  // Completed runs are saved as they finish so an interrupted suite keeps them.
+  const partialPath = outputPath.replace(/\.json$/, '') + '.partial.json'
+  const completed: BenchmarkResult[] = []
 
   try {
     const { results, scorecard } = await runBenchmarkSuite({
       taskIds: args.tasks,
       repetitions: args.reps,
+      parallelReps: args.parallel,
       onTaskStart: (task, runNumber) => {
         console.log(`\n--> Starting ${task.id} run #${runNumber}: ${task.name}`)
       },
       onTaskComplete: (result) => {
         printRunLine(result)
+        completed.push(result)
+        fs.writeFileSync(partialPath, JSON.stringify({ results: completed }, null, 2))
       },
     })
 
     printScorecard(scorecard)
 
-    // Default output: ./benchmark-results/{timestamp}.json
-    const defaultDir = path.resolve(process.cwd(), 'benchmark-results')
-    const defaultFile = `${new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19)}.json`
-    const outputPath = args.output
-      ? path.resolve(process.cwd(), args.output)
-      : path.join(defaultDir, defaultFile)
-
-    // Ensure parent directory exists
-    fs.mkdirSync(path.dirname(outputPath), { recursive: true })
-
     fs.writeFileSync(
       outputPath,
       JSON.stringify({ results, scorecard, durationMs: Date.now() - startTime }, null, 2)
     )
+    fs.rmSync(partialPath, { force: true })
     console.log(`\nResults written to: ${path.relative(process.cwd(), outputPath)}`)
     console.log(`Total elapsed: ${formatDuration(Date.now() - startTime)}`)
 

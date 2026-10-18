@@ -5,7 +5,7 @@
  * across all Gemini calls within a run or aggregation phase.
  */
 
-// Pricing per 1M tokens (gemini-3-flash-preview, March 2026)
+// Pricing per 1M tokens
 const PRICING: Record<string, { input: number; output: number }> = {
   'gemini-3-flash-preview': { input: 0.50, output: 3.00 },
   'gemini-2.0-flash':       { input: 0.10, output: 0.40 },
@@ -85,7 +85,8 @@ export function extractTokenCounts(result: any): { input: number; output: number
   if (meta) {
     return {
       input: meta.promptTokenCount ?? 0,
-      output: meta.candidatesTokenCount ?? 0,
+      // Thinking tokens are billed at the output rate
+      output: (meta.candidatesTokenCount ?? 0) + (meta.thoughtsTokenCount ?? 0),
     }
   }
   return { input: 0, output: 0 }

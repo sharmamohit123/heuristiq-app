@@ -1,0 +1,4488 @@
+{
+  "results": [
+    {
+      "taskId": "T01",
+      "taskName": "Wikipedia Article Discovery",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T10:49:56.563Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 50693,
+      "taskProgress": 100,
+      "finalUrl": "https://en.wikipedia.org/wiki/Quantum_computing#History",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 6,
+        "total_input_tokens": 26295,
+        "total_output_tokens": 1922,
+        "total_cost_usd": 0.018914,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5162,
+            "output_tokens": 203,
+            "cost_usd": 0.00319,
+            "timestamp": "2026-10-18T10:49:00.649Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5066,
+            "output_tokens": 237,
+            "cost_usd": 0.003244,
+            "timestamp": "2026-10-18T10:49:08.458Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5080,
+            "output_tokens": 233,
+            "cost_usd": 0.003239,
+            "timestamp": "2026-10-18T10:49:15.609Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5054,
+            "output_tokens": 214,
+            "cost_usd": 0.003169,
+            "timestamp": "2026-10-18T10:49:33.153Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5117,
+            "output_tokens": 256,
+            "cost_usd": 0.003327,
+            "timestamp": "2026-10-18T10:49:39.963Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 816,
+            "output_tokens": 779,
+            "cost_usd": 0.002745,
+            "timestamp": "2026-10-18T10:49:49.977Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (6/6 completed)"
+      ]
+    },
+    {
+      "taskId": "T01",
+      "taskName": "Wikipedia Article Discovery",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T10:52:46.016Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 6,
+      "durationMs": 206643,
+      "taskProgress": 100,
+      "finalUrl": "https://en.wikipedia.org/wiki/Quantum_computing#History",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 6,
+        "total_input_tokens": 26348,
+        "total_output_tokens": 1990,
+        "total_cost_usd": 0.019145,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5162,
+            "output_tokens": 187,
+            "cost_usd": 0.003142,
+            "timestamp": "2026-10-18T10:49:09.745Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5067,
+            "output_tokens": 203,
+            "cost_usd": 0.003143,
+            "timestamp": "2026-10-18T10:50:16.212Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5080,
+            "output_tokens": 262,
+            "cost_usd": 0.003326,
+            "timestamp": "2026-10-18T10:50:22.579Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5075,
+            "output_tokens": 185,
+            "cost_usd": 0.003092,
+            "timestamp": "2026-10-18T10:52:10.183Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5133,
+            "output_tokens": 206,
+            "cost_usd": 0.003185,
+            "timestamp": "2026-10-18T10:52:15.594Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 831,
+            "output_tokens": 947,
+            "cost_usd": 0.003257,
+            "timestamp": "2026-10-18T10:52:29.993Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (6/6 completed)"
+      ]
+    },
+    {
+      "taskId": "T01",
+      "taskName": "Wikipedia Article Discovery",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T10:49:57.826Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 52690,
+      "taskProgress": 100,
+      "finalUrl": "https://en.wikipedia.org/wiki/Quantum_computing#History",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 6,
+        "total_input_tokens": 26290,
+        "total_output_tokens": 1907,
+        "total_cost_usd": 0.018868,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5162,
+            "output_tokens": 197,
+            "cost_usd": 0.003172,
+            "timestamp": "2026-10-18T10:48:59.982Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5061,
+            "output_tokens": 233,
+            "cost_usd": 0.00323,
+            "timestamp": "2026-10-18T10:49:06.866Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5081,
+            "output_tokens": 239,
+            "cost_usd": 0.003258,
+            "timestamp": "2026-10-18T10:49:14.371Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5055,
+            "output_tokens": 213,
+            "cost_usd": 0.003167,
+            "timestamp": "2026-10-18T10:49:34.087Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5118,
+            "output_tokens": 204,
+            "cost_usd": 0.003171,
+            "timestamp": "2026-10-18T10:49:41.991Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 813,
+            "output_tokens": 821,
+            "cost_usd": 0.00287,
+            "timestamp": "2026-10-18T10:49:50.927Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (6/6 completed)"
+      ]
+    },
+    {
+      "taskId": "T02",
+      "taskName": "Hacker News Story Deep-Dive",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T10:53:40.772Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 36391,
+      "taskProgress": 100,
+      "finalUrl": "https://news.ycombinator.com/news",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 6,
+        "total_input_tokens": 28512,
+        "total_output_tokens": 2354,
+        "total_cost_usd": 0.021321,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5393,
+            "output_tokens": 256,
+            "cost_usd": 0.003465,
+            "timestamp": "2026-10-18T10:52:54.853Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5597,
+            "output_tokens": 202,
+            "cost_usd": 0.003405,
+            "timestamp": "2026-10-18T10:53:01.312Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5609,
+            "output_tokens": 225,
+            "cost_usd": 0.00348,
+            "timestamp": "2026-10-18T10:53:06.803Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5637,
+            "output_tokens": 227,
+            "cost_usd": 0.0035,
+            "timestamp": "2026-10-18T10:53:15.071Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5475,
+            "output_tokens": 333,
+            "cost_usd": 0.003737,
+            "timestamp": "2026-10-18T10:53:21.213Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 801,
+            "output_tokens": 1111,
+            "cost_usd": 0.003734,
+            "timestamp": "2026-10-18T10:53:31.647Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (4/4 completed)"
+      ]
+    },
+    {
+      "taskId": "T02",
+      "taskName": "Hacker News Story Deep-Dive",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T10:54:31.722Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 5,
+      "durationMs": 78471,
+      "taskProgress": 100,
+      "finalUrl": "https://news.ycombinator.com/news",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 6,
+        "total_input_tokens": 28503,
+        "total_output_tokens": 1858,
+        "total_cost_usd": 0.019828,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5393,
+            "output_tokens": 262,
+            "cost_usd": 0.003483,
+            "timestamp": "2026-10-18T10:52:55.780Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5597,
+            "output_tokens": 156,
+            "cost_usd": 0.003267,
+            "timestamp": "2026-10-18T10:53:01.413Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5610,
+            "output_tokens": 232,
+            "cost_usd": 0.003501,
+            "timestamp": "2026-10-18T10:53:08.215Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5633,
+            "output_tokens": 233,
+            "cost_usd": 0.003516,
+            "timestamp": "2026-10-18T10:53:19.055Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5479,
+            "output_tokens": 226,
+            "cost_usd": 0.003418,
+            "timestamp": "2026-10-18T10:54:00.622Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 791,
+            "output_tokens": 749,
+            "cost_usd": 0.002643,
+            "timestamp": "2026-10-18T10:54:16.876Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (4/4 completed)"
+      ]
+    },
+    {
+      "taskId": "T02",
+      "taskName": "Hacker News Story Deep-Dive",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T10:56:38.390Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 7,
+      "durationMs": 214766,
+      "taskProgress": 100,
+      "finalUrl": "https://news.ycombinator.com/news",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 6,
+        "total_input_tokens": 28629,
+        "total_output_tokens": 2104,
+        "total_cost_usd": 0.020627,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5415,
+            "output_tokens": 260,
+            "cost_usd": 0.003487,
+            "timestamp": "2026-10-18T10:54:50.435Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5636,
+            "output_tokens": 152,
+            "cost_usd": 0.003274,
+            "timestamp": "2026-10-18T10:54:58.465Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5657,
+            "output_tokens": 183,
+            "cost_usd": 0.003378,
+            "timestamp": "2026-10-18T10:55:34.438Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5672,
+            "output_tokens": 196,
+            "cost_usd": 0.003424,
+            "timestamp": "2026-10-18T10:55:40.270Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5485,
+            "output_tokens": 196,
+            "cost_usd": 0.003331,
+            "timestamp": "2026-10-18T10:56:15.423Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 764,
+            "output_tokens": 1117,
+            "cost_usd": 0.003733,
+            "timestamp": "2026-10-18T10:56:29.179Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (4/4 completed)"
+      ]
+    },
+    {
+      "taskId": "T03",
+      "taskName": "GitHub Repo Exploration",
+      "runNumber": 1,
+      "verdict": "FAIL",
+      "score": 39,
+      "timestampIso": "2026-10-18T11:01:54.965Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 285434,
+      "taskProgress": 65,
+      "finalUrl": "https://github.com/vercel/next.js",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.5714285714285714,
+        "withinStepBudget": false,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 21,
+        "total_input_tokens": 110669,
+        "total_output_tokens": 5702,
+        "total_cost_usd": 0.072445,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5448,
+            "output_tokens": 181,
+            "cost_usd": 0.003267,
+            "timestamp": "2026-10-18T10:56:44.966Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5441,
+            "output_tokens": 220,
+            "cost_usd": 0.003381,
+            "timestamp": "2026-10-18T10:56:58.013Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5477,
+            "output_tokens": 219,
+            "cost_usd": 0.003396,
+            "timestamp": "2026-10-18T10:57:14.625Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5495,
+            "output_tokens": 222,
+            "cost_usd": 0.003414,
+            "timestamp": "2026-10-18T10:57:33.535Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5430,
+            "output_tokens": 229,
+            "cost_usd": 0.003402,
+            "timestamp": "2026-10-18T10:57:53.992Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5444,
+            "output_tokens": 210,
+            "cost_usd": 0.003352,
+            "timestamp": "2026-10-18T10:57:59.159Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5538,
+            "output_tokens": 224,
+            "cost_usd": 0.003441,
+            "timestamp": "2026-10-18T10:58:03.699Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5449,
+            "output_tokens": 226,
+            "cost_usd": 0.003403,
+            "timestamp": "2026-10-18T10:58:20.230Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5450,
+            "output_tokens": 233,
+            "cost_usd": 0.003424,
+            "timestamp": "2026-10-18T10:58:25.044Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5538,
+            "output_tokens": 232,
+            "cost_usd": 0.003465,
+            "timestamp": "2026-10-18T10:58:32.911Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5444,
+            "output_tokens": 247,
+            "cost_usd": 0.003463,
+            "timestamp": "2026-10-18T10:58:58.940Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5444,
+            "output_tokens": 200,
+            "cost_usd": 0.003322,
+            "timestamp": "2026-10-18T10:59:06.195Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5522,
+            "output_tokens": 235,
+            "cost_usd": 0.003466,
+            "timestamp": "2026-10-18T10:59:12.231Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5431,
+            "output_tokens": 191,
+            "cost_usd": 0.003289,
+            "timestamp": "2026-10-18T10:59:27.435Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5433,
+            "output_tokens": 206,
+            "cost_usd": 0.003335,
+            "timestamp": "2026-10-18T10:59:32.769Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5525,
+            "output_tokens": 224,
+            "cost_usd": 0.003435,
+            "timestamp": "2026-10-18T10:59:37.404Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5434,
+            "output_tokens": 257,
+            "cost_usd": 0.003488,
+            "timestamp": "2026-10-18T10:59:53.122Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5446,
+            "output_tokens": 210,
+            "cost_usd": 0.003353,
+            "timestamp": "2026-10-18T11:00:34.856Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5448,
+            "output_tokens": 230,
+            "cost_usd": 0.003414,
+            "timestamp": "2026-10-18T11:01:10.319Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5539,
+            "output_tokens": 209,
+            "cost_usd": 0.003397,
+            "timestamp": "2026-10-18T11:01:19.349Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1293,
+            "output_tokens": 1297,
+            "cost_usd": 0.004538,
+            "timestamp": "2026-10-18T11:01:37.991Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 18)",
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear.",
+        "Final URL did not match expected pattern (got: https://github.com/vercel/next.js)",
+        "Required URL(s) never visited: \\/tree\\/[^/]+\\/packages\\/next",
+        "Checkpoint completion 57% (4/7) below threshold 70%"
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (4/7 completed)",
+        "Skipped checkpoints: #5 \"After the packages folder loads, the file list now shows fol...\" | #6 \"After the next folder loads, scroll the file list and find t...\" | #7 \"Verify the README.md file opens and displays its rendered ma...\"",
+        "Judge: checkpoint #5 NOT completed — Agent repeatedly clicked the breadcrumb link instead of the 'next' folder, never reaching '/tree/canary/packages/next'",
+        "Judge: checkpoint #6 NOT completed — Step not reached due to failure at checkpoint 5",
+        "Judge: checkpoint #7 NOT completed — Step not reached due to failure at checkpoint 5"
+      ]
+    },
+    {
+      "taskId": "T03",
+      "taskName": "GitHub Repo Exploration",
+      "runNumber": 2,
+      "verdict": "FAIL",
+      "score": 39,
+      "timestampIso": "2026-10-18T11:00:33.878Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 215921,
+      "taskProgress": 65,
+      "finalUrl": "https://github.com/vercel/next.js/tree/canary/packages",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.5714285714285714,
+        "withinStepBudget": false,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 21,
+        "total_input_tokens": 110756,
+        "total_output_tokens": 5380,
+        "total_cost_usd": 0.071521,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5448,
+            "output_tokens": 187,
+            "cost_usd": 0.003285,
+            "timestamp": "2026-10-18T10:56:45.313Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5440,
+            "output_tokens": 229,
+            "cost_usd": 0.003407,
+            "timestamp": "2026-10-18T10:56:51.062Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5480,
+            "output_tokens": 230,
+            "cost_usd": 0.00343,
+            "timestamp": "2026-10-18T10:57:25.156Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5498,
+            "output_tokens": 207,
+            "cost_usd": 0.00337,
+            "timestamp": "2026-10-18T10:57:30.903Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5433,
+            "output_tokens": 256,
+            "cost_usd": 0.003485,
+            "timestamp": "2026-10-18T10:57:48.346Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5448,
+            "output_tokens": 210,
+            "cost_usd": 0.003354,
+            "timestamp": "2026-10-18T10:57:52.013Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5542,
+            "output_tokens": 218,
+            "cost_usd": 0.003425,
+            "timestamp": "2026-10-18T10:57:57.262Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5439,
+            "output_tokens": 231,
+            "cost_usd": 0.003413,
+            "timestamp": "2026-10-18T10:58:13.167Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5440,
+            "output_tokens": 231,
+            "cost_usd": 0.003413,
+            "timestamp": "2026-10-18T10:58:20.411Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5528,
+            "output_tokens": 226,
+            "cost_usd": 0.003442,
+            "timestamp": "2026-10-18T10:58:26.390Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5433,
+            "output_tokens": 275,
+            "cost_usd": 0.003542,
+            "timestamp": "2026-10-18T10:58:41.917Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5438,
+            "output_tokens": 219,
+            "cost_usd": 0.003376,
+            "timestamp": "2026-10-18T10:58:47.593Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5535,
+            "output_tokens": 210,
+            "cost_usd": 0.003398,
+            "timestamp": "2026-10-18T10:58:56.624Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5440,
+            "output_tokens": 275,
+            "cost_usd": 0.003545,
+            "timestamp": "2026-10-18T10:59:12.958Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5443,
+            "output_tokens": 232,
+            "cost_usd": 0.003418,
+            "timestamp": "2026-10-18T10:59:18.166Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5535,
+            "output_tokens": 200,
+            "cost_usd": 0.003368,
+            "timestamp": "2026-10-18T10:59:23.052Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5444,
+            "output_tokens": 226,
+            "cost_usd": 0.0034,
+            "timestamp": "2026-10-18T10:59:41.590Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5446,
+            "output_tokens": 259,
+            "cost_usd": 0.0035,
+            "timestamp": "2026-10-18T10:59:48.578Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5539,
+            "output_tokens": 224,
+            "cost_usd": 0.003441,
+            "timestamp": "2026-10-18T10:59:53.826Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5448,
+            "output_tokens": 224,
+            "cost_usd": 0.003396,
+            "timestamp": "2026-10-18T11:00:09.125Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1359,
+            "output_tokens": 811,
+            "cost_usd": 0.003113,
+            "timestamp": "2026-10-18T11:00:22.734Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 18)",
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear.",
+        "Final URL did not match expected pattern (got: https://github.com/vercel/next.js/tree/canary/packages)",
+        "Required URL(s) never visited: \\/tree\\/[^/]+\\/packages\\/next",
+        "Checkpoint completion 57% (4/7) below threshold 70%"
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (4/7 completed)",
+        "Skipped checkpoints: #5 \"After the packages folder loads, the file list now shows fol...\" | #6 \"After the next folder loads, scroll the file list and find t...\" | #7 \"Verify the README.md file opens and displays its rendered ma...\"",
+        "Judge: checkpoint #5 NOT completed — The agent never successfully navigated to /tree/canary/packages/next; it got stuck in a loop navigating back to root and packages.",
+        "Judge: checkpoint #6 NOT completed — The agent never reached the 'next' package folder or clicked 'README.md'.",
+        "Judge: checkpoint #7 NOT completed — The README.md file under packages/next was never opened or viewed."
+      ]
+    },
+    {
+      "taskId": "T03",
+      "taskName": "GitHub Repo Exploration",
+      "runNumber": 3,
+      "verdict": "FAIL",
+      "score": 39,
+      "timestampIso": "2026-10-18T11:00:19.737Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 205811,
+      "taskProgress": 60,
+      "finalUrl": "https://github.com/vercel/next.js/tree/canary/packages",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.5714285714285714,
+        "withinStepBudget": false,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 21,
+        "total_input_tokens": 110722,
+        "total_output_tokens": 5375,
+        "total_cost_usd": 0.071489,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5448,
+            "output_tokens": 199,
+            "cost_usd": 0.003321,
+            "timestamp": "2026-10-18T10:56:45.569Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5443,
+            "output_tokens": 240,
+            "cost_usd": 0.003442,
+            "timestamp": "2026-10-18T10:56:52.821Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5483,
+            "output_tokens": 213,
+            "cost_usd": 0.003381,
+            "timestamp": "2026-10-18T10:57:08.159Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5502,
+            "output_tokens": 200,
+            "cost_usd": 0.003351,
+            "timestamp": "2026-10-18T10:57:14.360Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5437,
+            "output_tokens": 261,
+            "cost_usd": 0.003502,
+            "timestamp": "2026-10-18T10:57:33.334Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5453,
+            "output_tokens": 221,
+            "cost_usd": 0.00339,
+            "timestamp": "2026-10-18T10:57:37.622Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5535,
+            "output_tokens": 228,
+            "cost_usd": 0.003452,
+            "timestamp": "2026-10-18T10:57:46.530Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5442,
+            "output_tokens": 219,
+            "cost_usd": 0.003378,
+            "timestamp": "2026-10-18T10:58:01.974Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5442,
+            "output_tokens": 212,
+            "cost_usd": 0.003357,
+            "timestamp": "2026-10-18T10:58:06.171Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5533,
+            "output_tokens": 226,
+            "cost_usd": 0.003444,
+            "timestamp": "2026-10-18T10:58:12.292Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5440,
+            "output_tokens": 244,
+            "cost_usd": 0.003452,
+            "timestamp": "2026-10-18T10:58:32.908Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5452,
+            "output_tokens": 194,
+            "cost_usd": 0.003308,
+            "timestamp": "2026-10-18T10:58:39.202Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5532,
+            "output_tokens": 233,
+            "cost_usd": 0.003465,
+            "timestamp": "2026-10-18T10:58:46.374Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5440,
+            "output_tokens": 246,
+            "cost_usd": 0.003458,
+            "timestamp": "2026-10-18T10:59:03.174Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5441,
+            "output_tokens": 204,
+            "cost_usd": 0.003333,
+            "timestamp": "2026-10-18T10:59:08.273Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5528,
+            "output_tokens": 216,
+            "cost_usd": 0.003412,
+            "timestamp": "2026-10-18T10:59:13.954Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5437,
+            "output_tokens": 252,
+            "cost_usd": 0.003475,
+            "timestamp": "2026-10-18T10:59:30.579Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5448,
+            "output_tokens": 176,
+            "cost_usd": 0.003252,
+            "timestamp": "2026-10-18T10:59:35.961Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5536,
+            "output_tokens": 239,
+            "cost_usd": 0.003485,
+            "timestamp": "2026-10-18T10:59:41.424Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5448,
+            "output_tokens": 204,
+            "cost_usd": 0.003336,
+            "timestamp": "2026-10-18T11:00:00.264Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1302,
+            "output_tokens": 948,
+            "cost_usd": 0.003495,
+            "timestamp": "2026-10-18T11:00:12.733Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 18)",
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear.",
+        "Final URL did not match expected pattern (got: https://github.com/vercel/next.js/tree/canary/packages)",
+        "Required URL(s) never visited: \\/tree\\/[^/]+\\/packages\\/next",
+        "Checkpoint completion 57% (4/7) below threshold 70%"
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (4/7 completed)",
+        "Skipped checkpoints: #5 \"After the packages folder loads, the file list now shows fol...\" | #6 \"After the next folder loads, scroll the file list and find t...\" | #7 \"Verify the README.md file opens and displays its rendered ma...\"",
+        "Judge: checkpoint #5 NOT completed — Agent never navigated to /tree/canary/packages/next; it looped between the root and packages directories.",
+        "Judge: checkpoint #6 NOT completed — Agent never reached the next package directory or the README.md file.",
+        "Judge: checkpoint #7 NOT completed — Agent never viewed the rendered markdown content of README.md."
+      ]
+    },
+    {
+      "taskId": "T04",
+      "taskName": "MDN API Reference Lookup",
+      "runNumber": 1,
+      "verdict": "PARTIAL",
+      "score": 69,
+      "timestampIso": "2026-10-18T11:12:23.157Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 18,
+      "durationMs": 594176,
+      "taskProgress": 100,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.5714285714285714,
+        "withinStepBudget": false,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 18,
+        "total_input_tokens": 93939,
+        "total_output_tokens": 5583,
+        "total_cost_usd": 0.063721,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5399,
+            "output_tokens": 204,
+            "cost_usd": 0.003312,
+            "timestamp": "2026-10-18T11:03:21.293Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5413,
+            "output_tokens": 221,
+            "cost_usd": 0.00337,
+            "timestamp": "2026-10-18T11:03:35.978Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5449,
+            "output_tokens": 271,
+            "cost_usd": 0.003538,
+            "timestamp": "2026-10-18T11:03:43.811Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5368,
+            "output_tokens": 462,
+            "cost_usd": 0.00407,
+            "timestamp": "2026-10-18T11:03:52.438Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5467,
+            "output_tokens": 274,
+            "cost_usd": 0.003555,
+            "timestamp": "2026-10-18T11:04:03.261Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5389,
+            "output_tokens": 225,
+            "cost_usd": 0.00337,
+            "timestamp": "2026-10-18T11:04:08.149Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5476,
+            "output_tokens": 254,
+            "cost_usd": 0.0035,
+            "timestamp": "2026-10-18T11:04:13.874Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5391,
+            "output_tokens": 196,
+            "cost_usd": 0.003284,
+            "timestamp": "2026-10-18T11:04:18.727Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5474,
+            "output_tokens": 279,
+            "cost_usd": 0.003574,
+            "timestamp": "2026-10-18T11:04:22.883Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5396,
+            "output_tokens": 191,
+            "cost_usd": 0.003271,
+            "timestamp": "2026-10-18T11:04:28.035Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5478,
+            "output_tokens": 219,
+            "cost_usd": 0.003396,
+            "timestamp": "2026-10-18T11:04:35.199Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5396,
+            "output_tokens": 219,
+            "cost_usd": 0.003355,
+            "timestamp": "2026-10-18T11:04:45.332Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5484,
+            "output_tokens": 299,
+            "cost_usd": 0.003639,
+            "timestamp": "2026-10-18T11:04:50.208Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5522,
+            "output_tokens": 289,
+            "cost_usd": 0.003628,
+            "timestamp": "2026-10-18T11:04:56.709Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5519,
+            "output_tokens": 248,
+            "cost_usd": 0.003503,
+            "timestamp": "2026-10-18T11:06:51.156Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5525,
+            "output_tokens": 234,
+            "cost_usd": 0.003465,
+            "timestamp": "2026-10-18T11:08:46.092Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5494,
+            "output_tokens": 240,
+            "cost_usd": 0.003467,
+            "timestamp": "2026-10-18T11:11:41.416Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1299,
+            "output_tokens": 1258,
+            "cost_usd": 0.004424,
+            "timestamp": "2026-10-18T11:12:00.408Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (18 > 15)",
+        "Checkpoint completion 57% (4/7) below threshold 70%"
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (4/7 completed)",
+        "Skipped checkpoints: #3 \"Press Enter to navigate to the full search results page (do ...\" | #4 \"From the search results, click the result titled \"Fetch API\"...\" | #6 \"On the subsection page, verify the URL is one of the expecte...\"",
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)",
+        "Judge: checkpoint #3 NOT completed — Agent did not navigate to the full search results page (/search); URL remained on the homepage overlay until navigating directly to Fetch API",
+        "Judge: checkpoint #4 NOT completed — Agent clicked from the search overlay/autocomplete rather than from the search results page",
+        "Judge: checkpoint #6 NOT completed — Agent did not scroll through the content or confirm a code example or method/property listing on the Request page"
+      ]
+    },
+    {
+      "taskId": "T04",
+      "taskName": "MDN API Reference Lookup",
+      "runNumber": 2,
+      "verdict": "PARTIAL",
+      "score": 51,
+      "timestampIso": "2026-10-18T11:07:06.166Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 20,
+      "durationMs": 280984,
+      "taskProgress": 100,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": false,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.42857142857142855,
+        "withinStepBudget": false,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 20,
+        "total_input_tokens": 104571,
+        "total_output_tokens": 4938,
+        "total_cost_usd": 0.067105,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5399,
+            "output_tokens": 209,
+            "cost_usd": 0.003327,
+            "timestamp": "2026-10-18T11:03:31.786Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5413,
+            "output_tokens": 203,
+            "cost_usd": 0.003316,
+            "timestamp": "2026-10-18T11:03:36.785Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5450,
+            "output_tokens": 218,
+            "cost_usd": 0.003379,
+            "timestamp": "2026-10-18T11:04:39.911Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5369,
+            "output_tokens": 200,
+            "cost_usd": 0.003285,
+            "timestamp": "2026-10-18T11:04:45.335Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5469,
+            "output_tokens": 237,
+            "cost_usd": 0.003446,
+            "timestamp": "2026-10-18T11:04:50.220Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5391,
+            "output_tokens": 186,
+            "cost_usd": 0.003254,
+            "timestamp": "2026-10-18T11:04:59.324Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5477,
+            "output_tokens": 251,
+            "cost_usd": 0.003492,
+            "timestamp": "2026-10-18T11:05:03.764Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5394,
+            "output_tokens": 189,
+            "cost_usd": 0.003264,
+            "timestamp": "2026-10-18T11:05:09.336Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5476,
+            "output_tokens": 273,
+            "cost_usd": 0.003557,
+            "timestamp": "2026-10-18T11:05:15.672Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5397,
+            "output_tokens": 188,
+            "cost_usd": 0.003263,
+            "timestamp": "2026-10-18T11:05:20.650Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5479,
+            "output_tokens": 223,
+            "cost_usd": 0.003409,
+            "timestamp": "2026-10-18T11:05:24.878Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5401,
+            "output_tokens": 185,
+            "cost_usd": 0.003256,
+            "timestamp": "2026-10-18T11:05:29.729Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5480,
+            "output_tokens": 281,
+            "cost_usd": 0.003583,
+            "timestamp": "2026-10-18T11:05:40.208Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5402,
+            "output_tokens": 173,
+            "cost_usd": 0.00322,
+            "timestamp": "2026-10-18T11:05:48.989Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5481,
+            "output_tokens": 260,
+            "cost_usd": 0.00352,
+            "timestamp": "2026-10-18T11:05:56.785Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5398,
+            "output_tokens": 143,
+            "cost_usd": 0.003128,
+            "timestamp": "2026-10-18T11:06:02.751Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5477,
+            "output_tokens": 245,
+            "cost_usd": 0.003474,
+            "timestamp": "2026-10-18T11:06:20.046Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5385,
+            "output_tokens": 201,
+            "cost_usd": 0.003296,
+            "timestamp": "2026-10-18T11:06:25.407Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5470,
+            "output_tokens": 212,
+            "cost_usd": 0.003371,
+            "timestamp": "2026-10-18T11:06:32.722Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1363,
+            "output_tokens": 861,
+            "cost_usd": 0.003265,
+            "timestamp": "2026-10-18T11:06:45.737Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 15)",
+        "Required URL(s) never visited: \\/docs\\/Web\\/API\\/(Request|Response|Headers|Body|Using_Fetch)",
+        "Checkpoint completion 43% (3/7) below threshold 70%"
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (3/7 completed)",
+        "Skipped checkpoints: #3 \"Press Enter to navigate to the full search results page (do ...\" | #5 \"On the Fetch API reference page, look at the LEFT SIDEBAR ON...\" | #6 \"On the subsection page, verify the URL is one of the expecte...\" | #7 \"Return to the Fetch API page by clicking the \"Fetch API\" lin...\"",
+        "Agent self-reported success but external verification disagrees (possible hallucinated completion)",
+        "Judge: checkpoint #3 NOT completed — The agent did not navigate to the full search results page; the URL remained on the homepage with the search overlay open.",
+        "Judge: checkpoint #5 NOT completed — Agent clicked a link leading to XMLHttpRequest instead of a Fetch API sidebar subsection (Request, Response, Headers, Body, or Using_Fetch).",
+        "Judge: checkpoint #6 NOT completed — The agent never visited an approved Fetch API subsection page.",
+        "Judge: checkpoint #7 NOT completed — Agent never navigated from a valid subsection page back to Fetch API via the top sidebar link."
+      ]
+    },
+    {
+      "taskId": "T04",
+      "taskName": "MDN API Reference Lookup",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 95,
+      "timestampIso": "2026-10-18T11:12:28.272Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 20,
+      "durationMs": 538605,
+      "taskProgress": 100,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": false,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 18,
+        "total_input_tokens": 93629,
+        "total_output_tokens": 5436,
+        "total_cost_usd": 0.063128,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5399,
+            "output_tokens": 250,
+            "cost_usd": 0.00345,
+            "timestamp": "2026-10-18T11:03:24.125Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5415,
+            "output_tokens": 212,
+            "cost_usd": 0.003344,
+            "timestamp": "2026-10-18T11:03:42.325Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5451,
+            "output_tokens": 261,
+            "cost_usd": 0.003509,
+            "timestamp": "2026-10-18T11:03:48.820Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5373,
+            "output_tokens": 183,
+            "cost_usd": 0.003236,
+            "timestamp": "2026-10-18T11:03:55.523Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5473,
+            "output_tokens": 207,
+            "cost_usd": 0.003358,
+            "timestamp": "2026-10-18T11:03:59.623Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5398,
+            "output_tokens": 368,
+            "cost_usd": 0.003803,
+            "timestamp": "2026-10-18T11:04:05.933Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5482,
+            "output_tokens": 250,
+            "cost_usd": 0.003491,
+            "timestamp": "2026-10-18T11:04:10.457Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5397,
+            "output_tokens": 158,
+            "cost_usd": 0.003173,
+            "timestamp": "2026-10-18T11:04:45.347Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5476,
+            "output_tokens": 279,
+            "cost_usd": 0.003575,
+            "timestamp": "2026-10-18T11:04:58.993Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5392,
+            "output_tokens": 226,
+            "cost_usd": 0.003374,
+            "timestamp": "2026-10-18T11:05:03.681Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5471,
+            "output_tokens": 227,
+            "cost_usd": 0.003417,
+            "timestamp": "2026-10-18T11:05:13.160Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5380,
+            "output_tokens": 188,
+            "cost_usd": 0.003254,
+            "timestamp": "2026-10-18T11:05:19.063Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5462,
+            "output_tokens": 278,
+            "cost_usd": 0.003565,
+            "timestamp": "2026-10-18T11:05:23.841Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5374,
+            "output_tokens": 201,
+            "cost_usd": 0.00329,
+            "timestamp": "2026-10-18T11:07:06.814Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5461,
+            "output_tokens": 239,
+            "cost_usd": 0.003448,
+            "timestamp": "2026-10-18T11:08:47.138Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5505,
+            "output_tokens": 249,
+            "cost_usd": 0.0035,
+            "timestamp": "2026-10-18T11:08:52.317Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5445,
+            "output_tokens": 606,
+            "cost_usd": 0.004541,
+            "timestamp": "2026-10-18T11:10:48.826Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1275,
+            "output_tokens": 1054,
+            "cost_usd": 0.0038,
+            "timestamp": "2026-10-18T11:11:03.758Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 15)"
+      ],
+      "notes": [
+        "Judge unavailable — fell back to keyword-based checkpoint tracker (less reliable)"
+      ]
+    },
+    {
+      "taskId": "T05",
+      "taskName": "Open Library Search + Book Detail",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 93,
+      "timestampIso": "2026-10-18T11:13:54.810Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 7,
+      "durationMs": 59309,
+      "taskProgress": 100,
+      "finalUrl": "https://openlibrary.org/authors/OL30400A/Charles_Osborne",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.875,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 8,
+        "total_input_tokens": 37257,
+        "total_output_tokens": 2337,
+        "total_cost_usd": 0.025641,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4895,
+            "output_tokens": 198,
+            "cost_usd": 0.003042,
+            "timestamp": "2026-10-18T11:12:35.944Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4906,
+            "output_tokens": 208,
+            "cost_usd": 0.003077,
+            "timestamp": "2026-10-18T11:12:52.990Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5346,
+            "output_tokens": 213,
+            "cost_usd": 0.003312,
+            "timestamp": "2026-10-18T11:12:58.318Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5359,
+            "output_tokens": 228,
+            "cost_usd": 0.003364,
+            "timestamp": "2026-10-18T11:13:03.241Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5172,
+            "output_tokens": 192,
+            "cost_usd": 0.003162,
+            "timestamp": "2026-10-18T11:13:08.519Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5318,
+            "output_tokens": 258,
+            "cost_usd": 0.003433,
+            "timestamp": "2026-10-18T11:13:15.445Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5336,
+            "output_tokens": 271,
+            "cost_usd": 0.003481,
+            "timestamp": "2026-10-18T11:13:25.959Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 925,
+            "output_tokens": 769,
+            "cost_usd": 0.00277,
+            "timestamp": "2026-10-18T11:13:32.743Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (7/8 completed)",
+        "Skipped checkpoints: #8 \"On the author's page, verify the author's name is shown as t...\"",
+        "Judge: checkpoint #8 NOT completed — Trajectory ends immediately after navigating to the author's page; no observation or step verified the author's name as the page heading."
+      ]
+    },
+    {
+      "taskId": "T05",
+      "taskName": "Open Library Search + Book Detail",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 93,
+      "timestampIso": "2026-10-18T11:14:50.684Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 7,
+      "durationMs": 101758,
+      "taskProgress": 100,
+      "finalUrl": "https://openlibrary.org/authors/OL30400A/Charles_Osborne",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.875,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 8,
+        "total_input_tokens": 37455,
+        "total_output_tokens": 2464,
+        "total_cost_usd": 0.026121,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5024,
+            "output_tokens": 223,
+            "cost_usd": 0.003181,
+            "timestamp": "2026-10-18T11:12:35.100Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4908,
+            "output_tokens": 175,
+            "cost_usd": 0.002979,
+            "timestamp": "2026-10-18T11:12:41.185Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5352,
+            "output_tokens": 222,
+            "cost_usd": 0.003342,
+            "timestamp": "2026-10-18T11:12:49.391Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5370,
+            "output_tokens": 219,
+            "cost_usd": 0.003342,
+            "timestamp": "2026-10-18T11:13:16.488Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5183,
+            "output_tokens": 213,
+            "cost_usd": 0.003231,
+            "timestamp": "2026-10-18T11:13:39.539Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5387,
+            "output_tokens": 260,
+            "cost_usd": 0.003474,
+            "timestamp": "2026-10-18T11:13:50.568Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5353,
+            "output_tokens": 244,
+            "cost_usd": 0.003409,
+            "timestamp": "2026-10-18T11:14:07.031Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 878,
+            "output_tokens": 908,
+            "cost_usd": 0.003163,
+            "timestamp": "2026-10-18T11:14:28.006Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (7/8 completed)",
+        "Skipped checkpoints: #8 \"On the author's page, verify the author's name is shown as t...\"",
+        "Judge: checkpoint #8 NOT completed — Trajectory ended upon navigation to the author URL without any step or observation verifying the heading on the author's page."
+      ]
+    },
+    {
+      "taskId": "T05",
+      "taskName": "Open Library Search + Book Detail",
+      "runNumber": 3,
+      "verdict": "FAIL",
+      "score": 40,
+      "timestampIso": "2026-10-18T11:21:23.272Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 514786,
+      "taskProgress": 50,
+      "finalUrl": "https://openlibrary.org/search?q=coffee",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": false,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.5,
+        "withinStepBudget": false,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 20,
+        "total_input_tokens": 80068,
+        "total_output_tokens": 5286,
+        "total_cost_usd": 0.055895,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5022,
+            "output_tokens": 255,
+            "cost_usd": 0.003276,
+            "timestamp": "2026-10-18T11:12:36.674Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4906,
+            "output_tokens": 210,
+            "cost_usd": 0.003083,
+            "timestamp": "2026-10-18T11:12:41.362Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5352,
+            "output_tokens": 215,
+            "cost_usd": 0.003321,
+            "timestamp": "2026-10-18T11:14:09.620Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5370,
+            "output_tokens": 229,
+            "cost_usd": 0.003372,
+            "timestamp": "2026-10-18T11:14:19.505Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3475,
+            "output_tokens": 241,
+            "cost_usd": 0.002461,
+            "timestamp": "2026-10-18T11:18:54.027Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3469,
+            "output_tokens": 193,
+            "cost_usd": 0.002314,
+            "timestamp": "2026-10-18T11:18:58.783Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5415,
+            "output_tokens": 222,
+            "cost_usd": 0.003373,
+            "timestamp": "2026-10-18T11:19:04.968Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3569,
+            "output_tokens": 221,
+            "cost_usd": 0.002448,
+            "timestamp": "2026-10-18T11:19:39.736Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3566,
+            "output_tokens": 227,
+            "cost_usd": 0.002464,
+            "timestamp": "2026-10-18T11:19:44.467Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5428,
+            "output_tokens": 246,
+            "cost_usd": 0.003452,
+            "timestamp": "2026-10-18T11:19:52.225Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3486,
+            "output_tokens": 159,
+            "cost_usd": 0.00222,
+            "timestamp": "2026-10-18T11:19:57.884Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3482,
+            "output_tokens": 205,
+            "cost_usd": 0.002356,
+            "timestamp": "2026-10-18T11:20:04.254Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5428,
+            "output_tokens": 192,
+            "cost_usd": 0.00329,
+            "timestamp": "2026-10-18T11:20:09.911Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3490,
+            "output_tokens": 223,
+            "cost_usd": 0.002414,
+            "timestamp": "2026-10-18T11:20:31.545Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3485,
+            "output_tokens": 200,
+            "cost_usd": 0.002343,
+            "timestamp": "2026-10-18T11:20:36.219Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3463,
+            "output_tokens": 205,
+            "cost_usd": 0.002347,
+            "timestamp": "2026-10-18T11:20:40.429Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3486,
+            "output_tokens": 221,
+            "cost_usd": 0.002406,
+            "timestamp": "2026-10-18T11:20:49.893Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3451,
+            "output_tokens": 223,
+            "cost_usd": 0.002395,
+            "timestamp": "2026-10-18T11:20:54.932Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3443,
+            "output_tokens": 241,
+            "cost_usd": 0.002445,
+            "timestamp": "2026-10-18T11:21:00.774Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1282,
+            "output_tokens": 1158,
+            "cost_usd": 0.004115,
+            "timestamp": "2026-10-18T11:21:12.234Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 12)",
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear.",
+        "Final URL did not match expected pattern (got: https://openlibrary.org/search?q=coffee)",
+        "Checkpoint completion 50% (4/8) below threshold 75%"
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (4/8 completed)",
+        "Skipped checkpoints: #5 \"Tap the title of any book in the results to open its details...\" | #6 \"On the book's page, find the author's name (shown near the t...\" | #7 \"Tap the author's name to open the author's page...\" | #8 \"On the author's page, verify the author's name is shown as t...\"",
+        "Judge: checkpoint #5 NOT completed — Clicking book titles resulted in Open Library's 'verify_human' / connection error page ('Hmm...') rather than opening the book details page.",
+        "Judge: checkpoint #6 NOT completed — Book details page never loaded due to site blocking/errors, so author's name could not be found.",
+        "Judge: checkpoint #7 NOT completed — Author's page was never navigated to.",
+        "Judge: checkpoint #8 NOT completed — Author's page was never reached."
+      ]
+    },
+    {
+      "taskId": "T06",
+      "taskName": "Stripe Marketing Exploration",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:25:28.828Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 6,
+      "durationMs": 201342,
+      "taskProgress": 100,
+      "finalUrl": "https://stripe.com/in/contact/sales",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 7,
+        "total_input_tokens": 29327,
+        "total_output_tokens": 2161,
+        "total_cost_usd": 0.021149,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5014,
+            "output_tokens": 160,
+            "cost_usd": 0.002987,
+            "timestamp": "2026-10-18T11:21:51.633Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5037,
+            "output_tokens": 221,
+            "cost_usd": 0.003182,
+            "timestamp": "2026-10-18T11:21:58.250Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4830,
+            "output_tokens": 206,
+            "cost_usd": 0.003033,
+            "timestamp": "2026-10-18T11:22:03.274Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4851,
+            "output_tokens": 194,
+            "cost_usd": 0.003008,
+            "timestamp": "2026-10-18T11:23:25.032Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4867,
+            "output_tokens": 246,
+            "cost_usd": 0.003172,
+            "timestamp": "2026-10-18T11:23:30.933Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3871,
+            "output_tokens": 339,
+            "cost_usd": 0.002953,
+            "timestamp": "2026-10-18T11:24:40.258Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 857,
+            "output_tokens": 795,
+            "cost_usd": 0.002814,
+            "timestamp": "2026-10-18T11:25:20.259Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (7/7 completed)"
+      ]
+    },
+    {
+      "taskId": "T06",
+      "taskName": "Stripe Marketing Exploration",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:24:22.613Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 8,
+      "durationMs": 148900,
+      "taskProgress": 100,
+      "finalUrl": "https://stripe.com/in/contact/sales",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 8,
+        "total_input_tokens": 34607,
+        "total_output_tokens": 2849,
+        "total_cost_usd": 0.025852,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5014,
+            "output_tokens": 174,
+            "cost_usd": 0.003029,
+            "timestamp": "2026-10-18T11:21:34.782Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5069,
+            "output_tokens": 213,
+            "cost_usd": 0.003174,
+            "timestamp": "2026-10-18T11:23:19.147Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5084,
+            "output_tokens": 201,
+            "cost_usd": 0.003145,
+            "timestamp": "2026-10-18T11:23:24.743Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4880,
+            "output_tokens": 217,
+            "cost_usd": 0.003091,
+            "timestamp": "2026-10-18T11:23:30.511Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4897,
+            "output_tokens": 201,
+            "cost_usd": 0.003052,
+            "timestamp": "2026-10-18T11:23:36.187Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4892,
+            "output_tokens": 228,
+            "cost_usd": 0.00313,
+            "timestamp": "2026-10-18T11:23:42.322Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3876,
+            "output_tokens": 287,
+            "cost_usd": 0.002799,
+            "timestamp": "2026-10-18T11:23:48.723Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 895,
+            "output_tokens": 1328,
+            "cost_usd": 0.004432,
+            "timestamp": "2026-10-18T11:24:01.739Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (7/7 completed)"
+      ]
+    },
+    {
+      "taskId": "T06",
+      "taskName": "Stripe Marketing Exploration",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:22:18.836Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 6,
+      "durationMs": 40336,
+      "taskProgress": 100,
+      "finalUrl": "https://stripe.com/in/contact/sales",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 7,
+        "total_input_tokens": 29311,
+        "total_output_tokens": 2520,
+        "total_cost_usd": 0.022216,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5014,
+            "output_tokens": 178,
+            "cost_usd": 0.003041,
+            "timestamp": "2026-10-18T11:21:31.112Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 5037,
+            "output_tokens": 203,
+            "cost_usd": 0.003128,
+            "timestamp": "2026-10-18T11:21:37.430Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4828,
+            "output_tokens": 198,
+            "cost_usd": 0.003008,
+            "timestamp": "2026-10-18T11:21:43.388Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4848,
+            "output_tokens": 215,
+            "cost_usd": 0.003069,
+            "timestamp": "2026-10-18T11:21:48.407Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4864,
+            "output_tokens": 242,
+            "cost_usd": 0.003158,
+            "timestamp": "2026-10-18T11:21:54.025Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3866,
+            "output_tokens": 286,
+            "cost_usd": 0.002791,
+            "timestamp": "2026-10-18T11:22:01.720Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 854,
+            "output_tokens": 1198,
+            "cost_usd": 0.004021,
+            "timestamp": "2026-10-18T11:22:12.822Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (7/7 completed)"
+      ]
+    },
+    {
+      "taskId": "T07",
+      "taskName": "TodoMVC CRUD Flow",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:29:55.161Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 9,
+      "durationMs": 219609,
+      "taskProgress": 100,
+      "finalUrl": "https://todomvc.com/examples/react/dist/#/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 10,
+        "total_input_tokens": 37045,
+        "total_output_tokens": 2904,
+        "total_cost_usd": 0.027236,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3774,
+            "output_tokens": 210,
+            "cost_usd": 0.002517,
+            "timestamp": "2026-10-18T11:25:34.572Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3921,
+            "output_tokens": 218,
+            "cost_usd": 0.002615,
+            "timestamp": "2026-10-18T11:25:40.755Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3982,
+            "output_tokens": 200,
+            "cost_usd": 0.002591,
+            "timestamp": "2026-10-18T11:25:46.669Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4043,
+            "output_tokens": 251,
+            "cost_usd": 0.002775,
+            "timestamp": "2026-10-18T11:26:06.246Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4063,
+            "output_tokens": 232,
+            "cost_usd": 0.002728,
+            "timestamp": "2026-10-18T11:28:42.943Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4147,
+            "output_tokens": 226,
+            "cost_usd": 0.002751,
+            "timestamp": "2026-10-18T11:28:47.878Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4061,
+            "output_tokens": 213,
+            "cost_usd": 0.00267,
+            "timestamp": "2026-10-18T11:28:52.871Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4012,
+            "output_tokens": 225,
+            "cost_usd": 0.002681,
+            "timestamp": "2026-10-18T11:28:59.412Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4130,
+            "output_tokens": 362,
+            "cost_usd": 0.003151,
+            "timestamp": "2026-10-18T11:29:05.966Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 912,
+            "output_tokens": 767,
+            "cost_usd": 0.002757,
+            "timestamp": "2026-10-18T11:29:28.274Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (8/8 completed)"
+      ]
+    },
+    {
+      "taskId": "T07",
+      "taskName": "TodoMVC CRUD Flow",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:26:36.655Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 8,
+      "durationMs": 48046,
+      "taskProgress": 100,
+      "finalUrl": "https://todomvc.com/examples/react/dist/#/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 9,
+        "total_input_tokens": 32960,
+        "total_output_tokens": 2482,
+        "total_cost_usd": 0.023928,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3774,
+            "output_tokens": 166,
+            "cost_usd": 0.002385,
+            "timestamp": "2026-10-18T11:25:34.188Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3921,
+            "output_tokens": 200,
+            "cost_usd": 0.002561,
+            "timestamp": "2026-10-18T11:25:39.656Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3981,
+            "output_tokens": 220,
+            "cost_usd": 0.002651,
+            "timestamp": "2026-10-18T11:25:45.434Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4044,
+            "output_tokens": 268,
+            "cost_usd": 0.002826,
+            "timestamp": "2026-10-18T11:25:51.797Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4123,
+            "output_tokens": 214,
+            "cost_usd": 0.002704,
+            "timestamp": "2026-10-18T11:25:55.909Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4061,
+            "output_tokens": 230,
+            "cost_usd": 0.002721,
+            "timestamp": "2026-10-18T11:26:00.822Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4019,
+            "output_tokens": 217,
+            "cost_usd": 0.002661,
+            "timestamp": "2026-10-18T11:26:07.103Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4138,
+            "output_tokens": 264,
+            "cost_usd": 0.002861,
+            "timestamp": "2026-10-18T11:26:14.842Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 899,
+            "output_tokens": 703,
+            "cost_usd": 0.002558,
+            "timestamp": "2026-10-18T11:26:25.794Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (8/8 completed)"
+      ]
+    },
+    {
+      "taskId": "T07",
+      "taskName": "TodoMVC CRUD Flow",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:27:23.512Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 8,
+      "durationMs": 62726,
+      "taskProgress": 100,
+      "finalUrl": "https://todomvc.com/examples/react/dist/#/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 9,
+        "total_input_tokens": 32972,
+        "total_output_tokens": 2800,
+        "total_cost_usd": 0.024888,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3774,
+            "output_tokens": 206,
+            "cost_usd": 0.002505,
+            "timestamp": "2026-10-18T11:25:34.484Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3921,
+            "output_tokens": 221,
+            "cost_usd": 0.002624,
+            "timestamp": "2026-10-18T11:25:45.458Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3982,
+            "output_tokens": 209,
+            "cost_usd": 0.002618,
+            "timestamp": "2026-10-18T11:25:51.025Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4043,
+            "output_tokens": 270,
+            "cost_usd": 0.002832,
+            "timestamp": "2026-10-18T11:26:00.879Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4122,
+            "output_tokens": 242,
+            "cost_usd": 0.002787,
+            "timestamp": "2026-10-18T11:26:06.427Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4062,
+            "output_tokens": 220,
+            "cost_usd": 0.002691,
+            "timestamp": "2026-10-18T11:26:14.867Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4017,
+            "output_tokens": 238,
+            "cost_usd": 0.002723,
+            "timestamp": "2026-10-18T11:26:21.779Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4136,
+            "output_tokens": 273,
+            "cost_usd": 0.002887,
+            "timestamp": "2026-10-18T11:26:29.988Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 915,
+            "output_tokens": 921,
+            "cost_usd": 0.003221,
+            "timestamp": "2026-10-18T11:26:38.902Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (8/8 completed)"
+      ]
+    },
+    {
+      "taskId": "T08",
+      "taskName": "SauceDemo E-commerce Checkout",
+      "runNumber": 1,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:31:58.581Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 11,
+      "durationMs": 89738,
+      "taskProgress": 100,
+      "finalUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 12,
+        "total_input_tokens": 42383,
+        "total_output_tokens": 3330,
+        "total_cost_usd": 0.031185,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3445,
+            "output_tokens": 187,
+            "cost_usd": 0.002284,
+            "timestamp": "2026-10-18T11:30:00.274Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3460,
+            "output_tokens": 191,
+            "cost_usd": 0.002303,
+            "timestamp": "2026-10-18T11:30:12.812Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3473,
+            "output_tokens": 180,
+            "cost_usd": 0.002277,
+            "timestamp": "2026-10-18T11:30:16.643Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4413,
+            "output_tokens": 239,
+            "cost_usd": 0.002924,
+            "timestamp": "2026-10-18T11:30:27.493Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4424,
+            "output_tokens": 239,
+            "cost_usd": 0.002929,
+            "timestamp": "2026-10-18T11:30:33.088Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3664,
+            "output_tokens": 230,
+            "cost_usd": 0.002522,
+            "timestamp": "2026-10-18T11:30:39.787Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3712,
+            "output_tokens": 203,
+            "cost_usd": 0.002465,
+            "timestamp": "2026-10-18T11:30:46.475Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3709,
+            "output_tokens": 184,
+            "cost_usd": 0.002407,
+            "timestamp": "2026-10-18T11:30:50.075Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3715,
+            "output_tokens": 209,
+            "cost_usd": 0.002485,
+            "timestamp": "2026-10-18T11:31:13.286Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3718,
+            "output_tokens": 216,
+            "cost_usd": 0.002507,
+            "timestamp": "2026-10-18T11:31:17.896Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3631,
+            "output_tokens": 263,
+            "cost_usd": 0.002605,
+            "timestamp": "2026-10-18T11:31:23.236Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1019,
+            "output_tokens": 989,
+            "cost_usd": 0.003477,
+            "timestamp": "2026-10-18T11:31:51.379Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (10/10 completed)"
+      ]
+    },
+    {
+      "taskId": "T08",
+      "taskName": "SauceDemo E-commerce Checkout",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:33:37.820Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 12,
+      "durationMs": 204996,
+      "taskProgress": 100,
+      "finalUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 12,
+        "total_input_tokens": 42422,
+        "total_output_tokens": 3409,
+        "total_cost_usd": 0.031441,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3445,
+            "output_tokens": 179,
+            "cost_usd": 0.00226,
+            "timestamp": "2026-10-18T11:30:00.476Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3460,
+            "output_tokens": 191,
+            "cost_usd": 0.002303,
+            "timestamp": "2026-10-18T11:30:13.602Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3473,
+            "output_tokens": 180,
+            "cost_usd": 0.002277,
+            "timestamp": "2026-10-18T11:30:17.299Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4414,
+            "output_tokens": 231,
+            "cost_usd": 0.0029,
+            "timestamp": "2026-10-18T11:30:40.253Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4424,
+            "output_tokens": 224,
+            "cost_usd": 0.002884,
+            "timestamp": "2026-10-18T11:31:13.457Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3683,
+            "output_tokens": 255,
+            "cost_usd": 0.002607,
+            "timestamp": "2026-10-18T11:32:52.552Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3723,
+            "output_tokens": 181,
+            "cost_usd": 0.002405,
+            "timestamp": "2026-10-18T11:32:57.269Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3719,
+            "output_tokens": 208,
+            "cost_usd": 0.002484,
+            "timestamp": "2026-10-18T11:33:02.392Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3717,
+            "output_tokens": 204,
+            "cost_usd": 0.002471,
+            "timestamp": "2026-10-18T11:33:08.180Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3716,
+            "output_tokens": 225,
+            "cost_usd": 0.002533,
+            "timestamp": "2026-10-18T11:33:12.821Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3636,
+            "output_tokens": 252,
+            "cost_usd": 0.002574,
+            "timestamp": "2026-10-18T11:33:17.973Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1012,
+            "output_tokens": 1079,
+            "cost_usd": 0.003743,
+            "timestamp": "2026-10-18T11:33:28.933Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (10/10 completed)"
+      ]
+    },
+    {
+      "taskId": "T08",
+      "taskName": "SauceDemo E-commerce Checkout",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 100,
+      "timestampIso": "2026-10-18T11:32:11.483Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 11,
+      "durationMs": 105851,
+      "taskProgress": 100,
+      "finalUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 1,
+        "withinStepBudget": true,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 12,
+        "total_input_tokens": 42368,
+        "total_output_tokens": 3327,
+        "total_cost_usd": 0.031168,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3445,
+            "output_tokens": 137,
+            "cost_usd": 0.002134,
+            "timestamp": "2026-10-18T11:29:59.888Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3460,
+            "output_tokens": 175,
+            "cost_usd": 0.002255,
+            "timestamp": "2026-10-18T11:30:05.225Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3473,
+            "output_tokens": 182,
+            "cost_usd": 0.002283,
+            "timestamp": "2026-10-18T11:30:09.805Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4414,
+            "output_tokens": 239,
+            "cost_usd": 0.002924,
+            "timestamp": "2026-10-18T11:30:15.556Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4424,
+            "output_tokens": 214,
+            "cost_usd": 0.002854,
+            "timestamp": "2026-10-18T11:30:35.224Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3664,
+            "output_tokens": 227,
+            "cost_usd": 0.002513,
+            "timestamp": "2026-10-18T11:30:40.441Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3711,
+            "output_tokens": 204,
+            "cost_usd": 0.002468,
+            "timestamp": "2026-10-18T11:30:44.795Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3708,
+            "output_tokens": 183,
+            "cost_usd": 0.002403,
+            "timestamp": "2026-10-18T11:30:49.615Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3713,
+            "output_tokens": 215,
+            "cost_usd": 0.002502,
+            "timestamp": "2026-10-18T11:31:12.996Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3717,
+            "output_tokens": 242,
+            "cost_usd": 0.002585,
+            "timestamp": "2026-10-18T11:31:18.234Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3633,
+            "output_tokens": 255,
+            "cost_usd": 0.002582,
+            "timestamp": "2026-10-18T11:31:38.796Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1006,
+            "output_tokens": 1054,
+            "cost_usd": 0.003665,
+            "timestamp": "2026-10-18T11:31:50.331Z"
+          }
+        ]
+      },
+      "failureReasons": [],
+      "notes": [
+        "Checkpoints validated by LLM judge (10/10 completed)"
+      ]
+    },
+    {
+      "taskId": "T09",
+      "taskName": "Atom Habit Tracker Full Journey",
+      "runNumber": 1,
+      "verdict": "FAIL",
+      "score": 40,
+      "timestampIso": "2026-10-18T11:38:13.061Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 244305,
+      "taskProgress": 95,
+      "finalUrl": "https://atom-habit-builder-app.vercel.app/",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.9,
+        "withinStepBudget": true,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 20,
+        "total_input_tokens": 79256,
+        "total_output_tokens": 5001,
+        "total_cost_usd": 0.054637,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3558,
+            "output_tokens": 153,
+            "cost_usd": 0.002238,
+            "timestamp": "2026-10-18T11:33:42.811Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3693,
+            "output_tokens": 189,
+            "cost_usd": 0.002414,
+            "timestamp": "2026-10-18T11:33:53.851Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3977,
+            "output_tokens": 170,
+            "cost_usd": 0.002499,
+            "timestamp": "2026-10-18T11:33:58.894Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3986,
+            "output_tokens": 177,
+            "cost_usd": 0.002524,
+            "timestamp": "2026-10-18T11:34:02.807Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4003,
+            "output_tokens": 206,
+            "cost_usd": 0.00262,
+            "timestamp": "2026-10-18T11:34:07.037Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4023,
+            "output_tokens": 186,
+            "cost_usd": 0.002569,
+            "timestamp": "2026-10-18T11:34:28.939Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4284,
+            "output_tokens": 207,
+            "cost_usd": 0.002763,
+            "timestamp": "2026-10-18T11:36:07.844Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4282,
+            "output_tokens": 240,
+            "cost_usd": 0.002861,
+            "timestamp": "2026-10-18T11:36:14.047Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4188,
+            "output_tokens": 200,
+            "cost_usd": 0.002694,
+            "timestamp": "2026-10-18T11:36:20.339Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4245,
+            "output_tokens": 221,
+            "cost_usd": 0.002786,
+            "timestamp": "2026-10-18T11:36:25.256Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4183,
+            "output_tokens": 181,
+            "cost_usd": 0.002635,
+            "timestamp": "2026-10-18T11:36:33.100Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4295,
+            "output_tokens": 221,
+            "cost_usd": 0.002811,
+            "timestamp": "2026-10-18T11:36:38.038Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4303,
+            "output_tokens": 177,
+            "cost_usd": 0.002683,
+            "timestamp": "2026-10-18T11:36:42.434Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4135,
+            "output_tokens": 234,
+            "cost_usd": 0.00277,
+            "timestamp": "2026-10-18T11:36:47.974Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4125,
+            "output_tokens": 259,
+            "cost_usd": 0.00284,
+            "timestamp": "2026-10-18T11:36:54.418Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4163,
+            "output_tokens": 256,
+            "cost_usd": 0.00285,
+            "timestamp": "2026-10-18T11:37:00.842Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4165,
+            "output_tokens": 236,
+            "cost_usd": 0.002791,
+            "timestamp": "2026-10-18T11:37:13.042Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4162,
+            "output_tokens": 227,
+            "cost_usd": 0.002762,
+            "timestamp": "2026-10-18T11:37:24.302Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4165,
+            "output_tokens": 200,
+            "cost_usd": 0.002683,
+            "timestamp": "2026-10-18T11:37:32.182Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1321,
+            "output_tokens": 1061,
+            "cost_usd": 0.003844,
+            "timestamp": "2026-10-18T11:37:51.297Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear."
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (9/10 completed)",
+        "Skipped checkpoints: #10 \"Scroll to the bottom of the profile page, click \"Log Out\", t...\"",
+        "Judge: checkpoint #10 NOT completed — Agent opened the logout confirmation modal at step 17, but repeated attempts at steps 18-20 failed to confirm logout, leaving the modal still open at step 20."
+      ]
+    },
+    {
+      "taskId": "T09",
+      "taskName": "Atom Habit Tracker Full Journey",
+      "runNumber": 2,
+      "verdict": "FAIL",
+      "score": 40,
+      "timestampIso": "2026-10-18T11:38:36.818Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 205159,
+      "taskProgress": 95,
+      "finalUrl": "https://atom-habit-builder-app.vercel.app/",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.9,
+        "withinStepBudget": true,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 21,
+        "total_input_tokens": 83625,
+        "total_output_tokens": 4825,
+        "total_cost_usd": 0.05629,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3558,
+            "output_tokens": 160,
+            "cost_usd": 0.002259,
+            "timestamp": "2026-10-18T11:33:42.016Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3693,
+            "output_tokens": 235,
+            "cost_usd": 0.002552,
+            "timestamp": "2026-10-18T11:33:58.047Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3979,
+            "output_tokens": 176,
+            "cost_usd": 0.002518,
+            "timestamp": "2026-10-18T11:34:02.808Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3988,
+            "output_tokens": 189,
+            "cost_usd": 0.002561,
+            "timestamp": "2026-10-18T11:34:31.646Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4005,
+            "output_tokens": 177,
+            "cost_usd": 0.002534,
+            "timestamp": "2026-10-18T11:34:50.419Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4020,
+            "output_tokens": 182,
+            "cost_usd": 0.002556,
+            "timestamp": "2026-10-18T11:34:54.703Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4255,
+            "output_tokens": 235,
+            "cost_usd": 0.002833,
+            "timestamp": "2026-10-18T11:35:00.989Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4247,
+            "output_tokens": 227,
+            "cost_usd": 0.002804,
+            "timestamp": "2026-10-18T11:35:07.291Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4254,
+            "output_tokens": 209,
+            "cost_usd": 0.002754,
+            "timestamp": "2026-10-18T11:35:17.570Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4258,
+            "output_tokens": 234,
+            "cost_usd": 0.002831,
+            "timestamp": "2026-10-18T11:35:22.173Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4266,
+            "output_tokens": 228,
+            "cost_usd": 0.002817,
+            "timestamp": "2026-10-18T11:35:31.263Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4170,
+            "output_tokens": 230,
+            "cost_usd": 0.002775,
+            "timestamp": "2026-10-18T11:35:36.134Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4236,
+            "output_tokens": 215,
+            "cost_usd": 0.002763,
+            "timestamp": "2026-10-18T11:36:09.724Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4177,
+            "output_tokens": 206,
+            "cost_usd": 0.002707,
+            "timestamp": "2026-10-18T11:36:16.323Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4282,
+            "output_tokens": 219,
+            "cost_usd": 0.002798,
+            "timestamp": "2026-10-18T11:36:22.251Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4298,
+            "output_tokens": 221,
+            "cost_usd": 0.002812,
+            "timestamp": "2026-10-18T11:36:26.338Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4129,
+            "output_tokens": 217,
+            "cost_usd": 0.002716,
+            "timestamp": "2026-10-18T11:36:31.394Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4122,
+            "output_tokens": 236,
+            "cost_usd": 0.002769,
+            "timestamp": "2026-10-18T11:36:36.771Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4160,
+            "output_tokens": 298,
+            "cost_usd": 0.002974,
+            "timestamp": "2026-10-18T11:36:41.853Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4166,
+            "output_tokens": 223,
+            "cost_usd": 0.002752,
+            "timestamp": "2026-10-18T11:36:53.895Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1362,
+            "output_tokens": 508,
+            "cost_usd": 0.002205,
+            "timestamp": "2026-10-18T11:37:07.715Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear."
+      ],
+      "notes": [
+        "Judge unavailable — fell back to keyword-based checkpoint tracker (less reliable)",
+        "Skipped checkpoints: #10 \"Scroll to the bottom of the profile page, click \"Log Out\", t...\""
+      ]
+    },
+    {
+      "taskId": "T09",
+      "taskName": "Atom Habit Tracker Full Journey",
+      "runNumber": 3,
+      "verdict": "FAIL",
+      "score": 40,
+      "timestampIso": "2026-10-18T11:37:03.424Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 186133,
+      "taskProgress": 95,
+      "finalUrl": "https://atom-habit-builder-app.vercel.app/",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.8,
+        "withinStepBudget": true,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 21,
+        "total_input_tokens": 83475,
+        "total_output_tokens": 5403,
+        "total_cost_usd": 0.05795,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3558,
+            "output_tokens": 143,
+            "cost_usd": 0.002208,
+            "timestamp": "2026-10-18T11:33:42.853Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3693,
+            "output_tokens": 209,
+            "cost_usd": 0.002474,
+            "timestamp": "2026-10-18T11:33:53.136Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3979,
+            "output_tokens": 186,
+            "cost_usd": 0.002548,
+            "timestamp": "2026-10-18T11:33:57.913Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3988,
+            "output_tokens": 169,
+            "cost_usd": 0.002501,
+            "timestamp": "2026-10-18T11:34:29.927Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4005,
+            "output_tokens": 177,
+            "cost_usd": 0.002534,
+            "timestamp": "2026-10-18T11:34:33.908Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4017,
+            "output_tokens": 175,
+            "cost_usd": 0.002533,
+            "timestamp": "2026-10-18T11:34:38.923Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4258,
+            "output_tokens": 200,
+            "cost_usd": 0.002729,
+            "timestamp": "2026-10-18T11:34:45.603Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4249,
+            "output_tokens": 217,
+            "cost_usd": 0.002776,
+            "timestamp": "2026-10-18T11:34:51.318Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4256,
+            "output_tokens": 197,
+            "cost_usd": 0.002719,
+            "timestamp": "2026-10-18T11:34:56.110Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4261,
+            "output_tokens": 247,
+            "cost_usd": 0.002872,
+            "timestamp": "2026-10-18T11:35:08.292Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4168,
+            "output_tokens": 208,
+            "cost_usd": 0.002708,
+            "timestamp": "2026-10-18T11:35:13.229Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4233,
+            "output_tokens": 251,
+            "cost_usd": 0.002869,
+            "timestamp": "2026-10-18T11:35:20.681Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4283,
+            "output_tokens": 245,
+            "cost_usd": 0.002877,
+            "timestamp": "2026-10-18T11:35:29.138Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4294,
+            "output_tokens": 229,
+            "cost_usd": 0.002834,
+            "timestamp": "2026-10-18T11:35:34.204Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4128,
+            "output_tokens": 216,
+            "cost_usd": 0.002712,
+            "timestamp": "2026-10-18T11:35:38.990Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4126,
+            "output_tokens": 218,
+            "cost_usd": 0.002717,
+            "timestamp": "2026-10-18T11:35:43.817Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4125,
+            "output_tokens": 233,
+            "cost_usd": 0.002762,
+            "timestamp": "2026-10-18T11:35:48.171Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4159,
+            "output_tokens": 198,
+            "cost_usd": 0.002674,
+            "timestamp": "2026-10-18T11:36:13.318Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4159,
+            "output_tokens": 241,
+            "cost_usd": 0.002803,
+            "timestamp": "2026-10-18T11:36:24.286Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4162,
+            "output_tokens": 267,
+            "cost_usd": 0.002882,
+            "timestamp": "2026-10-18T11:36:35.723Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1374,
+            "output_tokens": 1177,
+            "cost_usd": 0.004218,
+            "timestamp": "2026-10-18T11:36:53.547Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear."
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (8/10 completed)",
+        "Skipped checkpoints: #9 \"In the General section, find the \"Notifications\" toggle swit...\" | #10 \"Scroll to the bottom of the profile page, click \"Log Out\", t...\"",
+        "Judge: checkpoint #9 NOT completed — In Step 16 the agent clicked but the Notifications toggle remained 'currently off' without toggling state",
+        "Judge: checkpoint #10 NOT completed — The confirmation dialog was triggered in Step 18, but through Step 20 the confirmation modal remained open and the user was not logged out"
+      ]
+    },
+    {
+      "taskId": "T10",
+      "taskName": "Heuristiq Landing Page Tour",
+      "runNumber": 1,
+      "verdict": "FAIL",
+      "score": 40,
+      "timestampIso": "2026-10-18T11:44:30.883Z",
+      "agentReportedSuccess": false,
+      "totalSteps": 20,
+      "durationMs": 331366,
+      "taskProgress": 95,
+      "finalUrl": "https://www.heuristiq.co.in/",
+      "verificationSignals": {
+        "agentReportedSuccess": false,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.75,
+        "withinStepBudget": false,
+        "noExplicitFailure": false,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 19,
+        "total_input_tokens": 85057,
+        "total_output_tokens": 4814,
+        "total_cost_usd": 0.056973,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4639,
+            "output_tokens": 177,
+            "cost_usd": 0.00285,
+            "timestamp": "2026-10-18T11:38:44.198Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4651,
+            "output_tokens": 194,
+            "cost_usd": 0.002908,
+            "timestamp": "2026-10-18T11:39:30.132Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4664,
+            "output_tokens": 176,
+            "cost_usd": 0.00286,
+            "timestamp": "2026-10-18T11:39:35.516Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4687,
+            "output_tokens": 203,
+            "cost_usd": 0.002953,
+            "timestamp": "2026-10-18T11:39:40.896Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4706,
+            "output_tokens": 178,
+            "cost_usd": 0.002887,
+            "timestamp": "2026-10-18T11:39:46.762Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4725,
+            "output_tokens": 202,
+            "cost_usd": 0.002969,
+            "timestamp": "2026-10-18T11:39:51.187Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4748,
+            "output_tokens": 375,
+            "cost_usd": 0.003499,
+            "timestamp": "2026-10-18T11:41:21.052Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4741,
+            "output_tokens": 188,
+            "cost_usd": 0.002935,
+            "timestamp": "2026-10-18T11:43:01.009Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4742,
+            "output_tokens": 180,
+            "cost_usd": 0.002911,
+            "timestamp": "2026-10-18T11:43:06.024Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4732,
+            "output_tokens": 209,
+            "cost_usd": 0.002993,
+            "timestamp": "2026-10-18T11:43:12.670Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4739,
+            "output_tokens": 219,
+            "cost_usd": 0.003027,
+            "timestamp": "2026-10-18T11:43:17.652Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3702,
+            "output_tokens": 207,
+            "cost_usd": 0.002472,
+            "timestamp": "2026-10-18T11:43:28.968Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4736,
+            "output_tokens": 159,
+            "cost_usd": 0.002845,
+            "timestamp": "2026-10-18T11:43:34.660Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4733,
+            "output_tokens": 169,
+            "cost_usd": 0.002874,
+            "timestamp": "2026-10-18T11:43:40.551Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4734,
+            "output_tokens": 233,
+            "cost_usd": 0.003066,
+            "timestamp": "2026-10-18T11:43:46.634Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4724,
+            "output_tokens": 187,
+            "cost_usd": 0.002923,
+            "timestamp": "2026-10-18T11:43:52.860Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4724,
+            "output_tokens": 160,
+            "cost_usd": 0.002842,
+            "timestamp": "2026-10-18T11:43:57.676Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4726,
+            "output_tokens": 224,
+            "cost_usd": 0.003035,
+            "timestamp": "2026-10-18T11:44:03.324Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1204,
+            "output_tokens": 1174,
+            "cost_usd": 0.004124,
+            "timestamp": "2026-10-18T11:44:16.729Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (20 > 14)",
+        "Explicit failure: Task could not be completed within 20 steps. The flow may be too complex or unclear."
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (6/8 completed)",
+        "Skipped checkpoints: #7 \"Fill the contact form with: Name \"Test User\", Email \"test@ex...\" | #8 \"Do NOT click any \"Send Message\" or \"Submit\" button — only ve...\"",
+        "Judge: checkpoint #7 NOT completed — While Name and Email were confirmed filled by step 20, the trajectory ended on step 20 with no subsequent step or evidence confirming the Message field was successfully filled.",
+        "Judge: checkpoint #8 NOT completed — The run ended at step 20 before verifying that all three fields had been filled."
+      ]
+    },
+    {
+      "taskId": "T10",
+      "taskName": "Heuristiq Landing Page Tour",
+      "runNumber": 2,
+      "verdict": "PASS",
+      "score": 80,
+      "timestampIso": "2026-10-18T11:42:21.283Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 19,
+      "durationMs": 197992,
+      "taskProgress": 100,
+      "finalUrl": "https://www.heuristiq.co.in/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.75,
+        "withinStepBudget": false,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 20,
+        "total_input_tokens": 89621,
+        "total_output_tokens": 5143,
+        "total_cost_usd": 0.060242,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4639,
+            "output_tokens": 200,
+            "cost_usd": 0.00292,
+            "timestamp": "2026-10-18T11:38:45.424Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4651,
+            "output_tokens": 199,
+            "cost_usd": 0.002922,
+            "timestamp": "2026-10-18T11:38:49.921Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4664,
+            "output_tokens": 169,
+            "cost_usd": 0.002839,
+            "timestamp": "2026-10-18T11:38:55.241Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4686,
+            "output_tokens": 180,
+            "cost_usd": 0.002883,
+            "timestamp": "2026-10-18T11:38:59.819Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4704,
+            "output_tokens": 165,
+            "cost_usd": 0.002847,
+            "timestamp": "2026-10-18T11:39:04.426Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4722,
+            "output_tokens": 188,
+            "cost_usd": 0.002925,
+            "timestamp": "2026-10-18T11:39:09.841Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4727,
+            "output_tokens": 183,
+            "cost_usd": 0.002913,
+            "timestamp": "2026-10-18T11:39:19.822Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4727,
+            "output_tokens": 184,
+            "cost_usd": 0.002916,
+            "timestamp": "2026-10-18T11:39:53.793Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4731,
+            "output_tokens": 203,
+            "cost_usd": 0.002974,
+            "timestamp": "2026-10-18T11:40:19.654Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4727,
+            "output_tokens": 218,
+            "cost_usd": 0.003018,
+            "timestamp": "2026-10-18T11:40:25.832Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4725,
+            "output_tokens": 326,
+            "cost_usd": 0.003341,
+            "timestamp": "2026-10-18T11:40:31.975Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3692,
+            "output_tokens": 218,
+            "cost_usd": 0.0025,
+            "timestamp": "2026-10-18T11:40:56.724Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4724,
+            "output_tokens": 202,
+            "cost_usd": 0.002968,
+            "timestamp": "2026-10-18T11:41:00.892Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4721,
+            "output_tokens": 181,
+            "cost_usd": 0.002904,
+            "timestamp": "2026-10-18T11:41:06.579Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4715,
+            "output_tokens": 217,
+            "cost_usd": 0.003009,
+            "timestamp": "2026-10-18T11:41:12.132Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4718,
+            "output_tokens": 198,
+            "cost_usd": 0.002953,
+            "timestamp": "2026-10-18T11:41:16.541Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4713,
+            "output_tokens": 184,
+            "cost_usd": 0.002909,
+            "timestamp": "2026-10-18T11:41:26.720Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4715,
+            "output_tokens": 185,
+            "cost_usd": 0.002912,
+            "timestamp": "2026-10-18T11:41:44.856Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4718,
+            "output_tokens": 272,
+            "cost_usd": 0.003175,
+            "timestamp": "2026-10-18T11:41:51.669Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1202,
+            "output_tokens": 1271,
+            "cost_usd": 0.004414,
+            "timestamp": "2026-10-18T11:42:04.476Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (19 > 14)"
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (6/8 completed)",
+        "Skipped checkpoints: #7 \"Fill the contact form with: Name \"Test User\", Email \"test@ex...\" | #8 \"Do NOT click any \"Send Message\" or \"Submit\" button — only ve...\"",
+        "Judge: checkpoint #7 NOT completed — Only Name ('Test User') and Email ('test@example.com') were populated; the trajectory ended at Step 18 with the Message textarea still empty and ready for input.",
+        "Judge: checkpoint #8 NOT completed — All three fields were not filled, so verification of all three populated fields could not be completed."
+      ]
+    },
+    {
+      "taskId": "T10",
+      "taskName": "Heuristiq Landing Page Tour",
+      "runNumber": 3,
+      "verdict": "PASS",
+      "score": 80,
+      "timestampIso": "2026-10-18T11:41:33.669Z",
+      "agentReportedSuccess": true,
+      "totalSteps": 19,
+      "durationMs": 153116,
+      "taskProgress": 100,
+      "finalUrl": "https://www.heuristiq.co.in/",
+      "verificationSignals": {
+        "agentReportedSuccess": true,
+        "finalUrlMatch": true,
+        "visitedExpectedUrls": true,
+        "finalContentMatch": true,
+        "checkpointCompletionRate": 0.75,
+        "withinStepBudget": false,
+        "noExplicitFailure": true,
+        "noForbiddenActions": true
+      },
+      "llmUsage": {
+        "model": "gemini-3.8-flash",
+        "total_calls": 20,
+        "total_input_tokens": 89606,
+        "total_output_tokens": 4837,
+        "total_cost_usd": 0.05932,
+        "calls": [
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4639,
+            "output_tokens": 168,
+            "cost_usd": 0.002824,
+            "timestamp": "2026-10-18T11:38:45.676Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4651,
+            "output_tokens": 175,
+            "cost_usd": 0.00285,
+            "timestamp": "2026-10-18T11:38:54.260Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4662,
+            "output_tokens": 171,
+            "cost_usd": 0.002844,
+            "timestamp": "2026-10-18T11:38:59.321Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4682,
+            "output_tokens": 135,
+            "cost_usd": 0.002746,
+            "timestamp": "2026-10-18T11:39:06.517Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4699,
+            "output_tokens": 184,
+            "cost_usd": 0.002902,
+            "timestamp": "2026-10-18T11:39:10.744Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4716,
+            "output_tokens": 186,
+            "cost_usd": 0.002916,
+            "timestamp": "2026-10-18T11:39:15.955Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4719,
+            "output_tokens": 178,
+            "cost_usd": 0.002894,
+            "timestamp": "2026-10-18T11:39:20.673Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4719,
+            "output_tokens": 195,
+            "cost_usd": 0.002945,
+            "timestamp": "2026-10-18T11:39:26.618Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4722,
+            "output_tokens": 226,
+            "cost_usd": 0.003039,
+            "timestamp": "2026-10-18T11:39:44.534Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4723,
+            "output_tokens": 190,
+            "cost_usd": 0.002932,
+            "timestamp": "2026-10-18T11:39:49.590Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4723,
+            "output_tokens": 197,
+            "cost_usd": 0.002953,
+            "timestamp": "2026-10-18T11:39:56.105Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 3691,
+            "output_tokens": 262,
+            "cost_usd": 0.002632,
+            "timestamp": "2026-10-18T11:40:30.057Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4725,
+            "output_tokens": 194,
+            "cost_usd": 0.002945,
+            "timestamp": "2026-10-18T11:40:34.374Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4725,
+            "output_tokens": 359,
+            "cost_usd": 0.00344,
+            "timestamp": "2026-10-18T11:40:39.518Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4720,
+            "output_tokens": 193,
+            "cost_usd": 0.002939,
+            "timestamp": "2026-10-18T11:40:44.825Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4713,
+            "output_tokens": 201,
+            "cost_usd": 0.00296,
+            "timestamp": "2026-10-18T11:40:49.980Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4713,
+            "output_tokens": 203,
+            "cost_usd": 0.002966,
+            "timestamp": "2026-10-18T11:40:55.118Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4716,
+            "output_tokens": 170,
+            "cost_usd": 0.002868,
+            "timestamp": "2026-10-18T11:41:00.812Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "browser-agent-step",
+            "input_tokens": 4719,
+            "output_tokens": 273,
+            "cost_usd": 0.003179,
+            "timestamp": "2026-10-18T11:41:06.052Z"
+          },
+          {
+            "model": "gemini-3.8-flash",
+            "feature": "run-analysis",
+            "input_tokens": 1229,
+            "output_tokens": 977,
+            "cost_usd": 0.003546,
+            "timestamp": "2026-10-18T11:41:17.452Z"
+          }
+        ]
+      },
+      "failureReasons": [
+        "Exceeded step budget (19 > 14)"
+      ],
+      "notes": [
+        "Checkpoints validated by LLM judge (6/8 completed)",
+        "Skipped checkpoints: #7 \"Fill the contact form with: Name \"Test User\", Email \"test@ex...\" | #8 \"Do NOT click any \"Send Message\" or \"Submit\" button — only ve...\"",
+        "Judge: checkpoint #7 NOT completed — Only Name and Email were filled; step 18 observation explicitly states 'The Message textarea is currently empty' and the run ended without confirming the message was entered.",
+        "Judge: checkpoint #8 NOT completed — All three fields were not verified as filled since the message field remained empty."
+      ]
+    }
+  ],
+  "scorecard": {
+    "totalRuns": 30,
+    "passRate": 0.6666666666666666,
+    "partialRate": 0.06666666666666667,
+    "failRate": 0.26666666666666666,
+    "avgScore": 79,
+    "avgCheckpointCompletion": 0.8604761904761904,
+    "avgStepEfficiency": 0.6955942254626465,
+    "avgDurationMs": 195868.43333333332,
+    "fatalErrorRate": 0,
+    "maxStepsExhaustionRate": 0.3333333333333333,
+    "totalCostUsd": 1.2202,
+    "totalLlmCalls": 398,
+    "navigationReliabilityScore": 85,
+    "byTask": {
+      "T01": {
+        "taskId": "T01",
+        "taskName": "Wikipedia Article Discovery",
+        "difficulty": "easy",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 5.333333333333333,
+        "avgCostUsd": 0.018975666666666665
+      },
+      "T02": {
+        "taskId": "T02",
+        "taskName": "Hacker News Story Deep-Dive",
+        "difficulty": "easy",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 5.666666666666667,
+        "avgCostUsd": 0.020592
+      },
+      "T03": {
+        "taskId": "T03",
+        "taskName": "GitHub Repo Exploration",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 0,
+        "avgScore": 39,
+        "avgCheckpointCompletion": 0.5714285714285714,
+        "avgSteps": 20,
+        "avgCostUsd": 0.07181833333333333
+      },
+      "T04": {
+        "taskId": "T04",
+        "taskName": "MDN API Reference Lookup",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 0.3333333333333333,
+        "avgScore": 71.66666666666667,
+        "avgCheckpointCompletion": 0.6666666666666666,
+        "avgSteps": 19.333333333333332,
+        "avgCostUsd": 0.06465133333333334
+      },
+      "T05": {
+        "taskId": "T05",
+        "taskName": "Open Library Search + Book Detail",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 0.6666666666666666,
+        "avgScore": 75.33333333333333,
+        "avgCheckpointCompletion": 0.75,
+        "avgSteps": 11.333333333333334,
+        "avgCostUsd": 0.03588566666666667
+      },
+      "T06": {
+        "taskId": "T06",
+        "taskName": "Stripe Marketing Exploration",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 6.666666666666667,
+        "avgCostUsd": 0.023072333333333334
+      },
+      "T07": {
+        "taskId": "T07",
+        "taskName": "TodoMVC CRUD Flow",
+        "difficulty": "medium",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 8.333333333333334,
+        "avgCostUsd": 0.02535066666666667
+      },
+      "T08": {
+        "taskId": "T08",
+        "taskName": "SauceDemo E-commerce Checkout",
+        "difficulty": "hard",
+        "runs": 3,
+        "passRate": 1,
+        "avgScore": 100,
+        "avgCheckpointCompletion": 1,
+        "avgSteps": 11.333333333333334,
+        "avgCostUsd": 0.03126466666666667
+      },
+      "T09": {
+        "taskId": "T09",
+        "taskName": "Atom Habit Tracker Full Journey",
+        "difficulty": "hard",
+        "runs": 3,
+        "passRate": 0,
+        "avgScore": 40,
+        "avgCheckpointCompletion": 0.8666666666666667,
+        "avgSteps": 20,
+        "avgCostUsd": 0.05629233333333333
+      },
+      "T10": {
+        "taskId": "T10",
+        "taskName": "Heuristiq Landing Page Tour",
+        "difficulty": "easy",
+        "runs": 3,
+        "passRate": 0.6666666666666666,
+        "avgScore": 66.66666666666667,
+        "avgCheckpointCompletion": 0.75,
+        "avgSteps": 19.333333333333332,
+        "avgCostUsd": 0.058845
+      }
+    }
+  },
+  "durationMs": 3338979
+}

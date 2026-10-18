@@ -457,6 +457,7 @@ export interface AINavigationDecision {
   confidence: number  // 0-1 confidence score
   taskProgress: number // 0-100 progress toward completing the script goal
   isTaskComplete: boolean
+  completedSteps?: number[] // Checklist step ids the AI reports as done so far
   observation: string // What AI observed on the current page
   uxObservation?: string // Genuine UX issues observed (separate from automation issues)
 }
@@ -488,6 +489,8 @@ export interface TrajectoryStep {
   url: string
   title: string
   action: string
+  description?: string
+  target?: string // selector and/or value the action was applied to
   strategyUsed?: string
   actionSuccess: boolean
 }

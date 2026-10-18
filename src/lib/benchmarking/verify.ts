@@ -98,19 +98,22 @@ function checkFinalUrl(result: BrowserTestResult, pattern: RegExp): boolean {
   return pattern.test(finalUrl)
 }
 
+// Only steps that act on an element can trigger a forbidden action. Typing,
+// scrolling, and the agent's closing "done" note are excluded, so a note like
+// "filled the form without submitting" is not mistaken for a submit.
+const ELEMENT_ACTIONS = new Set(['click', 'select', 'navigate'])
+
 function checkForbiddenActions(
   result: BrowserTestResult,
   forbiddenPatterns: RegExp[]
 ): { ok: boolean; matched?: string } {
   if (forbiddenPatterns.length === 0) return { ok: true }
   const trajectory = result.trajectory || []
-  const expLogs = result.experienceLogs || []
-  for (const pattern of forbiddenPatterns) {
-    for (const step of trajectory) {
-      if (pattern.test(step.action)) return { ok: false, matched: step.action }
-    }
-    for (const log of expLogs) {
-      if (pattern.test(log.action || '')) return { ok: false, matched: log.action }
+  for (const step of trajectory) {
+    if (!ELEMENT_ACTIONS.has(step.action)) continue
+    const text = [step.target, step.description].filter(Boolean).join(' ')
+    for (const pattern of forbiddenPatterns) {
+      if (pattern.test(text)) return { ok: false, matched: step.description || text }
     }
   }
   return { ok: true }

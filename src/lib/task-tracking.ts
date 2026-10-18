@@ -248,3 +248,26 @@ export function updateCheckpointCompletion(
   
   return checkpoints
 }
+
+/**
+ * Mark the checkpoints the agent reports as done. Completion is sticky: a step
+ * missing from a later report stays completed.
+ */
+export function applyReportedCompletion(
+  checkpoints: TaskCheckpoint[],
+  completedIds: number[],
+  stepNumber: number
+): TaskCheckpoint[] {
+  const reported = new Set(completedIds)
+  const current = checkpoints.find(c => !c.completed)
+  if (current) current.attempts++
+
+  for (const checkpoint of checkpoints) {
+    if (!checkpoint.completed && reported.has(checkpoint.id)) {
+      checkpoint.completed = true
+      checkpoint.completedAtStep = stepNumber
+    }
+  }
+
+  return checkpoints
+}

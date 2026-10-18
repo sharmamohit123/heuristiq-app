@@ -8,9 +8,13 @@ import { AINavigationDecision, BrowserActionType } from '@/types/database'
 import { PageAnalysisInput } from './types'
 import { getBrowserAgentPrompt } from './prompts/browser-agent'
 import { LlmUsageTracker, extractTokenCounts } from './llm-usage'
-import { getGenerativeModel, type GeminiPart } from './gemini-client'
+import { getGenerativeModel, ThinkingLevel, type GeminiPart } from './gemini-client'
 
 const GEMINI_VISION_MODEL = process.env.GEMINI_VISION_MODEL || 'gemini-3-flash-preview'
+
+// Per-step decisions run up to 20 times per persona. Default thinking made a
+// step take ~20 s, often over 45 s on busy pages; LOW keeps it around 5 s.
+const NAVIGATION_THINKING_LEVEL = ThinkingLevel.LOW
 
 /**
  * Analyze the current page state and decide the next browser action
@@ -20,7 +24,7 @@ export async function analyzePageAndDecideAction(
   checkpointStatus?: string,
   usageTracker?: LlmUsageTracker
 ): Promise<AINavigationDecision> {
-  const model = getGenerativeModel({ model: GEMINI_VISION_MODEL })
+  const model = getGenerativeModel({ model: GEMINI_VISION_MODEL, thinkingLevel: NAVIGATION_THINKING_LEVEL })
 
   // Build context of previous actions
   const previousActionsContext = input.previousActions.length > 0
@@ -67,6 +71,9 @@ export async function analyzePageAndDecideAction(
       confidence: Math.max(0, Math.min(1, parsed.confidence || 0.5)),
       taskProgress: Math.max(0, Math.min(100, parsed.taskProgress || 0)),
       isTaskComplete: parsed.isTaskComplete || false,
+      completedSteps: Array.isArray(parsed.completedSteps)
+        ? parsed.completedSteps.map(Number).filter(Number.isInteger)
+        : undefined,
       observation: parsed.observation || 'Page analyzed',
       uxObservation: parsed.uxObservation || undefined,
     }

@@ -1,6 +1,5 @@
 # Heuristiq: Live URL Agent Benchmarking Strategy
 
-> **Date**: 2026-03-01
 > **Purpose**: Define a comprehensive evaluation framework for Heuristiq's live URL browser agent before public release
 > **Scope**: Navigation reliability, UX finding quality, persona fidelity, cost efficiency, and end-user trust
 
@@ -15,7 +14,7 @@ Industry data paints a clear picture of the bar we must clear:
 
 | Reference                         | Metric                                                  |
 | --------------------------------- | ------------------------------------------------------- |
-| Browser Use Cloud v3 (March 2026) | 97% on Online-Mind2Web, 89% on WebVoyager               |
+| Browser Use Cloud v3              | 97% on Online-Mind2Web, 89% on WebVoyager               |
 | Stagehand (act/extract/observe)   | 85-95% reliability vs 99%+ for deterministic Playwright |
 | AI UX testers vs human experts    | Identify 73-77% of real usability issues (best case)    |
 | UXAgent (Amazon, 2025)            | 11-17% accuracy at predicting actual human actions      |
@@ -77,7 +76,7 @@ We need to measure quality across **five distinct dimensions**. A weakness in an
 | Category                 | Example Sites                       | Why It Matters                                |
 | ------------------------ | ----------------------------------- | --------------------------------------------- |
 | Content / Read-heavy     | Wikipedia, MDN Docs                 | Tests scrolling, navigation, content parsing  |
-| Image / Media gallery    | Unsplash, Dribbble                  | Tests modal/lightbox handling, grid layouts   |
+| Image / Media gallery    | Dribbble, Open Library              | Tests modal/lightbox handling, grid layouts   |
 | SaaS / Dashboard app     | Atom (existing test), Todoist       | Tests forms, toggles, multi-step workflows    |
 | E-commerce               | A sample Shopify store              | Tests search, filtering, cart flow, checkout  |
 | Landing page / Marketing | A Vercel template, Stripe.com       | Tests CTA clarity, navigation simplicity      |
@@ -291,7 +290,7 @@ Based on the existing test reports and industry research, these are the specific
 | Test ID | Website                     | Task Complexity                                 | Auth Required | Special Challenges                                      |
 | ------- | --------------------------- | ----------------------------------------------- | ------------- | ------------------------------------------------------- |
 | T01     | Wikipedia                   | Simple (navigate, search)                       | No            | Content-heavy, internal links                           |
-| T02     | Unsplash                    | Medium (search, filter, modal)                  | No            | Image grid, lightbox, infinite scroll                   |
+| T02     | Open Library                | Medium (search, results, detail page)           | No            | Dense result rows, lazy-loaded lists, mobile search box |
 | T03     | Atom Habit Tracker          | Hard (login, CRUD, logout)                      | Yes           | Auth flow, toggles, confirmation dialogs, small targets |
 | T04     | Hacker News                 | Simple (browse, click links)                    | No            | Minimal styling, dense text, non-standard UI            |
 | T05     | A Shopify demo store        | Hard (search, add to cart, begin checkout)      | No            | E-commerce flow, variant selection, cart management     |

@@ -61,36 +61,37 @@ For a deeper walkthrough, see [docs/technical-architecture-report.md](docs/techn
 
 ## Benchmarks
 
-Navigation reliability is measured with a 10-task suite on live public websites (`src/lib/benchmarking/`, task design in [docs/benchmarking-navigation-tasks.md](docs/benchmarking-navigation-tasks.md)). A run passes only if it reaches the expected final URL, visits every required page, and completes enough checkpoints, with no failures or forbidden actions.
+Navigation reliability is measured with a 10-task suite on live public websites (`src/lib/benchmarking/`, task design in [docs/benchmarking-navigation-tasks.md](docs/benchmarking-navigation-tasks.md)). A separate Gemini judge checks each task step against the agent's recorded trajectory, not its own claims. A run passes only if it reaches the expected final URL, visits every required page, and completes enough checkpoints, with no failures or forbidden actions.
 
-Best full run, 10 tasks × 3 runs ([benchmark-results/2026-05-02T11-44-24.json](benchmark-results/2026-05-02T11-44-24.json)):
+Full run, 10 tasks × 3 runs, Gemini 3.8 Flash ([benchmark-results/2026-10-18T10-48-50.json](benchmark-results/2026-10-18T10-48-50.json)):
 
 | Metric | Result |
 |---|---|
-| Navigation reliability score | 93 / 100 |
-| Checkpoints completed | 96.7% |
-| Pass / partial / fail | 67% / 20% / 13% |
+| Navigation reliability score | 85 / 100 |
+| Checkpoints completed | 86% |
+| Pass / partial / fail | 67% / 7% / 27% |
 | Fatal errors | 0 |
-| Average Gemini cost per run | $0.031 |
+| Average Gemini cost per run (including thinking tokens) | $0.041 |
 
 | Task | Difficulty | Passed | Checkpoints |
 |---|---|---|---|
 | T01 Wikipedia article discovery | Easy | 3/3 | 100% |
 | T02 Hacker News story deep-dive | Easy | 3/3 | 100% |
-| T03 GitHub repository exploration | Medium | 0/3 | 86% |
-| T04 MDN API reference lookup | Medium | 1/3 | 100% |
-| T05 Unsplash search and modal | Medium | 3/3 | 96% |
-| T06 Stripe marketing exploration | Medium | 0/3 | 86% |
+| T03 GitHub repository exploration | Medium | 0/3 | 57% |
+| T04 MDN API reference lookup | Medium | 1/3 | 67% |
+| T05 Open Library search to author page (mobile) | Medium | 2/3 | 75% |
+| T06 Stripe marketing exploration | Medium | 3/3 | 100% |
 | T07 TodoMVC CRUD flow | Medium | 3/3 | 100% |
 | T08 SauceDemo login to checkout | Hard | 3/3 | 100% |
-| T09 Atom habit tracker journey (mobile) | Hard | 3/3 | 100% |
-| T10 Heuristiq landing page tour | Easy | 1/3 | 100% |
+| T09 Atom habit tracker journey (mobile) | Hard | 0/3 | 87% |
+| T10 Heuristiq landing page tour (mobile) | Easy | 2/3 | 75% |
 
 Run it yourself (needs a Gemini credential in `.env.local`; Supabase is optional for benchmarks):
 
 ```bash
-npm run benchmark:smoke          # T01 once
-npm run benchmark -- --reps 3    # all 10 tasks x 3
+npm run benchmark:smoke                 # T01 once
+npm run benchmark -- --reps 3           # all 10 tasks x 3, one run at a time
+npm run benchmark -- --reps 3 --parallel  # each task's 3 runs at the same time
 npm run benchmark -- --tasks T08,T09 --reps 1
 ```
 

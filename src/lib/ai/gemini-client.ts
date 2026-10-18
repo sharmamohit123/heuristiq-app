@@ -10,8 +10,9 @@
  * 3. GOOGLE_GEMINI_API_KEY: AI Studio (local development fallback).
  */
 
-import { GoogleGenAI, type Part } from '@google/genai'
+import { GoogleGenAI, ThinkingLevel, type Part } from '@google/genai'
 
+export { ThinkingLevel }
 export type GeminiPart = Part
 
 type GenerateInput = string | Array<string | GeminiPart>
@@ -59,17 +60,47 @@ function toParts(input: GenerateInput): GeminiPart[] {
   return items.map((item) => (typeof item === 'string' ? { text: item } : item))
 }
 
+// Without a timeout, one stalled request blocks a persona run indefinitely.
+const REQUEST_TIMEOUT_MS = 30_000
+const MAX_ATTEMPTS = 3
+const SLOW_CALL_LOG_MS = 20_000
+
+function isRetryable(error: unknown): boolean {
+  const status = (error as { status?: number })?.status
+  if (status === 429 || (status !== undefined && status >= 500)) return true
+  const text = error instanceof Error ? `${error.name} ${error.message}` : String(error)
+  return /abort|timeout|timed out|ECONNRESET|socket hang up|fetch failed/i.test(text)
+}
+
 /**
  * Drop-in stand-in for the old AI Studio `getGenerativeModel().generateContent()`
  * shape used across the AI modules (`response.text()`, `response.usageMetadata`).
  */
-export function getGenerativeModel(options: { model: string }) {
+export function getGenerativeModel(options: { model: string; thinkingLevel?: ThinkingLevel }) {
   return {
     async generateContent(input: GenerateInput) {
-      const response = await getClient().models.generateContent({
-        model: options.model,
-        contents: [{ role: 'user', parts: toParts(input) }],
-      })
+      const contents = [{ role: 'user', parts: toParts(input) }]
+      let response
+      for (let attempt = 1; ; attempt++) {
+        const started = Date.now()
+        try {
+          response = await getClient().models.generateContent({
+            model: options.model,
+            contents,
+            config: {
+              httpOptions: { timeout: REQUEST_TIMEOUT_MS },
+              ...(options.thinkingLevel ? { thinkingConfig: { thinkingLevel: options.thinkingLevel } } : {}),
+            },
+          })
+          const elapsed = Date.now() - started
+          if (elapsed > SLOW_CALL_LOG_MS) console.warn(`[gemini] Slow call: ${elapsed} ms (${options.model})`)
+          break
+        } catch (error) {
+          if (attempt >= MAX_ATTEMPTS || !isRetryable(error)) throw error
+          console.warn(`[gemini] Attempt ${attempt} failed after ${Date.now() - started} ms, retrying:`, error instanceof Error ? error.message.slice(0, 120) : error)
+          await new Promise((resolve) => setTimeout(resolve, 1000 * attempt))
+        }
+      }
 
       return {
         response: {

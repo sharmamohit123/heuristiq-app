@@ -10,7 +10,7 @@ import { T01_WIKIPEDIA } from './t01-wikipedia'
 import { T02_HACKERNEWS } from './t02-hackernews'
 import { T03_GITHUB } from './t03-github'
 import { T04_MDN } from './t04-mdn'
-import { T05_UNSPLASH } from './t05-unsplash'
+import { T05_OPENLIBRARY } from './t05-openlibrary'
 import { T06_STRIPE } from './t06-stripe'
 import { T07_TODOMVC } from './t07-todomvc'
 import { T08_SAUCEDEMO } from './t08-saucedemo'
@@ -22,7 +22,7 @@ export const ALL_TASKS: BenchmarkTask[] = [
   T02_HACKERNEWS,
   T03_GITHUB,
   T04_MDN,
-  T05_UNSPLASH,
+  T05_OPENLIBRARY,
   T06_STRIPE,
   T07_TODOMVC,
   T08_SAUCEDEMO,
@@ -45,7 +45,7 @@ export {
   T02_HACKERNEWS,
   T03_GITHUB,
   T04_MDN,
-  T05_UNSPLASH,
+  T05_OPENLIBRARY,
   T06_STRIPE,
   T07_TODOMVC,
   T08_SAUCEDEMO,
