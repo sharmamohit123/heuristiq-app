@@ -444,7 +444,7 @@ export default function LandingPage() {
               icon={FlaskConical}
               title="Live browser agents"
               description="Personas navigate your real product in headless Chromium: typing, clicking, scrolling, and recovering from dead ends on their own. Every run is recorded on video with a screenshot at each step, so every finding links to the moment it happened."
-              screenshot="/screenshots/usability-test.png"
+              screenshot="/screenshots/live_execution_3.png"
               accentColor="cyan"
             />
 
